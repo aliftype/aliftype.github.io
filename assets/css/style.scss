@@ -2,3 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
+header, section {
+  padding-top: 70px;
+}
