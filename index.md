@@ -7,7 +7,7 @@ libre fonts.
 
 Amiri
 -----
-[Website](amirifont.org), [GitHub](https://github.com/alif-type/amiri)
+[Website](https://amirifont.org), [GitHub](https://github.com/alif-type/amiri)
 
 Rana Kufi
 ---------
