@@ -12,3 +12,7 @@ Amiri
 Rana Kufi
 ---------
 [Website](/rana-kufi), [GitHub](https://github.com/alif-type/rana-kufi)
+
+Qahiri
+---------
+[Website](/qahiri), [GitHub](https://github.com/alif-type/qahiri)
