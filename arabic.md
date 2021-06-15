@@ -6,12 +6,12 @@ layout: arabic
 
 أمیری
 -----
-[الموقع](https://amirifont.org)، [صفحة المشروع](https://github.com/alif-type/amiri)
+[الموقع](https://amirifont.org)، [صفحة المشروع](https://github.com/aliftype/amiri)
 
 رنا كوفی
 --------
-[الموقع](/rana-kufi)، [صفحة المشروع](https://github.com/alif-type/rana-kufi)
+[الموقع](/rana-kufi)، [صفحة المشروع](https://github.com/aliftype/rana-kufi)
 
 قاهری
 -----
-[الموقع](/qahiri)، [صفحة المشروع](https://github.com/alif-type/qahiri)
+[الموقع](/qahiri)، [صفحة المشروع](https://github.com/aliftype/qahiri)
