@@ -16,3 +16,5 @@ Rana Kufi
 Qahiri
 ---------
 [Website](/qahiri), [GitHub](https://github.com/aliftype/qahiri)
+
+<a rel="me" href="https://typo.social/@khaled" style="visibility: hidden;">Mastodon</a>
