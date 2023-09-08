@@ -1,8 +1,8 @@
 ---
-layout: arabic
+layout: default
+language: ar
+direction: rtl
 ---
-
-«مسبك ألف» هو مسبك حروف رقمی متخصص فی الخطوط العربیة والریاضیاتیة.
 
 أمیری
 -----
@@ -15,3 +15,7 @@ layout: arabic
 قاهری
 -----
 [الموقع](/qahiri)، [صفحة المشروع](https://github.com/aliftype/qahiri)
+
+رق
+-----
+[الموقع](/raqq)، [صفحة المشروع](https://github.com/aliftype/raqq)

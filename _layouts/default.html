@@ -1,47 +1,58 @@
+{% assign messages = site.data.messages[page.language] %}
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ page.language }}" dir="{{ page.direction | default: rtl }}">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/images/favicon.svg"/>
 
-{% seo %}
+    <title>{{ page.title | default: site.title }} | {{ page.description | default: site.description }}</title>
+    <meta property="og:locale" content="{{ page.language }}" />
+    <meta        name="description" content="{{ messages.description }}" />
+    <meta property="og:description" content="{{ messages.description }}" />
+    <link      rel="canonical" href="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}" />
+    <meta property="og:url" content="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:image" content="{{ "/assets/images/card.png" | relative_url }}" />
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <p class="lang-switcher" lang="ar"><a href="./arabic" hreflang="ar">عربی</a></p>
-    <div class="wrapper">
-      <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+    <header>
+      <p id="logo">أ</p>
+      <h1>{{ messages.foundry }}</h1>
+      <p class="lang-switcher-side">
+      {% if page.language == "ar" %}
+        عربي | <a lang="en-US" href="./" hreflang="en-US">English</a>
+      {% else %}
+        English | <a lang=ar" href="./arabic" hreflang="ar">عربي</a>
+      {% endif %}
+      </p>
+      <p>{{ messages.foundry-description }}</p>
+    </header>
+    <footer>
+      <h2>{{ messages.contact }}</h2>
+      <p>{{ messages.contact-detail }} <a href="mailto:info@aliftype.com"><code>info@aliftype.com</code></a></p>
+      <p>
+        <a href="https://www.facebook.com/AlifTypeFoundry">{{ messages.facebook }}</a></br>
+        <a href="https://www.instagram.com/khaledhosny.type">{{ messages.instagram }}</a></br>
+        <a href="https://fonts.google.com/?subset=arabic&query=Khaled+Hosny">{{ messages.google-fonts }}</a></br>
+      </p>
+      <p id="sitedesigner"><a href="https://abdomohamed.com">{{ messages.sitedesigner }}</a></p>
+    </footer>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        <p class="view"><a href="{{ site.github.owner_url }}">View on GitHub</a></p>
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <p class="lang-switcher-top">
+    {% if page.language == "ar" %}
+      عربي | <a lang="en-US" href="./english" hreflang="en-US">English</a>
+    {% else %}
+      English | <a lang=ar" href="./" hreflang="ar">عربي</a>
     {% endif %}
+    </p>
+    <section>
+      {% if page.title and page.description %}
+      <h1>{{ page.title }}&VeryThinSpace;—&VeryThinSpace;{{ page.description }}</h1>
+      {% endif %}
+      {{ content }}
+    </section>
   </body>
 </html>

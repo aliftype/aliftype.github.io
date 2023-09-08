@@ -1,9 +1,10 @@
 ---
+title: Alif Type
+description: A type foundry
 layout: default
+language: en-US
+direction: ltr
 ---
-
-Alif Type is a _virtual_ type foundry specialized in Arabic and mathematical
-libre fonts.
 
 Amiri
 -----
@@ -16,5 +17,9 @@ Rana Kufi
 Qahiri
 ---------
 [Website](/qahiri), [GitHub](https://github.com/aliftype/qahiri)
+
+Raqq
+---------
+[Website](/raqq), [GitHub](https://github.com/aliftype/raqq)
 
 <a rel="me" href="https://typo.social/@khaled" style="visibility: hidden;">Mastodon</a>
