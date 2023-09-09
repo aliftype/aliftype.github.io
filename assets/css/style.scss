@@ -52,7 +52,8 @@ body {
   justify-content: space-between;
   grid-template-areas:
     "header section"
-    "footer section";
+    "footer section"
+    ".      section";
   gap: 15px;
 }
 
@@ -131,6 +132,24 @@ footer p
 .lang-switcher-side,
 .lang-switcher-top {
   font-family: var(--latin-font);
+}
+
+.sample {
+  margin-block-end: 0;
+}
+
+.links {
+  padding: 0;
+  margin-block-start: 0;
+  border-block-start: 1px solid #e5e5e5;
+  border-width: 1px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.more {
+  flex-grow: 1;
 }
 
 @media print, screen and (max-width: 700px) {
