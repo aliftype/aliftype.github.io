@@ -61,13 +61,21 @@ Raqq
 [Github](https://github.com/aliftype/raqq)
 {:.links}
 
-Rana Kufi
+Rana Kufi ⚠️🚧
 ---------
 ![](assets/images/rana-kufi.svg)
 {:.sample}
 [Read more...](/rana-kufi){:.more}
 [Github](https://github.com/aliftype/rana-kufi)
-⚠️🚧
+{:.links}
+
+XITS Math
+---------
+![](assets/images/xits.svg)
+{:.sample}
+* *{:.more}
+[Wikipedia](https://en.wikipedia.org/wiki/XITS_font_project) |
+[Github](https://github.com/aliftype/xits)
 {:.links}
 
 <a rel="me" href="https://typo.social/@khaled" style="visibility: hidden;">Mastodon</a>

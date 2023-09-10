@@ -61,11 +61,19 @@ Aref Ruqaa
 [جت‌هب](https://github.com/aliftype/raqq)
 {:.links}
 
-كوفي رنا
+كوفي رنا ⚠️🚧
 --------
 ![](assets/images/rana-kufi.svg)
 {:.sample}
 [اعرف أكثر...](/rana-kufi){:.more}
 [جت‌هب](https://github.com/aliftype/rana-kufi)
-⚠️🚧
+{:.links}
+
+XITS Math
+---------
+![](assets/images/xits.svg)
+{:.sample}
+* *{:.more}
+[ويكيبيديا](https://en.wikipedia.org/wiki/XITS_font_project) |
+[جت‌هب](https://github.com/aliftype/xits)
 {:.links}
