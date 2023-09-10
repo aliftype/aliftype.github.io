@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="300" data-text='[{"code":1571,"features":["cv02=5"]},{"code":1576},{"code":1580,"features":[]},{"code":1583,"features":["cv02=2"]},{"code":32},{"code":1607,"features":["cv01=3"]},{"code":1608},{"code":1586},{"code":32},{"code":1581},{"code":1591},{"code":1610,"features":["cv01=8"]},{"code":32},{"code":1603,"features":["cv05=1"]},{"code":1604},{"code":1605,"features":["cv01=3"]},{"code":1606,"features":["cv01=1"]}]' version="1.1" viewBox="0 0 12000 3e3" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="300" version="1.1" viewBox="0 0 12000 3e3" xmlns="http://www.w3.org/2000/svg">
+ <rect x="-128.57" y="-192.86" width="12343" height="3428.6"/>
  <g transform="translate(-432,-350)">
   <path transform="translate(650 3e3)" d="m100 0c56 0 100-44 100-100s-44-100-100-100-100 44-100 100 44 100 100 100z" fill="#d22e1f"/>
   <g fill="#fff">
