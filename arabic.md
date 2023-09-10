@@ -21,7 +21,7 @@ direction: rtl
 ----
 ![](assets/images/mada.svg)
 {:.sample}
-* *{:.more}
+[نزّل الخط...](https://github.com/aliftype/mada/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/mada) |
 [خطوط جوجل](https://fonts.google.com/specimen/Mada)
 {:.links}
@@ -30,7 +30,7 @@ direction: rtl
 --------
 ![](assets/images/reem-kufi.svg)
 {:.sample}
-* *{:.more}
+[نزّل الخط...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/reem-kufi) |
 [خطوط جوجل](https://fonts.google.com/specimen/Reem+Kufi)
 {:.links}
@@ -39,7 +39,7 @@ Aref Ruqaa
 ----------
 ![](assets/images/aref-ruqaa.svg)
 {:.sample}
-* *{:.more}
+[نزّل الخط...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/aref-ruqaa) |
 [خطوط جوجل](https://fonts.google.com/specimen/Aref+Ruqaa)
 {:.links}
@@ -73,7 +73,7 @@ XITS Math
 ---------
 ![](assets/images/xits.svg)
 {:.sample}
-* *{:.more}
+[نزّل الخط...](https://github.com/aliftype/xits/releases/latest){:.more}
 [ويكيبيديا](https://en.wikipedia.org/wiki/XITS_font_project) |
 [جت‌هب](https://github.com/aliftype/xits)
 {:.links}

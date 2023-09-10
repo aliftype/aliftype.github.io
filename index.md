@@ -21,7 +21,7 @@ Mada
 ----
 ![](assets/images/mada.svg)
 {:.sample}
-* *{:.more}
+[Download...](https://github.com/aliftype/mada/releases/latest){:.more}
 [Github](https://github.com/aliftype/mada) |
 [Google Fonts](https://fonts.google.com/specimen/Mada)
 {:.links}
@@ -30,7 +30,7 @@ Reem Kufi
 ---------
 ![](assets/images/reem-kufi.svg)
 {:.sample}
-* *{:.more}
+[Download...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
 [Github](https://github.com/aliftype/reem-kufi) |
 [Google Fonts](https://fonts.google.com/specimen/Reem+Kufi)
 {:.links}
@@ -39,7 +39,7 @@ Aref Ruqaa
 ----------
 ![](assets/images/aref-ruqaa.svg)
 {:.sample}
-* *{:.more}
+[Download...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
 [Github](https://github.com/aliftype/aref-ruqaa) |
 [Google Fonts](https://fonts.google.com/specimen/Aref+Ruqaa)
 {:.links}
@@ -73,7 +73,7 @@ XITS Math
 ---------
 ![](assets/images/xits.svg)
 {:.sample}
-* *{:.more}
+[Download...](https://github.com/aliftype/xits/releases/latest){:.more}
 [Wikipedia](https://en.wikipedia.org/wiki/XITS_font_project) |
 [Github](https://github.com/aliftype/xits)
 {:.links}
