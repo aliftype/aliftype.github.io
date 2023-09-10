@@ -12,6 +12,7 @@ direction: rtl
 {:.sample}
 
 [اعرف أكثر...](https://www.amirifont.org){:.more}
+[ويكيبيديا](https://ar.wikipedia.org/wiki/الخط_الأميري) |
 [جت‌هب](https://github.com/aliftype/amiri) |
 [خطوط جوجل](https://fonts.google.com/specimen/Amiri)
 {:.links}
