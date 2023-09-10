@@ -35,8 +35,8 @@ direction: rtl
 [خطوط جوجل](https://fonts.google.com/specimen/Reem+Kufi)
 {:.links}
 
-Aref Ruqaa
-----------
+رقعة عارف
+---------
 ![](assets/images/aref-ruqaa.svg)
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
