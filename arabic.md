@@ -53,6 +53,14 @@ direction: rtl
 [خطوط جوجل](https://fonts.google.com/specimen/Qahiri)
 {:.links}
 
+أنت
+---
+![](assets/images/anti.svg)
+{:.sample}
+[نزّل الخط...](https://github.com/aliftype/anti/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/anti)
+{:.links}
+
 رَقّ
 ----
 ![](assets/images/raqq.svg)

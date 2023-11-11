@@ -53,6 +53,14 @@ Qahiri
 [Google Fonts](https://fonts.google.com/specimen/Qahiri)
 {:.links}
 
+Anti
+----
+![](assets/images/anti.svg)
+{:.sample}
+[Download...](https://github.com/aliftype/anti/releases/latest){:.more}
+[Github](https://github.com/aliftype/anti)
+{:.links}
+
 Raqq
 ----
 ![](assets/images/raqq.svg)
