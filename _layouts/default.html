@@ -34,10 +34,10 @@
       <h2>{{ messages.contact }}</h2>
       <p>{{ messages.contact-detail }} <a href="mailto:info@aliftype.com"><code>info@aliftype.com</code></a></p>
       <p>
-        <a href="https://github.com/aliftype">{{ messages.github }}</a></br>
-        <a href="https://www.facebook.com/AlifTypeFoundry">{{ messages.facebook }}</a></br>
+        <a href="https://github.com/aliftype">{{ messages.github }}</a><br/>
+        <a href="https://www.facebook.com/AlifTypeFoundry">{{ messages.facebook }}</a><br/>
         <!--a href="https://www.instagram.com/khaledhosny.type">{{ messages.instagram }}</a></br-->
-        <a href="https://fonts.google.com/?subset=arabic&query=Khaled+Hosny">{{ messages.google-fonts }}</a></br>
+        <a href="https://fonts.google.com/?subset=arabic&query=Khaled+Hosny">{{ messages.google-fonts }}</a><br/>
       </p>
       <p id="sitedesigner"><a href="https://abdomohamed.com">{{ messages.sitedesigner }}</a></p>
     </footer>
@@ -46,7 +46,7 @@
     {% if page.language == "ar" %}
       عربي | <a lang="en-US" href="./" hreflang="en-US">English</a>
     {% else %}
-      English | <a lang=ar" href="./arabic" hreflang="ar">عربي</a>
+      English | <a lang="ar" href="./arabic" hreflang="ar">عربي</a>
     {% endif %}
     </p>
     <section>
