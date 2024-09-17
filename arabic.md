@@ -1,6 +1,6 @@
 ---
 title: حروف ألف
-description: مسبك حروف رقمي
+description: مسبك حروف عربي
 layout: default
 language: ar
 direction: rtl

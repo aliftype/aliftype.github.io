@@ -1,6 +1,6 @@
 ---
 title: Alif Type
-description: A virtual type foundry
+description: An Arabic type foundry
 layout: default
 language: en-US
 direction: ltr
