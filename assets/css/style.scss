@@ -18,8 +18,11 @@
 }
 
 :root {
+  color-scheme: light dark;
+  --body-background-color: light-dark(#FFFAED, black);
+  --body-color: light-dark(black, lightgray);
   --kufi-family: "Raqq", serif;
-  --kufi-color: #DFDFDF;
+  --kufi-color: light-dark(black, #DFDFDF);
   --main-family: "Amiri", serif;
   --heading-family: "Reem Kufi", sans-serif;
   --h1-font-size: 40px;
@@ -35,8 +38,10 @@
   --h1-font-size: 1.5em;
 }
 
-body * {
-  font-palette: dark;
+@media (prefers-color-scheme: dark) {
+  body * {
+    font-palette: dark;
+  }
 }
 
 body {
@@ -44,8 +49,8 @@ body {
   font-size: 14pt;
   font-weight: 400;
   font-variant-numeric: proportional-nums;
-  background-color: black;
-  color: lightgray;
+  background-color: var(--body-background-color);
+  color: var(--body-color);
   max-width: 1240px;
   padding: 0 15px;
   margin: var(--top-bottom-margin) auto;
