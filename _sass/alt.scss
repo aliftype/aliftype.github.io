@@ -1,104 +1,20 @@
----
----
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=block');
-
-@font-face {
-  font-family: "Raqq";
-  src: url("{{ "/assets/fonts/Raqq.woff2" | relative_url }}");
-  font-weight: 400;
-}
+@use 'main';
 
 @font-feature-values "Raqq" {
   @stylistic { alt-one: 1; alt-two: 2; }
   @styleset { dotless: 1; }
 }
 
-@font-face {
-  font-family: "Amiri";
-  src: url("{{ "/assets/fonts/Amiri-Regular.woff2" | relative_url }}");
-  font-weight: 400;
-}
-
-:root {
-  color-scheme: light dark;
-  --body-background-color: light-dark(#FFFAED, black);
-  --body-color: light-dark(black, lightgray);
-  --kufi-family: "Raqq", serif;
-  --kufi-color: light-dark(black, #DFDFDF);
-  --download-background-color: light-dark(black, #F4F4F4);
-  --download-color: light-dark(#FFFAED, #676767);
-  --main-family: "Amiri", serif;
-  --heading-family: "Reem Kufi", sans-serif;
-  --h1-font-size: 40px;
-  --latin-font: "DM Sans", "Amiri", sans-serif;
-}
-
-:lang(en-US) {
-  --main-family: var(--latin-font);
-  --heading-family: var(--latin-font);
-  --h1-font-size: 1.5em;
-}
-
-@media (prefers-color-scheme: dark) {
-  body * {
-    font-palette: dark;
-  }
-}
-
 body {
-  font-family: var(--main-family);
-  font-size: 14pt;
-  font-weight: 400;
-  font-variant-numeric: proportional-nums;
-  background-color: var(--body-background-color);
-  color: var(--body-color);
-  max-width: 1240px;
-  padding: 0 15px;
-  margin: 50px auto;
-  display: grid;
   grid-template-columns: 1fr 700px 1fr;
   grid-template-rows: auto auto auto;
-  justify-content: space-between;
   grid-template-areas:
     "header title title"
     "header section footer";
-  gap: 15px;
 }
 
-.lang-switcher-top { grid-area: lang-switcher; }
-header  { grid-area: header; }
 #title  { grid-area: title; }
-section { grid-area: section; }
-footer  { grid-area: footer; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-family);
-  margin-block-start: 20px;
-  margin-block-end: 5px;
-  color: var(--kufi-color);
-}
-
-h1, h2, h3 {
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: var(--h1-font-size);
-}
-
-p, li {
-  text-align: justify;
-  line-height: normal;
-  hyphens: auto;
-}
-
-a {
-  color: #267CB9;
-  text-decoration: none;
-}
 
 blockquote {
   margin: 0;
@@ -122,30 +38,9 @@ blockquote.كبير p {
   margin-block-end: .4em;
 }
 
-code {
-  font-family: "Inconsolata", monospace;
-}
-
-img {
-  max-width: 100%;
-}
-
-#sitedesigner {
-  font-size: 60%;
-  color: grey;
-}
-
 header p {
   text-align: start;
   margin-block-end: 20%;
-}
-
-#logo {
-  font-family: var(--kufi-family);
-  color: var(--kufi-color);
-  font-size: 55pt;
-  margin-block-end: 5%;
-  margin-block-start: 0;
 }
 
 #logo a,
@@ -187,21 +82,6 @@ footer p {
   font-size: 120%;
   color: var(--download-color);
   text-align: center;
-}
-
-.lang-switcher-side {
-  font-size: 120%;
-}
-
-.lang-switcher-top {
-  grid-area: lang-switcher;
-  text-align: center;
-  display: none;
-}
-
-.lang-switcher-side,
-.lang-switcher-top {
-  font-family: var(--latin-font);
 }
 
 .kufi p, .كوفي p {
@@ -252,14 +132,6 @@ footer p {
     ;
   }
 
-  .lang-switcher-top {
-    display: revert;
-  }
-
-  .lang-switcher-side {
-    display: none;
-  }
-
   header {
     border-block-start: 1px solid #e5e5e5;
     border-width: 1px 0;
@@ -303,14 +175,6 @@ footer p {
 @media print, screen and (max-width: 730px) {
   #title {
     font-size: 10vi;
-  }
-}
-
-@media print, screen and (max-width: 700px) {
-  section > p:lang(en-US) {
-    text-align: start;
-    hyphens: revert;
-    -webkit-hyphens: revert;
   }
 }
 

@@ -1,19 +1,16 @@
----
----
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=block');
 
 @font-face {
   font-family: "Raqq";
-  src: url("{{ "/assets/fonts/Raqq.woff2" | relative_url }}");
+  src: url("/assets/fonts/Raqq.woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Amiri";
-  src: url("{{ "/assets/fonts/Amiri-Regular.woff2" | relative_url }}");
+  src: url("/assets/fonts/Amiri-Regular.woff2");
   font-weight: 400;
 }
 
@@ -23,6 +20,8 @@
   --body-color: light-dark(black, lightgray);
   --kufi-family: "Raqq", serif;
   --kufi-color: light-dark(black, #DFDFDF);
+  --download-background-color: light-dark(black, #F4F4F4);
+  --download-color: light-dark(#FFFAED, #676767);
   --main-family: "Amiri", serif;
   --heading-family: "Reem Kufi", sans-serif;
   --h1-font-size: 40px;
@@ -85,11 +84,10 @@ h1 {
   font-size: var(--h1-font-size);
 }
 
-p {
+p, li {
   text-align: justify;
   line-height: normal;
   hyphens: auto;
-  -webkit-hyphens: auto;
 }
 
 a {
@@ -223,6 +221,5 @@ footer {
   section > p:lang(en-US) {
     text-align: start;
     hyphens: revert;
-    -webkit-hyphens: revert;
   }
 }
