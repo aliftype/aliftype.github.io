@@ -51,7 +51,7 @@
     <h1 dir="rtl" id="title">{{ config.title }}&#x200A;۝&#x200A;{{ config.subtitle }}</h1>
     <section>
       {% if page.subtitle %}
-      <h1>{{ page.title | default: config.title }}&#x200A;—&#x200A;{{ page.subtitle }}</h1>
+      <h1>{{ page.title | default: config.title }} — {{ page.subtitle }}</h1>
       {% endif %}
       {{ content }}
     </section>
