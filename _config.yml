@@ -1,7 +1,3 @@
 name: Alif Type
 title: حروف ألف
 description: مسبك حروف رقمي
-
-sass:
-    sass_dir: _sass
-    style: compressed
