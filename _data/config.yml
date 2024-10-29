@@ -1,0 +1,7 @@
+raqq:
+  name: Raqq
+  version: "2.00" # Increment only when tagging release, download link uses it.
+  title: رَقّ
+  subtitle: كُوفِي المَصاحفِ الأولَى
+  app: False
+  artwork: True

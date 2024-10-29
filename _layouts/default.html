@@ -8,8 +8,8 @@
 
     <title>{{ page.title | default: site.title }} | {{ page.description | default: site.description }}</title>
     <meta property="og:locale" content="{{ page.language }}">
-    <meta        name="description" content="{{ messages.description }}">
-    <meta property="og:description" content="{{ messages.description }}">
+    <meta        name="description" content="{{ messages.description | strip_html }}">
+    <meta property="og:description" content="{{ messages.description | strip_html }}">
     <link      rel="canonical" href="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}">
     <meta property="og:url" content="{{ site.url }}/{{ site.github.repository_name }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
@@ -28,7 +28,7 @@
         English | <a lang="ar" href="./arabic" hreflang="ar">عربي</a>
       {% endif %}
       </p>
-      <p>{{ messages.foundry-description }}</p>
+      <p>{{ messages.description }}</p>
     </header>
     <footer>
       <h2>{{ messages.contact }}</h2>
