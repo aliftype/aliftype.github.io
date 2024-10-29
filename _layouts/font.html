@@ -57,7 +57,7 @@
     </section>
 
     <footer>
-      <p class="downloads"><a href="{{ site.github.repository_url }}/{{ config.name | downcase }}/releases/download/v{{ config.version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
+      <p class="downloads"><a href="{{ site.github.owner_url }}/{{ project }}/releases/download/v{{ config.version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
       {% if config.artwork %}
         {% if page.language == "ar" %}
       <p class="downloads"><a href="./artwork">{{ messages.artwork }}</a></p>
@@ -68,7 +68,7 @@
       {% if config.app %}
       <p class="downloads"><a href="./app">{{ messages.app }}</a></p>
       {% endif %}
-      <p>{{ messages.github-long }} <br/><a href="{{ site.github.repository_url }}"><code>{{ site.github.repository_nwo }}</code></a></p>
+      <p>{{ messages.github-long }} <br/><a href="{{ site.github.owner_url }}/{{ project }}"><code>{{ site.github.hostname }}/{{ site.github.owner_name }}/{{ project }}</code></a></p>
     </footer>
   </body>
 </html>
