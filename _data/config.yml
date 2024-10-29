@@ -1,6 +1,6 @@
 raqq:
   name: Raqq
-  version: "2.00" # Increment only when tagging release, download link uses it.
+  version: "2.00"
   title: رَقّ
   subtitle: كُوفِي المَصاحفِ الأولَى
   app: False
