@@ -18,6 +18,9 @@
   --heading-family: "Reem Kufi", sans-serif;
   --h1-font-size: 40px;
   --latin-font: "DM Sans", "Amiri", sans-serif;
+  --top-bottom-margin: 50px;
+  --row-height: 400px;
+  --main-gap: 15px;
 }
 
 :lang(en-US) {
@@ -41,7 +44,7 @@ body {
   color: var(--body-color);
   max-width: 1240px;
   padding: 0 15px;
-  margin: 50px auto;
+  margin: var(--top-bottom-margin) auto;
   display: grid;
   grid-template-columns: 1fr 700px 1fr;
   grid-template-rows: auto auto auto;
@@ -49,7 +52,7 @@ body {
   grid-template-areas:
     "header title title"
     "header section footer";
-  gap: 15px;
+  gap: var(--main-gap);
 }
 
 .lang-switcher-top { grid-area: lang-switcher; }
@@ -135,9 +138,25 @@ img.زر {
   color: grey;
 }
 
-header p {
+header p,
+footer p
+{
   text-align: start;
   margin-block-end: 20%;
+  hyphens: none;
+  text-wrap: balance;
+}
+
+header,
+footer {
+  align-self: start;
+  position: sticky;
+  top: var(--top-bottom-margin);
+}
+
+footer p
+{
+  text-align: center;
 }
 
 #logo {
@@ -157,22 +176,11 @@ header p {
 #title {
   font-size: var(--title-font-size);
   font-weight: normal;
-  font-variant-alternates: stylistic(alt-two);
+  font-variant-alternates: stylistic(alt-title);
   text-align-last: justify;
   font-family: var(--title-family);
   margin: 0;
   color: var(--kufi-color);
-}
-
-footer {
-  align-self: start;
-  position: sticky;
-  top: 0;
-}
-
-footer p {
-  text-align: center;
-  margin-block-end: 20%;
 }
 
 .downloads {
@@ -242,16 +250,22 @@ footer p {
     border-width: 1px 0;
   }
 
-  header, header p {
+  header,
+  header p
+  {
     text-align: center;
   }
 
-  header p, footer p {
+  header p,
+  footer p
+  {
     margin-block-end: 10%;
     margin-block-end: 10%;
   }
 
-  header, footer {
+  header,
+  footer
+  {
     padding: revert;
     margin: revert;
     padding-block-start: 20px;
@@ -281,7 +295,6 @@ footer p {
   section > p:lang(en-US) {
     text-align: start;
     hyphens: revert;
-    -webkit-hyphens: revert;
   }
 }
 

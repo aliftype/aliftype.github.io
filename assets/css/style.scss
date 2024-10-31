@@ -9,6 +9,11 @@
   --body-color: light-dark(black, lightgray);
   --kufi-family: "Raqq", serif;
   --kufi-color: light-dark(black, #DFDFDF);
+  --download-background-color: light-dark(black, #F4F4F4);
+  --download-color: light-dark(#FFFAED, #676767);
+  --button-background-color: light-dark(#D9D9D9, #D9D9D9);
+  --title-family: "Raqq", serif;
+  --title-font-size: 55pt;
   --main-family: "Amiri", serif;
   --heading-family: "Reem Kufi", sans-serif;
   --h1-font-size: 40px;
@@ -41,20 +46,19 @@ body {
   padding: 0 15px;
   margin: var(--top-bottom-margin) auto;
   display: grid;
-  grid-template-columns: 260px 1fr;
-  grid-template-rows: var(--row-height) auto auto;
+  grid-template-columns: 1fr 700px 1fr;
+  grid-template-rows: auto auto auto;
   justify-content: space-between;
   grid-template-areas:
-    "header section"
-    "footer section"
-    ".      section";
+    "header title title"
+    "header section footer";
   gap: var(--main-gap);
 }
 
 .lang-switcher-top { grid-area: lang-switcher; }
 header  { grid-area: header; }
-footer  { grid-area: footer; }
 section { grid-area: section; }
+footer  { grid-area: footer; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-family);
@@ -71,11 +75,10 @@ h1 {
   font-size: var(--h1-font-size);
 }
 
-p {
+p, li {
   text-align: justify;
   line-height: normal;
   hyphens: auto;
-  -webkit-hyphens: auto;
 }
 
 a {
@@ -105,16 +108,16 @@ footer p
   text-wrap: balance;
 }
 
-header {
+header,
+footer {
   align-self: start;
   position: sticky;
   top: var(--top-bottom-margin);
 }
 
-footer {
-  align-self: top;
-  position: sticky;
-  top: calc(var(--top-bottom-margin) + var(--row-height) + var(--main-gap));
+footer
+{
+    display: none;
 }
 
 #logo {
@@ -124,6 +127,13 @@ footer {
   margin-block-end: 5%;
   margin-block-start: 0;
 }
+
+#logo a,
+#foundry a {
+  text-decoration: none;
+  color: unset;
+}
+
 
 .lang-switcher-side {
   font-size: 120%;
@@ -158,12 +168,21 @@ footer {
   flex-grow: 1;
 }
 
-@media print, screen and (max-width: 700px) {
+@media print, screen and (max-width: 1100px) {
+  footer
+  {
+    display: revert;
+  }
+
+  header .contact
+  {
+    display: none;
+  }
+
   body {
     grid-template-columns: auto;
     max-width: 700px;
     padding: 0 20px;
-    grid-template-rows: revert;
     grid-template-areas:
       "lang-switcher"
       "header"
@@ -180,8 +199,15 @@ footer {
     display: none;
   }
 
-  header, header p,
-  footer, footer p
+  footer {
+    border-block-start: 1px solid #e5e5e5;
+    border-width: 1px 0;
+  }
+
+  header,
+  header p,
+  footer,
+  footer p
   {
     text-align: center;
   }
@@ -209,6 +235,5 @@ footer {
   section > p:lang(en-US) {
     text-align: start;
     hyphens: revert;
-    -webkit-hyphens: revert;
   }
 }
