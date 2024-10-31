@@ -18,18 +18,14 @@
     <meta property="og:site_name" content="{{ config.title }}">
     <meta property="og:image" content="/assets/images/{{ project }}/card.png">
 
-    <link rel="stylesheet" href="{{ "/assets/css/font.css?v=" | append: site.github.build_revision }}">
+    <link rel="stylesheet" href="{{ "/assets/css/" | append: project | append: ".css?v=" | append: site.github.build_revision }}">
   </head>
   <body>
     <header>
       <p id="logo"><a href="/">أ</a></p>
       <h1 id="foundry"><a href="/">{{ messages.foundry }}</a></h1>
       <p class="lang-switcher-side">
-      {% if page.language == "ar" %}
-        عربي | <a lang="en-US" href="./english" hreflang="en-US">English</a>
-      {% else %}
-        English | <a lang="ar" href="./" hreflang="ar">عربي</a>
-      {% endif %}
+      {% include language-switcher.html %}
       </p>
       <p>{{ messages.description }}</p>
       <h2>{{ messages.contact }}</h2>
@@ -43,13 +39,9 @@
     </header>
 
     <p class="lang-switcher-top">
-    {% if page.language == "ar" %}
-      عربي | <a lang="en-US" href="./english" hreflang="en-US">English</a>
-    {% else %}
-      English | <a lang="ar" href="./" hreflang="ar">عربي</a>
-    {% endif %}
+    {% include language-switcher.html %}
     </p>
-    <h1 dir="rtl" id="title">{{ config.title }}&#x200A;۝&#x200A;{{ config.subtitle }}</h1>
+    <h1 dir="rtl" id="title">{{ config.title }}{{ config.title-separator }}{{ config.subtitle }}</h1>
     <section>
       {% if page.subtitle %}
       <h1>{{ page.title | default: config.title }} — {{ page.subtitle }}</h1>

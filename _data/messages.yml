@@ -13,7 +13,16 @@ en-US:
   download: Download font
   artwork: Artwork
   raqq:
-    description: Raqq (رَقّ) is a manuscript Kufic typeface, intends to revive (as faithfully as possible) the style of Kufic script used in writing the Qur’an in the third century AH. Raqq is Arabic for parchment, on which early Qur’ans were written.
+    description: >
+      Raqq (رَقّ) is a manuscript Kufic typeface, intends to revive (as
+      faithfully as possible) the style of Kufic script used in writing the
+      Qur’an in the third century AH. Raqq is Arabic for parchment, on which
+      early Qur’ans were written.
+  qahiri:
+    description: >
+      Qahiri is a Kufic typeface based on the modernized and regularized old
+      manuscript Kufic calligraphy style of the late master of Arabic
+      calligraphy Mohammad Abdul Qadir.
 
 ar:
   foundry: حروف ألف
@@ -30,4 +39,11 @@ ar:
   app: اذهب إلى التطبيق
   artwork: أعمال فنية
   raqq:
-    description: «رَقّ» هو خط حاسوبي كوفي مصحفي، يهدف إلى إحياء الخط الكوفي الذي كتبت به المصاحف المبكرة، وتحديدا مصاحف القرن الثالث الهجري، عبر رقمنته رقمنة دقيقة قدر الإمكان. الرَقّ هو الجلد الذي كتبت عليه المصاحف المبكرة.
+    description: >
+      «رَقّ» هو خط حاسوبي كوفي مصحفي، يهدف إلى إحياء الخط الكوفي الذي كتبت به
+      المصاحف المبكرة، وتحديدا مصاحف القرن الثالث الهجري، عبر رقمنته رقمنة دقيقة
+      قدر الإمكان. الرَقّ هو الجلد الذي كتبت عليه المصاحف المبكرة.
+  qahiri:
+    description: >
+      «قاهري» هو خط حاسوبي كوفي مبني على القاعدة الحديثة لخط كوفي المصاحف التي
+      وضعها الأستاذ محمد عبد القادر رحمه الله.

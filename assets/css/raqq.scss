@@ -1,26 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=block');
-
-@font-face {
-  font-family: "Raqq";
-  src: url("{{ "/assets/fonts/Raqq.woff2" | relative_url }}");
-  font-weight: 400;
-}
-
-@font-feature-values "Raqq" {
-  @stylistic { alt-one: 1; alt-two: 2; }
-  @styleset { dotless: 1; }
-}
-
-@font-face {
-  font-family: "Amiri";
-  src: url("{{ "/assets/fonts/Amiri-Regular.woff2" | relative_url }}");
-  font-weight: 400;
-}
+@import "fonts";
 
 :root {
   color-scheme: light dark;
@@ -30,6 +11,9 @@
   --kufi-color: light-dark(black, #DFDFDF);
   --download-background-color: light-dark(black, #F4F4F4);
   --download-color: light-dark(#FFFAED, #676767);
+  --button-background-color: light-dark(#D9D9D9, #D9D9D9);
+  --title-family: "Raqq", serif;
+  --title-font-size: 55pt;
   --main-family: "Amiri", serif;
   --heading-family: "Reem Kufi", sans-serif;
   --h1-font-size: 40px;
@@ -155,12 +139,12 @@ header p {
 }
 
 #title {
-  font-size: 55pt;
+  font-size: var(--title-font-size);
   font-weight: normal;
   font-variation-settings: "SPAC" -100;
   font-variant-alternates: stylistic(alt-two);
   text-align-last: justify;
-  font-family: var(--kufi-family);
+  font-family: var(--title-family);
   margin: 0;
   color: var(--kufi-color);
 }

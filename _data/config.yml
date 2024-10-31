@@ -3,5 +3,15 @@ raqq:
   version: "2.00"
   title: رَقّ
   subtitle: كُوفِي المَصاحفِ الأولَى
+  title-separator: "\u200A۝\u200A"
   app: False
   artwork: True
+
+qahiri:
+  name: Qahiri
+  version: "3.00"
+  title: قاهري
+  subtitle: خط كوفي مصحفي
+  title-separator: "—"
+  app: True
+  artwork: False

@@ -1,21 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=block');
-
-@font-face {
-  font-family: "Raqq";
-  src: url("{{ "/assets/fonts/Raqq.woff2" | relative_url }}");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Amiri";
-  src: url("{{ "/assets/fonts/Amiri-Regular.woff2" | relative_url }}");
-  font-weight: 400;
-}
+@import "fonts";
 
 :root {
   color-scheme: light dark;

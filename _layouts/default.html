@@ -23,11 +23,7 @@
       <p id="logo">أ</p>
       <h1>{{ messages.foundry }}</h1>
       <p class="lang-switcher-side">
-      {% if page.language == "ar" %}
-        عربي | <a lang="en-US" href="./" hreflang="en-US">English</a>
-      {% else %}
-        English | <a lang="ar" href="./arabic" hreflang="ar">عربي</a>
-      {% endif %}
+      {% include language-switcher.html %}
       </p>
       <p>{{ messages.description }}</p>
     </header>
@@ -44,11 +40,7 @@
     </footer>
 
     <p class="lang-switcher-top">
-    {% if page.language == "ar" %}
-      عربي | <a lang="en-US" href="./" hreflang="en-US">English</a>
-    {% else %}
-      English | <a lang="ar" href="./arabic" hreflang="ar">عربي</a>
-    {% endif %}
+    {% include language-switcher.html %}
     </p>
     <section>
       {{ content }}

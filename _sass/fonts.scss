@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=block');
+
+@font-face {
+  font-family: "Raqq";
+  src: url("/assets/fonts/Raqq.woff2");
+  font-weight: 400;
+}
+
+@font-feature-values "Raqq" {
+  @stylistic { alt-one: 1; alt-two: 2; alt-title: 2; }
+  @styleset { dotless: 1; }
+}
+
+@font-face {
+  font-family: "Qahiri";
+  src: url("/assets/fonts/Qahiri-Regular.woff2");
+  font-weight: 400;
+}
+
+@font-feature-values "Qahiri" {
+  @stylistic { alt-title: 6; }
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("/assets/fonts/Amiri-Regular.woff2");
+  font-weight: 400;
+}
