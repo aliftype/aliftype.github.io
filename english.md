@@ -48,7 +48,7 @@ Qahiri
 ------
 ![](assets/images/qahiri.svg)
 {:.sample}
-[Read more...](/qahiri){:.more}
+[Read more...](/qahiri/english){:.more}
 [Github](https://github.com/aliftype/qahiri) |
 [Google Fonts](https://fonts.google.com/specimen/Qahiri)
 {:.links}
@@ -65,7 +65,7 @@ Raqq
 ----
 ![](assets/images/raqq.svg)
 {:.sample}
-[Read more...](/raqq){:.more}
+[Read more...](/raqq/english){:.more}
 [Github](https://github.com/aliftype/raqq)
 {:.links}
 
@@ -73,7 +73,7 @@ Rana Kufi ⚠️🚧
 ---------
 ![](assets/images/rana-kufi.svg)
 {:.sample}
-[Read more...](/rana-kufi){:.more}
+[Read more...](/rana-kufi/english){:.more}
 [Github](https://github.com/aliftype/rana-kufi)
 {:.links}
 
