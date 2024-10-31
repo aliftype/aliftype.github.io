@@ -1,89 +1,87 @@
 ---
-title: Alif Type
-description: An Arabic type foundry
+title: حروف ألف
+description: مسبك حروف عربي
 layout: default
-language: en-US
-direction: ltr
+language: ar
+direction: rtl
 ---
 
-Amiri
+أميري
 -----
 ![](assets/images/amiri.svg)
 {:.sample}
 
-[Read more...](https://www.amirifont.org){:.more}
-[Wikipedia](https://en.wikipedia.org/wiki/Amiri_(typeface)) |
-[Github](https://github.com/aliftype/amiri) |
-[Google Fonts](https://fonts.google.com/specimen/Amiri)
+[اعرف أكثر...](https://www.amirifont.org){:.more}
+[ويكيبيديا](https://ar.wikipedia.org/wiki/الخط_الأميري) |
+[جت‌هب](https://github.com/aliftype/amiri) |
+[خطوط جوجل](https://fonts.google.com/specimen/Amiri)
 {:.links}
 
-Mada
+مدى
 ----
 ![](assets/images/mada.svg)
 {:.sample}
-[Download...](https://github.com/aliftype/mada/releases/latest){:.more}
-[Github](https://github.com/aliftype/mada) |
-[Google Fonts](https://fonts.google.com/specimen/Mada)
+[نزّل الخط...](https://github.com/aliftype/mada/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/mada) |
+[خطوط جوجل](https://fonts.google.com/specimen/Mada)
 {:.links}
 
-Reem Kufi
----------
+كوفي ريم
+--------
 ![](assets/images/reem-kufi.svg)
 {:.sample}
-[Download...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
-[Github](https://github.com/aliftype/reem-kufi) |
-[Google Fonts](https://fonts.google.com/specimen/Reem+Kufi)
+[نزّل الخط...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/reem-kufi) |
+[خطوط جوجل](https://fonts.google.com/specimen/Reem+Kufi)
 {:.links}
 
-Aref Ruqaa
-----------
+رقعة عارف
+---------
 ![](assets/images/aref-ruqaa.svg)
 {:.sample}
-[Download...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
-[Github](https://github.com/aliftype/aref-ruqaa) |
-[Google Fonts](https://fonts.google.com/specimen/Aref+Ruqaa)
+[نزّل الخط...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/aref-ruqaa) |
+[خطوط جوجل](https://fonts.google.com/specimen/Aref+Ruqaa)
 {:.links}
 
-Qahiri
-------
+قاهري
+-----
 ![](assets/images/qahiri.svg)
 {:.sample}
-[Read more...](/qahiri){:.more}
-[Github](https://github.com/aliftype/qahiri) |
-[Google Fonts](https://fonts.google.com/specimen/Qahiri)
+[اعرف أكثر...](/qahiri){:.more}
+[جت‌هب](https://github.com/aliftype/qahiri) |
+[خطوط جوجل](https://fonts.google.com/specimen/Qahiri)
 {:.links}
 
-Anti
-----
+أنت
+---
 ![](assets/images/anti.svg)
 {:.sample}
-[Download...](https://github.com/aliftype/anti/releases/latest){:.more}
-[Github](https://github.com/aliftype/anti)
+[نزّل الخط...](https://github.com/aliftype/anti/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/anti)
 {:.links}
 
-Raqq
+رَقّ
 ----
 ![](assets/images/raqq.svg)
 {:.sample}
-[Read more...](/raqq){:.more}
-[Github](https://github.com/aliftype/raqq)
+[اعرف أكثر...](/raqq){:.more}
+[جت‌هب](https://github.com/aliftype/raqq)
 {:.links}
 
-Rana Kufi ⚠️🚧
----------
+كوفي رنا ⚠️🚧
+--------
 ![](assets/images/rana-kufi.svg)
 {:.sample}
-[Read more...](/rana-kufi){:.more}
-[Github](https://github.com/aliftype/rana-kufi)
+[اعرف أكثر...](/rana-kufi){:.more}
+[جت‌هب](https://github.com/aliftype/rana-kufi)
 {:.links}
 
 XITS Math
 ---------
 ![](assets/images/xits.svg)
 {:.sample}
-[Download...](https://github.com/aliftype/xits/releases/latest){:.more}
-[Wikipedia](https://en.wikipedia.org/wiki/XITS_font_project) |
-[Github](https://github.com/aliftype/xits)
+[نزّل الخط...](https://github.com/aliftype/xits/releases/latest){:.more}
+[ويكيبيديا](https://en.wikipedia.org/wiki/XITS_font_project) |
+[جت‌هب](https://github.com/aliftype/xits)
 {:.links}
-
-<a rel="me" href="https://typo.social/@khaled" style="visibility: hidden;">Mastodon</a>
