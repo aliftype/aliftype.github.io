@@ -1,6 +1,13 @@
 {% assign project = page.dir | remove_first: "/" | remove_last: "/" | split: "/" | first %}
 {% assign messages = site.data.messages[page.language] %}
 {% assign config = site.data.config[project] %}
+{% if page.language == "ar" %}
+  {% assign homepage = "/" %}
+  {% assign artwork = "./artwork" %}
+{% else %}
+  {% assign homepage = "/english" %}
+  {% assign artwork = "./artwork/english" %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="{{ page.language }}" dir="{{ page.direction | default: rtl }}">
   <head>
@@ -22,8 +29,8 @@
   </head>
   <body>
     <header>
-      <p id="logo"><a href="/">أ</a></p>
-      <h1 id="foundry"><a href="/">{{ messages.foundry }}</a></h1>
+      <p id="logo"><a href="{{ homepage }}">أ</a></p>
+      <h1 id="foundry"><a href="{{ homepage }}">{{ messages.foundry }}</a></h1>
       <p class="lang-switcher-side">
       {% include language-switcher.html %}
       </p>
@@ -52,11 +59,7 @@
     <footer>
       <p class="downloads"><a href="{{ site.github.owner_url }}/{{ project }}/releases/download/v{{ config.version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
       {% if config.artwork %}
-        {% if page.language == "ar" %}
-      <p class="downloads"><a href="./artwork">{{ messages.artwork }}</a></p>
-        {% else %}
-      <p class="downloads"><a href="./artwork/english">{{ messages.artwork }}</a></p>
-        {% endif %}
+      <p class="downloads"><a href="{{ artwork }}">{{ messages.artwork }}</a></p>
       {% endif %}
       {% if config.app %}
       <p class="downloads"><a href="./app">{{ messages.app }}</a></p>
