@@ -1,3 +1,12 @@
+amiri:
+  name: Amiri
+  version: "1.000"
+  title: أميري
+  subtitle: خط عربي للمتون
+  title-separator: "\u200A—\u200A"
+  app: False
+  artwork: False
+
 raqq:
   name: Raqq
   version: "2.00"

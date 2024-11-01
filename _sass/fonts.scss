@@ -34,3 +34,23 @@
   src: url("/assets/fonts/Amiri-Regular.woff2");
   font-weight: 400;
 }
+
+@font-face {
+  src: url("/assets/fonts/Amiri-Bold.woff2");
+  font-family: "Amiri";
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("/assets/fonts/Amiri-Italic.woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  src: url("/assets/fonts/Amiri-BoldItalic.woff2");
+  font-family: "Amiri";
+  font-weight: 700;
+  font-style: italic;
+}
