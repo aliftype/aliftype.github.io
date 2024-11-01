@@ -8,7 +8,7 @@ direction: rtl
 
 أميري
 -----
-![](assets/images/amiri.svg)
+![أميري](assets/images/amiri.svg "أميري")
 {:.sample}
 
 [اعرف أكثر...](https://www.amirifont.org){:.more}
@@ -19,7 +19,7 @@ direction: rtl
 
 مدى
 ----
-![](assets/images/mada.svg)
+![مدى](assets/images/mada.svg "مدى")
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/mada/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/mada) |
@@ -28,7 +28,7 @@ direction: rtl
 
 كوفي ريم
 --------
-![](assets/images/reem-kufi.svg)
+![كوفي ريم](assets/images/reem-kufi.svg "كوفي ريم")
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/reem-kufi) |
@@ -37,7 +37,7 @@ direction: rtl
 
 رقعة عارف
 ---------
-![](assets/images/aref-ruqaa.svg)
+![رقعة عارف](assets/images/aref-ruqaa.svg "رقعة عارف")
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/aref-ruqaa) |
@@ -46,7 +46,7 @@ direction: rtl
 
 قاهري
 -----
-![](assets/images/qahiri.svg)
+![قاهري](assets/images/qahiri.svg "قاهري")
 {:.sample}
 [اعرف أكثر...](/qahiri){:.more}
 [جت‌هب](https://github.com/aliftype/qahiri) |
@@ -55,7 +55,7 @@ direction: rtl
 
 أنت
 ---
-![](assets/images/anti.svg)
+![أنت](assets/images/anti.svg "أنت")
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/anti/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/anti)
@@ -63,7 +63,7 @@ direction: rtl
 
 رَقّ
 ----
-![](assets/images/raqq.svg)
+![رَقّ](assets/images/raqq.svg "رَقّ")
 {:.sample}
 [اعرف أكثر...](/raqq){:.more}
 [جت‌هب](https://github.com/aliftype/raqq)
@@ -71,7 +71,7 @@ direction: rtl
 
 كوفي رنا ⚠️🚧
 --------
-![](assets/images/rana-kufi.svg)
+![كوفي رنا](assets/images/rana-kufi.svg "كوفي رنا")
 {:.sample}
 [اعرف أكثر...](/rana-kufi){:.more}
 [جت‌هب](https://github.com/aliftype/rana-kufi)
@@ -79,7 +79,7 @@ direction: rtl
 
 XITS Math
 ---------
-![](assets/images/xits.svg)
+![XITS Math](assets/images/xits.svg "XITS Math")
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/xits/releases/latest){:.more}
 [ويكيبيديا](https://en.wikipedia.org/wiki/XITS_font_project) |

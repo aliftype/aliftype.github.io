@@ -8,7 +8,7 @@ direction: ltr
 
 Amiri
 -----
-![](assets/images/amiri.svg)
+![Amiri](assets/images/amiri.svg "Amiri")
 {:.sample}
 
 [Read more...](https://www.amirifont.org){:.more}
@@ -19,7 +19,7 @@ Amiri
 
 Mada
 ----
-![](assets/images/mada.svg)
+![Mada](assets/images/mada.svg "Mada")
 {:.sample}
 [Download...](https://github.com/aliftype/mada/releases/latest){:.more}
 [Github](https://github.com/aliftype/mada) |
@@ -28,7 +28,7 @@ Mada
 
 Reem Kufi
 ---------
-![](assets/images/reem-kufi.svg)
+![Reem Kufi](assets/images/reem-kufi.svg "Reem Kufi")
 {:.sample}
 [Download...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
 [Github](https://github.com/aliftype/reem-kufi) |
@@ -37,7 +37,7 @@ Reem Kufi
 
 Aref Ruqaa
 ----------
-![](assets/images/aref-ruqaa.svg)
+![Aref Ruqaa](assets/images/aref-ruqaa.svg "Aref Ruqaa")
 {:.sample}
 [Download...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
 [Github](https://github.com/aliftype/aref-ruqaa) |
@@ -46,7 +46,7 @@ Aref Ruqaa
 
 Qahiri
 ------
-![](assets/images/qahiri.svg)
+![](assets/images/qahiri.svg "Qahiri")
 {:.sample}
 [Read more...](/qahiri/english){:.more}
 [Github](https://github.com/aliftype/qahiri) |
@@ -55,7 +55,7 @@ Qahiri
 
 Anti
 ----
-![](assets/images/anti.svg)
+![](assets/images/anti.svg "Anti")
 {:.sample}
 [Download...](https://github.com/aliftype/anti/releases/latest){:.more}
 [Github](https://github.com/aliftype/anti)
@@ -63,7 +63,7 @@ Anti
 
 Raqq
 ----
-![](assets/images/raqq.svg)
+![](assets/images/raqq.svg "Raqq")
 {:.sample}
 [Read more...](/raqq/english){:.more}
 [Github](https://github.com/aliftype/raqq)
@@ -71,7 +71,7 @@ Raqq
 
 Rana Kufi ⚠️🚧
 ---------
-![](assets/images/rana-kufi.svg)
+![](assets/images/rana-kufi.svg "Rana Kufi")
 {:.sample}
 [Read more...](/rana-kufi/english){:.more}
 [Github](https://github.com/aliftype/rana-kufi)
@@ -79,7 +79,7 @@ Rana Kufi ⚠️🚧
 
 XITS Math
 ---------
-![](assets/images/xits.svg)
+![](assets/images/xits.svg "XITS Math")
 {:.sample}
 [Download...](https://github.com/aliftype/xits/releases/latest){:.more}
 [Wikipedia](https://en.wikipedia.org/wiki/XITS_font_project) |
