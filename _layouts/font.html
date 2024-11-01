@@ -50,7 +50,12 @@
     </section>
 
     <footer>
-      <p class="downloads"><a href="{{ site.github.owner_url }}/{{ project }}/releases/download/v{{ config.version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
+      {% if project == "amiri" %}
+        {% assign version = config.version %}
+      {% else %}
+        {% assign version = "v" | append: config.version %}
+      {% endif %}
+      <p class="downloads"><a href="{{ site.github.owner_url }}/{{ project }}/releases/download/{{ version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
       {% if config.artwork %}
       <p class="downloads"><a href="{{ artwork }}">{{ messages.artwork }}</a></p>
       {% endif %}
