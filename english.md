@@ -11,7 +11,7 @@ Amiri
 ![Amiri](assets/images/amiri.svg "Amiri")
 {:.sample}
 
-[Read more...](/amiri){:.more}
+[Read more...](/amiri/english){:.more}
 [Wikipedia](https://en.wikipedia.org/wiki/Amiri_(typeface)) |
 [Github](https://github.com/aliftype/amiri) |
 [Google Fonts](https://fonts.google.com/specimen/Amiri)
