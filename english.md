@@ -13,7 +13,6 @@ Amiri
 
 [Read more...](/amiri/english){:.more}
 [Wikipedia](https://en.wikipedia.org/wiki/Amiri_(typeface)) |
-[Github](https://github.com/aliftype/amiri) |
 [Google Fonts](https://fonts.google.com/specimen/Amiri)
 {:.links}
 
@@ -49,7 +48,6 @@ Qahiri
 ![](assets/images/qahiri.svg "Qahiri")
 {:.sample}
 [Read more...](/qahiri/english){:.more}
-[Github](https://github.com/aliftype/qahiri) |
 [Google Fonts](https://fonts.google.com/specimen/Qahiri)
 {:.links}
 
@@ -66,7 +64,6 @@ Raqq
 ![](assets/images/raqq.svg "Raqq")
 {:.sample}
 [Read more...](/raqq/english){:.more}
-[Github](https://github.com/aliftype/raqq)
 {:.links}
 
 Rana Kufi ⚠️🚧
@@ -74,7 +71,6 @@ Rana Kufi ⚠️🚧
 ![](assets/images/rana-kufi.svg "Rana Kufi")
 {:.sample}
 [Read more...](/rana-kufi/english){:.more}
-[Github](https://github.com/aliftype/rana-kufi)
 {:.links}
 
 XITS Math
@@ -85,5 +81,3 @@ XITS Math
 [Wikipedia](https://en.wikipedia.org/wiki/XITS_font_project) |
 [Github](https://github.com/aliftype/xits)
 {:.links}
-
-<a rel="me" href="https://typo.social/@khaled" style="visibility: hidden;">Mastodon</a>

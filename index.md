@@ -13,7 +13,6 @@ direction: rtl
 
 [اعرف أكثر...](/amiri){:.more}
 [ويكيبيديا](https://ar.wikipedia.org/wiki/الخط_الأميري) |
-[جت‌هب](https://github.com/aliftype/amiri) |
 [خطوط جوجل](https://fonts.google.com/specimen/Amiri)
 {:.links}
 
@@ -49,7 +48,6 @@ direction: rtl
 ![قاهري](assets/images/qahiri.svg "قاهري")
 {:.sample}
 [اعرف أكثر...](/qahiri){:.more}
-[جت‌هب](https://github.com/aliftype/qahiri) |
 [خطوط جوجل](https://fonts.google.com/specimen/Qahiri)
 {:.links}
 
@@ -66,7 +64,6 @@ direction: rtl
 ![رَقّ](assets/images/raqq.svg "رَقّ")
 {:.sample}
 [اعرف أكثر...](/raqq){:.more}
-[جت‌هب](https://github.com/aliftype/raqq)
 {:.links}
 
 كوفي رنا ⚠️🚧
@@ -74,7 +71,6 @@ direction: rtl
 ![كوفي رنا](assets/images/rana-kufi.svg "كوفي رنا")
 {:.sample}
 [اعرف أكثر...](/rana-kufi){:.more}
-[جت‌هب](https://github.com/aliftype/rana-kufi)
 {:.links}
 
 XITS Math
@@ -85,3 +81,6 @@ XITS Math
 [ويكيبيديا](https://en.wikipedia.org/wiki/XITS_font_project) |
 [جت‌هب](https://github.com/aliftype/xits)
 {:.links}
+
+<a rel="me" href="https://typo.social/@khaled" style="visibility:
+hidden;">Mastodon</a>
