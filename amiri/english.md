@@ -6,6 +6,8 @@ language: en-US
 direction: ltr
 ---
 
+![Amiri font](/assets/images/amiri/banner.jpg "Amiri font")
+
 Amiri is a classical Arabic typeface in Naskh style for typesetting books and other running text.
 
 Amiri is a revival of the beautiful typeface pioneered in early 20<sup>th</sup> century by Bulaq Press in Cairo, also known as Amiria Press, after which the font is named.
