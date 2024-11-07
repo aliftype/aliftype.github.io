@@ -5,7 +5,6 @@ amiri:
   subtitle: خط عربي للمتون
   title-separator: "\u200A—\u200A"
   app: False
-  artwork: False
 
 raqq:
   name: Raqq
@@ -14,7 +13,6 @@ raqq:
   subtitle: كُوفِي المَصاحفِ الأولَى
   title-separator: "\u200A۝\u200A"
   app: False
-  artwork: True
 
 qahiri:
   name: Qahiri
@@ -23,7 +21,6 @@ qahiri:
   subtitle: خط كوفي مصحفي
   title-separator: "—"
   app: True
-  artwork: False
 
 rana-kufi:
   name: Rana Kufi
@@ -32,4 +29,3 @@ rana-kufi:
   subtitle: خط كوفي فاطمي
   title-separator: "\u200A۝\u200A"
   app: True
-  artwork: False

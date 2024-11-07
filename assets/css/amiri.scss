@@ -1,39 +1,15 @@
 ---
 ---
 
-@import "fonts";
-
+@import "variables";
 :root {
-  color-scheme: light dark;
-  --body-background-color: light-dark(#FFFAED, black);
-  --body-color: light-dark(black, lightgray);
-  --kufi-family: "Raqq", serif;
-  --kufi-color: light-dark(black, #DFDFDF);
-  --download-background-color: light-dark(black, #F4F4F4);
-  --download-color: light-dark(#FFFAED, #676767);
-  --button-background-color: light-dark(#D9D9D9, #D9D9D9);
   --title-family: "Amiri", serif;
   --title-font-size: 84pt;
-  --main-family: "Amiri", serif;
-  --heading-family: "Reem Kufi", sans-serif;
-  --h1-font-size: 40px;
-  --latin-font: "DM Sans", "Amiri", sans-serif;
-  --top-bottom-margin: 50px;
-  --row-height: 400px;
-  --main-gap: 15px;
 }
 
-:lang(en-US) {
-  --main-family: var(--latin-font);
-  --heading-family: var(--latin-font);
-  --h1-font-size: 1.5em;
-}
-
-@media (prefers-color-scheme: dark) {
-    body * {
-      font-palette: dark;
-    }
-}
+@import "colors";
+@import "fonts";
+@import "nav";
 
 body {
   font-family: var(--main-family);
@@ -44,12 +20,16 @@ body {
   color: var(--body-color);
   max-width: 1240px;
   padding: 0 15px;
-  margin: var(--top-bottom-margin) auto;
+  margin-top: var(--top-margin);
+  margin-bottom: var(--bottom-margin);
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 700px 1fr;
   grid-template-rows: auto auto auto;
   justify-content: space-between;
   grid-template-areas:
+    "nav nav nav"
     "header title title"
     "header section footer";
   gap: var(--main-gap);
@@ -213,6 +193,7 @@ footer p
     max-width: 700px;
     padding: 0 20px;
     grid-template-areas:
+      "nav"
       "lang-switcher"
       "title"
       "section"

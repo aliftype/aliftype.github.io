@@ -1,0 +1,19 @@
+{% assign navigation = "fonts artwork about" | split: " " %}
+<nav>
+    {% for entry in navigation %}
+        {% if entry == "fonts" %}
+            {% assign url = "/" %}
+        {% else %}
+            {% assign url = "/" | append: entry | append: "/" %}
+        {% endif %}
+        {% if url == page.dir %}
+            {% assign class = "current" %}
+        {% else %}
+            {% assign class = "" %}
+        {% endif %}
+        {% if entry == "about" %}
+            {% assign class = class | append: " about" %}
+        {% endif %}
+    <a class="{{ class }}" href="{{ url }}{{ messages.suffix }}">{{ messages[entry] }}</a>
+    {% endfor %}
+</nav>

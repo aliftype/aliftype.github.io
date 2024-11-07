@@ -5,9 +5,9 @@
     {% include analytics.html %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./assets/images/favicon.svg">
+    <link rel="shortcut icon" href="/assets/images/favicon.svg">
 
-    <title>{{ page.title | default: site.title }} | {{ page.description | default: site.description }}</title>
+    <title>{{ page.title | default: site.title }} | {{ page.subtitle | default: site.description }}</title>
     <meta property="og:locale" content="{{ page.language }}">
     <meta        name="description" content="{{ messages.description | strip_html }}">
     <meta property="og:description" content="{{ messages.description | strip_html }}">
@@ -16,16 +16,17 @@
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:image" content="{{ "/assets/images/card.png" | relative_url }}">
 
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/default.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+    {% include nav.html %}
     <header>
       <p id="logo">أ</p>
       <h1>{{ messages.foundry }}</h1>
       <p class="lang-switcher-side">
       {% include language-switcher.html %}
       </p>
-      <p>{{ messages.description }}</p>
+      <p class="description">{{ messages.description }}</p>
       {% include contact.html %}
     </header>
 

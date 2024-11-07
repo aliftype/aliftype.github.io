@@ -1,4 +1,5 @@
 en-US:
+  suffix: "english"
   foundry: Alif Type
   description: <em>Alif Type</em> is a type foundry founded by <em>Khaled Hosny</em>, and specializes in Arabic and mathematical typefaces.
   contact: Contact
@@ -9,9 +10,11 @@ en-US:
   github: GitHub
   github-long: Project page on GitHub
   sitedesigner: Website design by Abdo Mohamed
-  app: Go to app
-  download: Download font
+  app: Try the font
+  download: Download the font
   artwork: Artwork
+  fonts: Fonts
+  about: About
   raqq:
     description: >
       Raqq (رَقّ) is a manuscript Kufic typeface, intends to revive (as
@@ -30,6 +33,7 @@ en-US:
       Mohammad Abdul Qadir.
 
 ar:
+  suffix: ""
   foundry: حروف ألف
   description: «حروف ألف» هو مسبك حروف رقمي أسسه خالد حسني، ويتخصص في الخطوط العربية والرياضياتية.
   contact: تواصل معنا
@@ -41,8 +45,10 @@ ar:
   github-long: صفحة المشروع على جت&zwnj;هب
   sitedesigner: الموقع من تصميم عبد الرحمن محمد
   download: نزِّل الخط
-  app: اذهب إلى التطبيق
+  app: جرِّب الخط
   artwork: أعمال فنية
+  fonts: الخطوط
+  about: من نحن
   raqq:
     description: >
       «رَقّ» هو خط حاسوبي كوفي مصحفي، يهدف إلى إحياء الخط الكوفي الذي كتبت به

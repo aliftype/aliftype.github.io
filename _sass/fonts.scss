@@ -3,54 +3,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=block');
 
 @font-face {
-  font-family: "Raqq";
-  src: url("/assets/fonts/Raqq.woff2");
-  font-weight: 400;
+    font-family: "Raqq";
+    src: url("/assets/fonts/Raqq.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Qahiri";
+    src: url("/assets/fonts/Qahiri-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Rana Kufi";
+    src: url("/assets/fonts/RanaKufi.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url("/assets/fonts/Amiri-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("/assets/fonts/Amiri-Bold.woff2");
+    font-family: "Amiri";
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url("/assets/fonts/Amiri-Italic.woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    src: url("/assets/fonts/Amiri-BoldItalic.woff2");
+    font-family: "Amiri";
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-feature-values "Raqq" {
-  @stylistic { alt-one: 1; alt-two: 2; alt-title: 2; }
-  @styleset { dotless: 1; }
-}
+    @stylistic {
+        alt-one: 1;
+        alt-two: 2;
+        alt-title: 2;
+    }
 
-@font-face {
-  font-family: "Qahiri";
-  src: url("/assets/fonts/Qahiri-Regular.woff2");
-  font-weight: 400;
+    @styleset {
+        dotless: 1;
+    }
 }
 
 @font-feature-values "Qahiri" {
-  @stylistic { alt-title: 6; }
+    @stylistic {
+        alt-title: 6;
+    }
 }
 
-@font-face {
-  font-family: "Rana Kufi";
-  src: url("/assets/fonts/RanaKufi.woff2");
-  font-weight: 400;
+:lang(en-US) {
+    --main-family: var(--latin-font);
+    --heading-family: var(--latin-font);
+    --h1-font-size: 1.5em;
 }
 
-@font-face {
-  font-family: "Amiri";
-  src: url("/assets/fonts/Amiri-Regular.woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  src: url("/assets/fonts/Amiri-Bold.woff2");
-  font-family: "Amiri";
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Amiri";
-  src: url("/assets/fonts/Amiri-Italic.woff2");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  src: url("/assets/fonts/Amiri-BoldItalic.woff2");
-  font-family: "Amiri";
-  font-weight: 700;
-  font-style: italic;
+body {
+    font-family: var(--main-family);
+    font-size: 14pt;
+    font-weight: 400;
+    font-variant-numeric: proportional-nums;
 }
