@@ -17,7 +17,7 @@ The pages are laid out following the layout of Kufi _Mushafs_:
 - _Sura_ body starts with _Basmala_ immediately followed by the text of the _Sura_ without a separator.
 - Space between calligraphic syllables equal to the inter-word space
 - Lines are broken between calligraphic syllables
-- Red, rounded dots for vowel marks, and rectangular dots in the text color for diacritical dots
+- Red, rounded dots for vowel marks and rectangular dots in the text color for diacritical dots
 - Ornamental gold dots for _ayah_ mark, with each five _ayahs_ marked with a big ornamental circle with the word “خمس” (five) inside it written in a style similar to _Sura_ title
 - Excessive elongation to justify the text line
 
