@@ -1,21 +1,22 @@
-let CACHE = 'app-cache-v-6';
+let CACHE = 'app-cache-v-8';
 let FILES = [
+  '/assets/images/app/clear.svg',
+  '/assets/images/app/open.svg',
+  '/assets/images/app/remove-dots.svg',
+  '/assets/images/app/small-dots.svg',
+  '/assets/images/app/save.svg',
+  '/assets/fonts/RanaKufi.otf',
+  '/app/app.js',
+  '/app/HarfBuzz.js',
+  '/app/OpenType.js',
+  '/app/TextView.js',
+  '/app/hb.js',
+  '/app/hb.wasm',
+  '/assets/css/app.css',
   './',
-  './assets/fonts/Qahiri-Regular.otf',
-  './assets/images/app-icon.svg',
-  './assets/images/clear.svg',
-  './assets/images/open.svg',
-  './assets/images/remove-dots.svg',
-  './assets/images/small-dots.svg',
-  './assets/images/save.svg',
-  './HarfBuzz.js',
   './app.webmanifest',
-  './OpenType.js',
-  './TextView.js',
-  './hb.js',
-  './hb.wasm',
-  './index.css',
-  './index.js',
+  './override.css',
+  './index.html',
 ]
 
 self.addEventListener('install', e => {

@@ -115,27 +115,27 @@ input[type=checkbox]:checked + label {
 }
 
 #nocolor-dots + label {
-  background-image: url(assets/images/nocolor-dots.svg);
+  background-image: url(/assets/images/app/nocolor-dots.svg);
 }
 
 #remove-dots + label {
-  background-image: url(assets/images/remove-dots.svg);
+  background-image: url(/assets/images/app/remove-dots.svg);
 }
 
 #small-dots + label {
-  background-image: url(assets/images/small-dots.svg);
+  background-image: url(/assets/images/app/small-dots.svg);
 }
 
 #adjust-dots + label {
-  background-image: url(assets/images/adjust-dots.svg);
+  background-image: url(/assets/images/app/adjust-dots.svg);
 }
 
 #onum + label {
-  background-image: url(assets/images/onum.svg);
+  background-image: url(/assets/images/app/onum.svg);
 }
 
 #round-dots + label {
-  background-image: url(assets/images/round-dots.svg);
+  background-image: url(/assets/images/app/round-dots.svg);
 }
 
 .feature {

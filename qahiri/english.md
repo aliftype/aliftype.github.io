@@ -20,19 +20,19 @@ Visit the app [web page][4] and type Arabic in the text area. Below the text wil
 
 The slider and the input box next to it control the text size.
 
-Two buttons control the dots, the ![remove dots](./app/assets/images/remove-dots.svg){:.button} button will remove all the dots, to get a dot-less version of the text resembling early Kufic manuscripts.
+Two buttons control the dots, the ![remove dots](/assets/images/app/remove-dots.svg){:.button} button will remove all the dots, to get a dot-less version of the text resembling early Kufic manuscripts.
 
 ![Screenshot with no dots](/assets/images/qahiri/screenshot-dotless.png)
 
-The ![rounded dots](./app/assets/images/round-dots.svg){:.button} button, on the other hand, replaces the default rectangular dots with more familiar rounded dots.
+The ![rounded dots](/assets/images/app/round-dots.svg){:.button} button, on the other hand, replaces the default rectangular dots with more familiar rounded dots.
 
 ![Screenshot with rounded dots](/assets/images/qahiri/screenshot-rounded-dots.png)
 
-The app allows exporting SVG files that can be further modified in any vector graphics application. Pressing ![export](./app/assets/images/export.svg){:.button} button will download the SVG.
+The app allows exporting SVG files that can be further modified in any vector graphics application. Pressing ![export](/assets/images/app/export.svg){:.button} button will download the SVG.
 
-The current text with the selected alternates can be saved by pressing the ![save](./app/assets/images/save.svg) button, and can be loaded any time in the app again using the ![open](./app/assets/images/open.svg){:.button} button.
+The current text with the selected alternates can be saved by pressing the ![save](/assets/images/app/save.svg) button, and can be loaded any time in the app again using the ![open](/assets/images/app/open.svg){:.button} button.
 
-Pressing the ![clear](./app/assets/images/clear.svg){:.button} button will delete all the text.
+Pressing the ![clear](/assets/images/app/clear.svg){:.button} button will delete all the text.
 
 ### Installing on mobile devices
 The application also works offline and supports mobile browsers and small screens. It is also possible to add the application to the home screen for quick access without opening the browser.

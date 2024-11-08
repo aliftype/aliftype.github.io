@@ -19,12 +19,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <head>
     <meta charset="utf8"/>
     <title>قاهري – خط كوفي مصحفي</title>
-    <meta name="color-scheme" content="only light"/>
+    <meta name="color-scheme" content="only light">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./index.css"/>
-    <link rel="stylesheet" type="text/css" href="./override.css"/>
-    <link rel="shortcut icon" href="../assets/images/favicon.svg"/>
-    <link rel="apple-touch-icon" href="./assets/images/app-icon.png">
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="./override.css">
+    <link rel="shortcut icon" href="/assets/images/qahiri/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
     <link rel="manifest" href="./app.webmanifest">
   </head>
   <body>
@@ -32,12 +32,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       <div id="header">
         <div id="menu">
           <div class="right">
-            <button type="button" class="button" title="افتح" id="open"><img src="assets/images/open.svg" height="20px"></button>
-            <button type="button" class="button" title="احفظ" id="save"><img src="assets/images/save.svg" height="20px"></button>
-            <button type="button" class="button" title="امسح" id="clear"><img src="assets/images/clear.svg" height="20px"></button>
-          </div>
-          <div class="links">
-            <button type="button" class="link" title="صفحة المشروع"><a href="../arabic" aria-label="صفحة المشروع"><img src="assets/images/app-icon.svg" height="20px"></a></button>
+            <button type="button" class="button" title="افتح" id="open"><img src="/assets/images/app/open.svg" height="20px"></button>
+            <button type="button" class="button" title="احفظ" id="save"><img src="/assets/images/app/save.svg" height="20px"></button>
+            <button type="button" class="button" title="امسح" id="clear"><img src="/assets/images/app/clear.svg" height="20px"></button>
           </div>
           <div class="left">
             <input type="checkbox" class="opts" id="onum"><label for="onum" title="أرقام نازلة عن السطر"></label>
@@ -61,6 +58,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <div id="alternates"></div>
       </div>
     </div>
-    <script src="index.js" type="module"></script>
+    <script type="module">
+        import * as config from './config.js';
+        window.APP_CONFIG = config;
+    </script>
+    <script src="/app/app.js" type="module"></script>
   </body>
 </html>

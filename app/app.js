@@ -17,8 +17,10 @@
  */
 
 import { View } from "./TextView.js"
-import { FONT_FILE, SERVICE_WORKER } from "./Config.js"
 import Module from "./hb.js"
+
+const FONT_FILE = APP_CONFIG.FONT_FILE;
+const SERVICE_WORKER = APP_CONFIG.SERVICE_WORKER;
 
 if ('serviceWorker' in navigator && SERVICE_WORKER != null) {
   window.addEventListener("load", () => {

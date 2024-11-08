@@ -19,7 +19,9 @@
 import { Font, Buffer } from "./HarfBuzz.js"
 import { TAG } from "./OpenType.js"
 import { FontRemapper, PUA_OFFSET } from "./FontRemapper.js"
-import { SAMPLE_TEXT, STAORAGE_KEY } from "./Config.js"
+
+const SAMPLE_TEXT = APP_CONFIG.SAMPLE_TEXT;
+const STAORAGE_KEY = APP_CONFIG.STAORAGE_KEY;
 
 class Layout {
   constructor(font, buffer, text) {
