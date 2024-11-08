@@ -10,7 +10,7 @@ en-US:
   github: GitHub
   github-long: Project page on GitHub
   sitedesigner: Website design by Abdo Mohamed
-  app: Try the font
+  try: Try the font
   download: Download the font
   artwork: Artwork
   fonts: Fonts
@@ -31,6 +31,10 @@ en-US:
       Rana Kufi (كوفي رنا) is a Fatimid Kufic that follows the Fatimid Kufic
       rules and measurements pioneered by the late master of Arabic calligraphy
       Mohammad Abdul Qadir.
+  app:
+    open: Open
+    save: Save
+    clear: Clear Text
 
 ar:
   suffix: ""
@@ -45,7 +49,7 @@ ar:
   github-long: صفحة المشروع على جت&zwnj;هب
   sitedesigner: الموقع من تصميم عبد الرحمن محمد
   download: نزِّل الخط
-  app: جرِّب الخط
+  try: جرِّب الخط
   artwork: أعمال فنية
   fonts: الخطوط
   about: من نحن
@@ -62,3 +66,7 @@ ar:
     description: >
       «رنا كوفي» كوفي هو خط حاسوبي كوفي فاطمي يتبع القواعد الفنية الصحيحة للخط
       الكوفي الفاطمي كما وضعها الأستاذ محمد عبد القادر.
+  app:
+    open: افتح
+    save: احفظ
+    clear: امسح النص

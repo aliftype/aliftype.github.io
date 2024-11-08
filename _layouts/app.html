@@ -1,6 +1,6 @@
 {% assign project = page.dir | remove_first: "/" | remove_last: "/" | split: "/" | first %}
+{% assign messages = site.data.messages[page.language] %}
 {% assign config = site.data.config[project] %}
-
 <!DOCTYPE html>
 <!--
 Copyright (c) 2019-2020 Khaled Hosny
@@ -35,9 +35,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       <div id="header">
         <div id="menu">
           <div class="right">
-            <button type="button" class="button" title="افتح" id="open"><img src="/assets/images/app/open.svg" height="20px"></button>
-            <button type="button" class="button" title="احفظ" id="save"><img src="/assets/images/app/save.svg" height="20px"></button>
-            <button type="button" class="button" title="امسح" id="clear"><img src="/assets/images/app/clear.svg" height="20px"></button>
+            <button type="button" class="button" id="open">{{ messages.app.open }}</button>
+            <button type="button" class="button" id="save">{{ messages.app.save }}</button>
+            <button type="button" class="button" id="clear">{{ messages.app.clear }}</button>
           </div>
           <div class="left">
             <input type="checkbox" class="opts" id="onum"><label for="onum" title="أرقام نازلة عن السطر"></label>

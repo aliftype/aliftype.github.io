@@ -57,6 +57,9 @@ Module().then(function (m) {
       el.addEventListener("change", e => view.update());
     });
 
+    const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    colorScheme.addEventListener('change', e => view.update());
+
     let range = document.getElementById("font-size");
     let number = document.getElementById("font-size-number");
     range.addEventListener('input', e => {

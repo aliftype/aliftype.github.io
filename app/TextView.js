@@ -377,10 +377,14 @@ export class View {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.scale(layout.scale, layout.scale);
 
+    // Get current text color from canvas, to handle light/dark mode.
+    const fillStyle = getComputedStyle(canvas).getPropertyValue("color");
+
     // Draw cursor.
     if (document.hasFocus() && document.activeElement == this._input) {
       ctx.save();
-      ctx.fillStyle = "#0000003f";
+      ctx.globalAlpha = 0.7;
+      ctx.fillStyle = fillStyle;
       let pos = layout.posOfIndex(this._cursor - 1);
       ctx.fillRect(pos, layout.baseline - layout.descender, 100, layout.descender - layout.ascender);
       ctx.restore();
@@ -397,15 +401,12 @@ export class View {
 
       // Draw glyphs.
       const glyphs = layout.glyphs;
+
       glyphs.forEach(g => {
-        if (g.index) {
-          ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
-        } else {
-          ctx.save();
-          ctx.fillStyle = "red";
-          ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
-          ctx.restore();
-        }
+        ctx.save();
+        ctx.fillStyle = g.index ? fillStyle: "red";
+        ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
+        ctx.restore();
       });
     });
 
