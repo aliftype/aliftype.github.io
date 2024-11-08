@@ -1,3 +1,6 @@
+{% assign project = page.dir | remove_first: "/" | remove_last: "/" | split: "/" | first %}
+{% assign config = site.data.config[project] %}
+
 <!DOCTYPE html>
 <!--
 Copyright (c) 2019-2020 Khaled Hosny
@@ -15,15 +18,15 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-<html lang="ar">
+<html lang="{{ page.language }}" dir="{{ page.direction | default: rtl }}">
   <head>
-    <meta charset="utf8"/>
-    <title>قاهري – خط كوفي مصحفي</title>
-    <meta name="color-scheme" content="only light">
+    {% include analytics.html %}
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
     <link rel="stylesheet" type="text/css" href="./override.css">
-    <link rel="shortcut icon" href="/assets/images/qahiri/favicon.svg">
+    <link rel="shortcut icon" href="/assets/images/{{ project }}/favicon.svg">
+    <title>{{ page.title | default: config.title }} | {{ page.subtitle | default: config.subtitle }}</title>
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
     <link rel="manifest" href="./app.webmanifest">
   </head>
