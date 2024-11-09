@@ -37,7 +37,7 @@ body {
   grid-template-rows: auto 50px auto auto;
   justify-content: space-between;
   grid-template-areas:
-    "nav nav nav"
+    ". nav nav"
     "header toolbar ."
     "header section alternates";
   gap: var(--main-gap);

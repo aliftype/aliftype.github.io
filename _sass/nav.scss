@@ -10,6 +10,10 @@ nav a {
   text-decoration: none;
 }
 
+nav .fonts {
+  margin-inline-end: auto;
+}
+
 nav .current {
   color: light-dark(black, white);
 }

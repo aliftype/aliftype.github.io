@@ -15,18 +15,25 @@ en-US:
   artwork: Artwork
   fonts: Fonts
   about: About
+  amiri:
+    name: Amiri
+    description: >
+      Amiri is a classical Arabic typeface in Naskh style for typesetting books and other running text.
   raqq:
+    name: Raqq
     description: >
       Raqq (رَقّ) is a manuscript Kufic typeface, intends to revive (as
       faithfully as possible) the style of Kufic script used in writing the
       Qur’an in the third century AH. Raqq is Arabic for parchment, on which
       early Qur’ans were written.
   qahiri:
+    name: Qahiri
     description: >
       Qahiri (قاهري) is a Kufic typeface based on the modernized and regularized old
       manuscript Kufic calligraphy style of the late master of Arabic
       calligraphy Mohammad Abdul Qadir.
   rana-kufi:
+    name: Rana Kufi
     description: >
       Rana Kufi (كوفي رنا) is a Fatimid Kufic that follows the Fatimid Kufic
       rules and measurements pioneered by the late master of Arabic calligraphy
@@ -60,16 +67,23 @@ ar:
   artwork: أعمال فنية
   fonts: الخطوط
   about: من نحن
+  amiri:
+    name: أميري
+    description: >
+      «أميري» هو خط نسخي موجه لطباعة الكتب و النصوص الطويلة.
   raqq:
+    name: رَقّ
     description: >
       «رَقّ» هو خط حاسوبي كوفي مصحفي، يهدف إلى إحياء الخط الكوفي الذي كتبت به
       المصاحف المبكرة، وتحديدا مصاحف القرن الثالث الهجري، عبر رقمنته رقمنة دقيقة
       قدر الإمكان. الرَقّ هو الجلد الذي كتبت عليه المصاحف المبكرة.
   qahiri:
+    name: قاهري
     description: >
       «قاهري» هو خط حاسوبي كوفي مبني على القاعدة الحديثة لخط كوفي المصاحف التي
       وضعها الأستاذ محمد عبد القادر رحمه الله.
   rana-kufi:
+    name: كوفي رنا
     description: >
       «رنا كوفي» كوفي هو خط حاسوبي كوفي فاطمي يتبع القواعد الفنية الصحيحة للخط
       الكوفي الفاطمي كما وضعها الأستاذ محمد عبد القادر.

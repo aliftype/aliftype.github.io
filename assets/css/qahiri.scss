@@ -24,7 +24,7 @@ body {
   grid-template-rows: auto auto auto;
   justify-content: space-between;
   grid-template-areas:
-    "nav nav nav"
+    ". nav nav"
     "header title title"
     "header section footer";
   gap: var(--main-gap);

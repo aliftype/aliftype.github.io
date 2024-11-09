@@ -1,16 +1,29 @@
 {% assign navigation = "fonts artwork about" | split: " " %}
 <nav>
     {% for entry in navigation %}
+        {% assign class = "" %}
         {% if entry == "fonts" %}
             {% assign url = "/" %}
+            {% assign class = class | append: " fonts" %}
         {% else %}
             {% assign url = "/" | append: entry | append: "/" %}
         {% endif %}
         {% if url == page.dir %}
-            {% assign class = "current" %}
-        {% else %}
-            {% assign class = "" %}
+            {% assign class = class | append: " current" %}
         {% endif %}
-    <a class="{{ class }}" href="{{ url }}{{ messages.suffix }}">{{ messages[entry] }}</a>
+        <span class="{{ class }}">
+            <a class="{{ class }}" href="{{ url }}{{ messages.suffix }}">{{ messages[entry] }}</a>
+            {% if entry == "fonts" %}
+                {% if project %}
+                    <span> <span class="arrow">></span>
+                    {% if page.layout == "app" %}
+                        <a href="/{{ project }}/{{ messages.suffix }}">{{ messages[project].name }}</a> <span class="arrow">></span> {{ messages.try }}
+                    {% else %}
+                        {{ messages[project].name }}
+                    {% endif %}
+                    </span>
+                {% endif %}
+            {% endif %}
+        </span>
     {% endfor %}
 </nav>
