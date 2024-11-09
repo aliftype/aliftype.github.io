@@ -46,8 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       {% include language-switcher.html %}
     </p>
 
-    <section>
-      <div id="toolbar">
+    <div id="toolbar">
         <div id="menu">
           <div class="right">
             <button type="button" class="button" id="open">{{ messages.app.open }}</button>
@@ -65,13 +64,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
           <input type="range"  id="font-size-slider" min="10" max="500" value="100" title="حجم الخط">
           <input type="number" id="font-size-number" min="10" max="500" value="100" title="حجم الخط">
         </div>
-      </div>
-      <div id="content">
-        <canvas tabindex="0" id="canvas"></canvas>
-        <input type="text" id="hiddeninput">
-      </div>
-      <div id="alternates"></div>
+    </div>
+    <section>
+      <canvas tabindex="0" id="canvas"></canvas>
+      <input type="text" id="hiddeninput">
     </section>
+    <p class="alternates-header" style="display: none;">{{ messages.app.alternates }}</p>
+    <div id="alternates"></div>
     <footer>
       {% include contact.html %}
     </footer>

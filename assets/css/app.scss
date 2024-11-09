@@ -38,12 +38,12 @@ body {
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 700px 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto 50px auto auto;
   justify-content: space-between;
   grid-template-areas:
     "nav nav nav"
-    "header section ."
-    "header section .";
+    "header toolbar ."
+    "header section alternates";
   gap: var(--main-gap);
 }
 
@@ -51,6 +51,8 @@ body {
 header  { grid-area: header; }
 section { grid-area: section; }
 footer  { grid-area: footer; }
+#toolbar { grid-area: toolbar; }
+#alternates { grid-area: alternates; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-family);
@@ -145,8 +147,8 @@ footer
 
 // App styles
 section {
-  overflow: auto;
-  height: 100vh;
+  overflow: scroll;
+  //height: 100vh;
 }
 
 #toolbar {
@@ -155,12 +157,8 @@ section {
   width: 100%;
 }
 
-#toolbar, #alternates {
+#toolbar {
   position: sticky;
-}
-
-#content {
-  overflow: scroll;
 }
 
 canvas {
@@ -236,26 +234,37 @@ input[type=checkbox]:checked + label {
   background-image: url(/assets/images/app/round-dots.svg);
 }
 
-.feature {
+.alternates-header {
+  font-family: var(--ui-family);
+}
+
+.alternates-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-bottom: 5px;
+}
+
+.alternate {
   background-color: var(--button-background-color);
   color: var(--button-color);
+  text-align: center;
   border: none;
   padding: 5px;
-  margin: 2px;
   display: inline-block;
   //opacity: 0.7;
   transition: 0.3s;
 }
 
-.feature.selected img {
+.alternate.selected img {
     opacity: 1;
 }
 
-.feature img {
+.alternate img {
   opacity: 0.4;
 }
 
-.feature:hover,
+.alternate:hover,
 .button:hover,
 input[type=range]:hover,
 input[type=checkbox]:hover + label {
@@ -322,13 +331,15 @@ input[type=range]::-moz-range-thumb {
 
   body {
     grid-template-columns: auto;
+    grid-template-rows: auto;
     max-width: 700px;
     padding: 0 20px;
     grid-template-areas:
       "nav"
       "lang-switcher"
-      "header"
+      "toolbar"
       "section"
+      "alternates"
       "footer"
     ;
   }

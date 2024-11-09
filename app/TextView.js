@@ -522,6 +522,7 @@ export class View {
   }
 
   _updateAlternates() {
+
     let alternates = document.getElementById("alternates");
     alternates.innerHTML = "";
 
@@ -530,12 +531,21 @@ export class View {
 
     let c = this._text[this._cursor - 1];
     let features = this._layout.featuresOfIndex(this._cursor - 1) || [];
+
+    if (features.length == 0)
+        return;
+
+    let header = document.getElementsByClassName("alternates-header")[0].cloneNode(true)
+    header.style.display = "block";
+    alternates.appendChild(header);
+
     for (const [feature, glyph] of features) {
       c.features = c.features || [];
 
       let alts = typeof(glyph) == "number" ? [glyph] : glyph;
 
       let div = document.createElement("div");
+      div.className = "alternates-group"
       alternates.appendChild(div);
       for (let i = 0; i < alts.length; i++) {
         let alt = alts[i];
@@ -592,9 +602,9 @@ export class View {
       for (let button of div.children) {
         if (features.includes(button.title) ||
             (selectbase && !button.title))
-          button.className = "feature selected";
+          button.className = "alternate selected";
         else
-          button.className = "feature";
+          button.className = "alternate";
       }
     }
   }
