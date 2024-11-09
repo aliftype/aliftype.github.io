@@ -188,20 +188,6 @@ input[type=checkbox] {
   display: none;
 }
 
-input[type=checkbox] + label {
-  display: inline-block;
-  cursor: pointer;
-  padding: 12px 16px;
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  transition: 0.3s;
-  opacity: 0.4;
-}
-
 input[type=checkbox]:checked + label {
   opacity: 1;
 }
@@ -299,6 +285,7 @@ input[type=range]::-moz-range-thumb {
 #font-size-number {
   appearance: textfield;
   font-family: var(--ui-family);
+  font-size: var(--ui-font-size);
   text-align: center;
   border: none;
   border-radius: 25px;
