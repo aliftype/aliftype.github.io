@@ -1,19 +1,19 @@
 nav {
-    display: flex;
-    justify-content: start;
-    grid-area: nav;
-    gap: 50px;
+  display: flex;
+  justify-content: start;
+  grid-area: nav;
+  gap: 50px;
 }
 
 nav a {
-    color: grey;
-    text-decoration: none;
+  color: grey;
+  text-decoration: none;
 }
 
 nav .about {
-    margin-inline-start: auto;
+  margin-inline-start: auto;
 }
 
 nav .current {
-    color: light-dark(black, white);
+  color: light-dark(black, white);
 }

@@ -27,7 +27,7 @@ class Layout {
   constructor(font, buffer, text) {
     this._font = font;
     this._buffer = buffer;
-    this._text = text.map(c => ({...c}));
+    this._text = text.map(c => ({ ...c }));
 
     this.fontSize = document.getElementById("font-size-slider").value;
 
@@ -169,7 +169,7 @@ class Layout {
       path.setAttributeNS(ns, "d", this._font.getGlyphOutline(glyph));
       svg.appendChild(path);
 
-      let blob = new Blob([svg.outerHTML], {type: "image/svg+xml"});
+      let blob = new Blob([svg.outerHTML], { type: "image/svg+xml" });
       this._svgs[glyph] = window.URL.createObjectURL(blob);
     }
 
@@ -259,7 +259,7 @@ class Layout {
 
     svg.dataset.text = JSON.stringify(text);
 
-    let blob = new Blob([svg.outerHTML], {type: "image/svg+xml"});
+    let blob = new Blob([svg.outerHTML], { type: "image/svg+xml" });
     return window.URL.createObjectURL(blob);
   }
 
@@ -299,7 +299,7 @@ export class View {
     this._layout = null;
 
     this._canvas.addEventListener('click', e => this._click(e));
-    this._canvas.addEventListener('focusin', e => this._input.focus({preventScroll: true}));
+    this._canvas.addEventListener('focusin', e => this._input.focus({ preventScroll: true }));
 
     this._input.addEventListener('keydown', e => this._keydown(e));
     this._input.addEventListener('input', e => this._keypress(e));
@@ -404,7 +404,7 @@ export class View {
 
       glyphs.forEach(g => {
         ctx.save();
-        ctx.fillStyle = g.index ? fillStyle: "red";
+        ctx.fillStyle = g.index ? fillStyle : "red";
         ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
         ctx.restore();
       });
@@ -533,7 +533,7 @@ export class View {
     let features = this._layout.featuresOfIndex(this._cursor - 1) || [];
 
     if (features.length == 0)
-        return;
+      return;
 
     let header = document.getElementsByClassName("alternates-header")[0].cloneNode(true)
     header.style.display = "block";
@@ -542,7 +542,7 @@ export class View {
     for (const [feature, glyph] of features) {
       c.features = c.features || [];
 
-      let alts = typeof(glyph) == "number" ? [glyph] : glyph;
+      let alts = typeof (glyph) == "number" ? [glyph] : glyph;
 
       let div = document.createElement("div");
       div.className = "alternates-group"
@@ -601,7 +601,7 @@ export class View {
     for (let div of alternates.children) {
       for (let button of div.children) {
         if (features.includes(button.title) ||
-            (selectbase && !button.title))
+          (selectbase && !button.title))
           button.className = "alternate selected";
         else
           button.className = "alternate";

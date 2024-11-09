@@ -52,8 +52,8 @@ class Pointer {
   }
 
   get int32Array() { return M.HEAP32.slice(this.ptr / 4, (this.ptr + this.byteLength) / 4); }
-  get int32()      { return M.HEAP32[this.ptr / 4]; }
-  get uint32()     { return M.HEAPU32[this.ptr / 4]; }
+  get int32() { return M.HEAP32[this.ptr / 4]; }
+  get uint32() { return M.HEAPU32[this.ptr / 4]; }
 }
 
 export class Font {
@@ -96,7 +96,7 @@ export class Font {
   getGlyphColorLayers(glyph) {
     if (this._layers[glyph] == undefined) {
       let palettes = this.CPAL ? this.CPAL.colors : [];
-      let layers = this.COLR ? this.COLR.layers[glyph] || []: [];
+      let layers = this.COLR ? this.COLR.layers[glyph] || [] : [];
       this._layers[glyph] = [];
       for (const layer of layers) {
         this._layers[glyph].push({
@@ -115,19 +115,19 @@ export class Font {
 
     if (!this._draw_funcs) {
       let funcs = this._draw_funcs = M._hb_draw_funcs_create();
-      let move_to = M.addFunction(function(f, g, s, x, y, u) {
+      let move_to = M.addFunction(function (f, g, s, x, y, u) {
         outlines[g] += `M${x},${-y}`;
       }, "viiiffi");
-      let line_to = M.addFunction(function(f, g, s, x, y, u) {
+      let line_to = M.addFunction(function (f, g, s, x, y, u) {
         outlines[g] += `L${x},${-y}`;
       }, "viiiffi");
-      let quadratic_to = M.addFunction(function(f, g, s, x1, y1, x2, y2, u) {
+      let quadratic_to = M.addFunction(function (f, g, s, x1, y1, x2, y2, u) {
         outlines[g] += `Q${x1},${-y1},${x2},${-y2}`;
       }, "viiiffffi");
-      let cubic_to = M.addFunction(function(f, g, s, x1, y1, x2, y2, x3, y3, u) {
+      let cubic_to = M.addFunction(function (f, g, s, x1, y1, x2, y2, x3, y3, u) {
         outlines[g] += `C${x1},${-y1},${x2},${-y2},${x3},${-y3}`;
       }, "viiiffffffi");
-      let close_path = M.addFunction(function(f, g, s, u) {
+      let close_path = M.addFunction(function (f, g, s, u) {
         outlines[g] += `Z`
       }, "viiii");
 
@@ -230,7 +230,7 @@ class Glyph {
   get layers() {
     let layers = this.font.getGlyphColorLayers(this.index);
     return layers.map(l => {
-      let glyph = {...this, index: l.index, color: l.color};
+      let glyph = { ...this, index: l.index, color: l.color };
       Object.setPrototypeOf(glyph, Glyph.prototype);
       return glyph;
     });

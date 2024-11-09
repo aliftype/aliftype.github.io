@@ -53,7 +53,7 @@ Module().then(function (m) {
       }
     });
 
-    [].forEach.call(document.getElementsByClassName("opts"), function(el) {
+    [].forEach.call(document.getElementsByClassName("opts"), function (el) {
       el.addEventListener("change", e => view.update());
     });
 
