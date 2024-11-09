@@ -2,6 +2,11 @@
   color-scheme: light dark;
 }
 
+body {
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+}
+
 @media (prefers-color-scheme: dark) {
   body * {
     font-palette: dark;

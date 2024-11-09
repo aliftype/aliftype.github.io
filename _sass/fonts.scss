@@ -73,7 +73,7 @@
 
 body {
   font-family: var(--main-family);
-  font-size: 14pt;
+  font-size: var(--main-font-size);
   font-weight: 400;
   font-variant-numeric: proportional-nums;
 }

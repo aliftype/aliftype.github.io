@@ -11,9 +11,6 @@
         {% else %}
             {% assign class = "" %}
         {% endif %}
-        {% if entry == "about" %}
-            {% assign class = class | append: " about" %}
-        {% endif %}
     <a class="{{ class }}" href="{{ url }}{{ messages.suffix }}">{{ messages[entry] }}</a>
     {% endfor %}
 </nav>

@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  justify-content: start;
+  justify-content: end;
   grid-area: nav;
   gap: 50px;
 }
@@ -8,10 +8,6 @@ nav {
 nav a {
   color: grey;
   text-decoration: none;
-}
-
-nav .about {
-  margin-inline-start: auto;
 }
 
 nav .current {
