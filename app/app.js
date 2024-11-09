@@ -60,7 +60,7 @@ Module().then(function (m) {
     const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
     colorScheme.addEventListener('change', e => view.update());
 
-    let range = document.getElementById("font-size");
+    let range = document.getElementById("font-size-slider");
     let number = document.getElementById("font-size-number");
     range.addEventListener('input', e => {
       number.value = e.target.value;

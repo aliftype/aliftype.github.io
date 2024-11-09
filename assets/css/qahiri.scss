@@ -10,6 +10,7 @@
 @import "colors";
 @import "fonts";
 @import "nav";
+@import "button";
 
 body {
   background-color: var(--body-background-color);
@@ -93,20 +94,15 @@ img {
   max-width: 100%;
 }
 
+em.button,
 img.button,
+em.زر,
 img.زر {
-  max-width: revert;
-  background-color: var(--button-background-color);
-  border: none;
-  padding: 6px 8px;
-  vertical-align: text-bottom;
-}
-
-@media (prefers-color-scheme: dark) {
-    img.button,
-    img.زر {
-        filter: invert(0);
-    }
+    @extend .button;
+    height: revert;
+    font-style: normal;
+    font-size: 10pt;
+    padding: 8.3px 11px;
 }
 
 #sitedesigner {

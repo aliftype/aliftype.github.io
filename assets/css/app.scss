@@ -19,33 +19,143 @@
  *
  */
 
- @import "variables";
- @import "colors";
- @import "fonts";
+@import "variables";
+@import "colors";
+@import "fonts";
+@import "nav";
+@import "button";
 
-* {
-  font-family: Mada;
+body {
+  font-family: var(--main-family);
   font-size: 12pt;
-  direction: rtl;
-}
-
-body, canvas {
   background-color: var(--body-background-color);
   color: var(--body-color);
+  max-width: 1240px;
+  padding: 0 15px;
+  margin-top: var(--top-margin);
+  margin-bottom: var(--bottom-margin);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 700px 1fr;
+  grid-template-rows: auto auto auto;
+  justify-content: space-between;
+  grid-template-areas:
+    "nav nav nav"
+    "header section ."
+    "header section .";
+  gap: var(--main-gap);
 }
 
-#app {
+.lang-switcher-top { grid-area: lang-switcher; }
+header  { grid-area: header; }
+section { grid-area: section; }
+footer  { grid-area: footer; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-family);
+  margin-block-start: 20px;
+  margin-block-end: 5px;
+  color: var(--kufi-color);
+}
+
+h1, h2, h3 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+p, li {
+  text-align: justify;
+  line-height: normal;
+  hyphens: auto;
+}
+
+a {
+  color: #267CB9;
+  text-decoration: none;
+}
+
+
+code {
+  font-family: "Inconsolata", monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+#sitedesigner {
+  font-size: 60%;
+  color: grey;
+}
+
+header p,
+footer p
+{
+  text-align: start;
+  margin-block-end: 20%;
+  hyphens: none;
+  text-wrap: balance;
+}
+
+header,
+footer {
+  align-self: start;
+  position: sticky;
+  top: var(--top-bottom-margin);
+}
+
+footer
+{
+    display: none;
+}
+
+#logo {
+  font-family: var(--kufi-family);
+  color: var(--kufi-color);
+  font-size: 55pt;
+  margin-block-end: 5%;
+  margin-block-start: 0;
+}
+
+#logo a,
+#foundry a {
+  text-decoration: none;
+  color: unset;
+}
+
+
+.lang-switcher-side {
+  font-size: 120%;
+}
+
+.lang-switcher-top {
+  grid-area: lang-switcher;
+  text-align: center;
+  display: none;
+}
+
+.lang-switcher-side,
+.lang-switcher-top {
+  font-family: var(--latin-font);
+}
+
+// App styles
+section {
   overflow: auto;
   height: 100vh;
 }
 
-#header {
+#toolbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-#header, #footer {
+#toolbar, #alternates {
   position: sticky;
 }
 
@@ -78,23 +188,6 @@ canvas {
   background-color: var(--button-background-color);
   color: var(--button-color);
   border-radius: 25px;
-}
-
-.font-size {
-  height: 50px;
-}
-
-.button {
-  background-color: var(--button-background-color);
-  color: var(--button-color);
-  border: none;
-  border-radius: 25px;
-  display: inline-block;
-  cursor: pointer;
-  height: 50px;
-  padding: 12px 16px;
-  text-align: center;
-  vertical-align: middle;
 }
 
 input[type=checkbox] {
@@ -200,6 +293,7 @@ input[type=range]::-moz-range-thumb {
 
 #font-size-number {
   appearance: textfield;
+  font-family: var(--ui-family);
   text-align: center;
   border: none;
   border-radius: 25px;
@@ -215,24 +309,75 @@ input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
 }
 
-@media screen and (max-width: 640px) {
-  #font-size-number {
+@media (max-width: 1100px) {
+  footer
+  {
+    display: revert;
+  }
+
+  header
+  {
     display: none;
+  }
+
+  body {
+    grid-template-columns: auto;
+    max-width: 700px;
+    padding: 0 20px;
+    grid-template-areas:
+      "nav"
+      "lang-switcher"
+      "header"
+      "section"
+      "footer"
+    ;
+  }
+
+  .lang-switcher-top {
+    display: revert;
+  }
+
+  .lang-switcher-side, header .description {
+    display: none;
+  }
+
+  footer {
+    border-block-start: 1px solid #e5e5e5;
+    border-width: 1px 0;
+  }
+
+  footer,
+  footer p
+  {
+    text-align: center;
+  }
+
+  footer p
+  {
+    margin-block-end: 10%;
+    margin-block-end: 10%;
+  }
+
+  footer
+  {
+    align-self: revert;
+    position: revert;
+    top: revert;
+    padding: revert;
+    margin: revert;
+    padding-block-start: 20px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #header {
+@media (max-width: 650px) {
+  #toolbar {
     flex-direction: column;
   }
 
-  #font-size {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 395px) {
-  #clear {
+  #font-size-number {
     display: none;
+  }
+  #font-size-slider {
+    width: 100%;
   }
 }

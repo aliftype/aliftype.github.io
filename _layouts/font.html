@@ -51,7 +51,7 @@
       {% endif %}
       <p class="downloads"><a href="{{ site.github.owner_url }}/{{ project }}/releases/download/{{ version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
       {% if config.app %}
-      <p class="downloads"><a href="./app">{{ messages.try }}</a></p>
+      <p class="downloads"><a href="./app/{{ messages.suffix }}">{{ messages.try }}</a></p>
       {% endif %}
       <p>{{ messages.github-long }} <br/><a href="{{ site.github.owner_url }}/{{ project }}"><code>{{ site.github.hostname }}/{{ site.github.owner_name }}/{{ project }}</code></a></p>
     </footer>

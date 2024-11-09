@@ -28,11 +28,7 @@ The ![rounded dots](/assets/images/app/round-dots.svg){:.button} button, on the 
 
 ![Screenshot with rounded dots](/assets/images/qahiri/screenshot-rounded-dots.png)
 
-The app allows exporting SVG files that can be further modified in any vector graphics application. Pressing ![export](/assets/images/app/export.svg){:.button} button will download the SVG.
-
-The current text with the selected alternates can be saved by pressing the ![save](/assets/images/app/save.svg) button, and can be loaded any time in the app again using the ![open](/assets/images/app/open.svg){:.button} button.
-
-Pressing the ![clear](/assets/images/app/clear.svg){:.button} button will delete all the text.
+The app allows exporting SVG files that can be further modified in any vector graphics application. Pressing *Export*{:.button} button will download the SVG. The SVG contains also the current text with the selected alternates, and can be loaded any time in the app again using the *Open*{:.button} button. Pressing the *Clear*{:.button} button will delete all the text.
 
 ### Installing on mobile devices
 The application also works offline and supports mobile browsers and small screens. It is also possible to add the application to the home screen for quick access without opening the browser.

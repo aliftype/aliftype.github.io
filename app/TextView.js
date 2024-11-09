@@ -29,7 +29,7 @@ class Layout {
     this._buffer = buffer;
     this._text = text.map(c => ({...c}));
 
-    this.fontSize = document.getElementById("font-size").value;
+    this.fontSize = document.getElementById("font-size-slider").value;
 
     this._adjustDots = false;
     this._removeDots = false;
@@ -341,7 +341,7 @@ export class View {
       this._updateInput();
     }
 
-    let fontSize = document.getElementById("font-size");
+    let fontSize = document.getElementById("font-size-slider");
     if (!manualFontSize) {
       if (window.screen.width < 700)
         fontSize.value = window.screen.width / 7;

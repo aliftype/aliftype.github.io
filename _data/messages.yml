@@ -35,6 +35,12 @@ en-US:
     open: Open
     save: Save
     clear: Clear Text
+    onum: Old style numbers
+    round-dots: Rounded dots
+    remove-dots: No dots
+    nocolor-dots: No color dots
+    small-dots: Small dots
+    adjust-dots: Adjust dots
 
 ar:
   suffix: ""
@@ -70,3 +76,9 @@ ar:
     open: افتح
     save: احفظ
     clear: امسح النص
+    onum: أرقام نازلة عن السطر
+    round-dots: نقاط مستديرة
+    remove-dots: لا نقاط
+    nocolor-dots: نقاط غير ملونة
+    small-dots: نقاط صغيرة
+    adjust-dots: اضبط النقاط
