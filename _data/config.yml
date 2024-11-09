@@ -20,7 +20,8 @@ qahiri:
   title: قاهري
   subtitle: خط كوفي مصحفي
   title-separator: "—"
-  app: True
+  app:
+    toolbar: [onum, round-dots, remove-dots]
 
 rana-kufi:
   name: Rana Kufi
@@ -28,4 +29,5 @@ rana-kufi:
   title: كوفي رنا
   subtitle: خط كوفي فاطمي
   title-separator: "\u200A۝\u200A"
-  app: True
+  app:
+    toolbar: [remove-dots, nocolor-dots, small-dots, adjust-dots]

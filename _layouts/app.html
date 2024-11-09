@@ -23,7 +23,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {% include analytics.html %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./override.css">
     <link rel="shortcut icon" href="/assets/images/{{ project }}/favicon.svg">
     <title>{{ page.title | default: config.title }} | {{ page.subtitle | default: config.subtitle }}</title>
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
@@ -54,9 +53,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <button type="button" class="button" id="clear">{{ messages.app.clear }}</button>
           </div>
           <div class="left">
-            {% assign options = "onum round-dots remove-dots nocolor-dots small-dots adjust-dots" | split: " " %}
-            {% for option in options %}
-                <input type="checkbox" class="opts" id="{{ option }}"><label for="{{ option }}" title="{{ messages.app[option] }}"></label>
+            {% for option in config.app.toolbar %}
+                <input type="checkbox" class="opts" id="{{ option }}">
+                <label for="{{ option }}" title="{{ messages.app[option] }}"></label>
             {% endfor %}
           </div>
         </div>

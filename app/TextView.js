@@ -349,12 +349,19 @@ export class View {
     }
     layout.fontSize = fontSize.value;
 
-    layout.adjustDots = document.getElementById("adjust-dots").checked;
-    layout.removeDots = document.getElementById("remove-dots").checked;
-    layout.nocolorDots = document.getElementById("nocolor-dots").checked;
-    layout.smallDots = document.getElementById("small-dots").checked;
-    layout.roundDots = document.getElementById("round-dots").checked;
-    layout.onum = document.getElementById("onum").checked;
+    const adjustDots = document.getElementById("adjust-dots");
+    const removeDots = document.getElementById("remove-dots");
+    const nocolorDots = document.getElementById("nocolor-dots");
+    const smallDots = document.getElementById("small-dots");
+    const roundDots = document.getElementById("round-dots");
+    const onum = document.getElementById("onum");
+
+    layout.adjustDots = adjustDots && adjustDots.checked;
+    layout.removeDots = removeDots && removeDots.checked;
+    layout.nocolorDots = nocolorDots && nocolorDots.checked;
+    layout.smallDots = smallDots && smallDots.checked;
+    layout.roundDots = roundDots && roundDots.checked;
+    layout.onum = onum && onum.checked;
 
     this._draw();
   }
