@@ -195,16 +195,14 @@ footer p {
   color: var(--kufi-color);
 }
 
-@media print,
-screen and (max-width: 1230px) {
+@media (max-width: 1230px) {
   #title {
     font-size: 8vw;
     font-variation-settings: "SPAC" -100;
   }
 }
 
-@media print,
-screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
   body {
     grid-template-columns: auto;
     max-width: 700px;
@@ -270,72 +268,9 @@ screen and (max-width: 1100px) {
   }
 }
 
-@media print,
-screen and (max-width: 700px) {
+@media (max-width: 700px) {
   section>p:lang(en-US) {
     text-align: start;
     hyphens: revert;
   }
-}
-
-@media print {
-  body {
-    background-color: revert;
-    grid-template-columns: auto;
-    max-width: 100%;
-    padding: 0 8%;
-    grid-template-areas:
-      "title"
-      "section"
-      "footer"
-      "header"
-    ;
-  }
-
-  body * {
-    font-palette: light;
-  }
-
-  body,
-  .kufi p,
-  .كوفي p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  #title,
-  #logo {
-    color: revert;
-  }
-
-  section {
-    break-after: page;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  blockquote {
-    break-after: avoid-page;
-  }
-
-  blockquote.kufi {
-    break-after: default;
-  }
-
-  footer {
-    border: none;
-  }
-
-  .lang-switcher-top,
-  .lang-switcher-side,
-  #sitedesigner {
-    display: none;
-  }
-
 }

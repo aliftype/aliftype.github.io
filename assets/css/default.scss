@@ -155,8 +155,7 @@ footer {
   flex-grow: 1;
 }
 
-@media print,
-screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
   footer {
     display: revert;
   }
@@ -216,8 +215,7 @@ screen and (max-width: 1100px) {
   }
 }
 
-@media print,
-screen and (max-width: 700px) {
+@media (max-width: 700px) {
   section>p:lang(en-US) {
     text-align: start;
     hyphens: revert;
