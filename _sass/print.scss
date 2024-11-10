@@ -1,0 +1,55 @@
+@media print {
+
+  nav,
+  .downloads,
+  .links,
+  .lang-switcher-side,
+  .lang-switcher-top,
+  #sitedesigner {
+    display: none !important;
+  }
+
+  body {
+    background-color: revert !important;
+    grid-template-columns: auto !important;
+    max-width: 100% !important;
+    padding: 0 8% !important;
+    grid-template-areas:
+      "title"
+      "section"
+    ;
+  }
+
+  #title {
+    width: 100% !important;
+    font-size: 10vw !important;
+  }
+
+  * {
+    font-palette: light !important;
+  }
+
+  a {
+    text-decoration: revert !important;
+  }
+
+  header,
+  footer {
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  blockquote.kufi {
+    break-after: default;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    break-after: avoid-page;
+  }
+}
