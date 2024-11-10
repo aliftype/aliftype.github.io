@@ -21,6 +21,31 @@ qahiri:
   subtitle: خط كوفي مصحفي
   title-separator: "—"
   app:
+    FONT_FILE: /assets/fonts/Qahiri-Regular.ttf
+    SAMPLE_TEXT:
+      [
+        { "code": 1575, "features": ["salt=3"] },
+        { "code": 1604 },
+        { "code": 1582, "features": ["salt=1"] },
+        { "code": 1591 },
+        { "code": 32 },
+        { "code": 1575, "features": ["salt=1"] },
+        { "code": 1604 },
+        { "code": 1603, "features": [] },
+        { "code": 1608, "features": ["salt=1"] },
+        { "code": 1601, "features": [] },
+        { "code": 1610, "features": [] },
+        { "code": 32 },
+        { "code": 1575, "features": ["salt=4"] },
+        { "code": 1604 },
+        { "code": 1605, "features": ["salt=2"] },
+        { "code": 1589, "features": [] },
+        { "code": 1581, "features": ["salt=3"] },
+        { "code": 1601, "features": ["salt=1"] },
+        { "code": 1610, "features": ["salt=5"] },
+      ]
+    STORAGE_KEY: qahiri.text-v3
+    SERVICE_WORKER: /qahiri/app/ServiceWorker.js
     toolbar: [onum, round-dots, remove-dots]
 
 rana-kufi:
@@ -30,4 +55,29 @@ rana-kufi:
   subtitle: خط كوفي فاطمي
   title-separator: "\u200A۝\u200A"
   app:
+    FONT_FILE: /assets/fonts/RanaKufi.otf
+    SAMPLE_TEXT:
+      [
+        { "code": 1575, "features": ["dlig=1", "cv05=2"] },
+        { "code": 1604, "features": ["dlig=1"] },
+        { "code": 1582 },
+        { "code": 1591, "features": ["cv01=1"] },
+        { "code": 32 },
+        { "code": 1575, "features": [] },
+        { "code": 1604, "features": [] },
+        { "code": 1603, "features": ["cv05=1"] },
+        { "code": 1608, "features": [] },
+        { "code": 1601, "features": [] },
+        { "code": 1610, "features": ["cv01=13"] },
+        { "code": 32 },
+        { "code": 1575, "features": ["dlig=1", "cv01=1"] },
+        { "code": 1604, "features": ["dlig=1"] },
+        { "code": 1601, "features": ["cv01=1"] },
+        { "code": 1575, "features": [] },
+        { "code": 1591, "features": ["cv05=1"] },
+        { "code": 1605, "features": ["cv01=1"] },
+        { "code": 1610, "features": ["cv01=12"] },
+      ]
+    STORAGE_KEY: rana-kufi.text-v3
+    SERVICE_WORKER: /rana-kufi/app/ServiceWorker.js
     toolbar: [remove-dots, nocolor-dots, small-dots, adjust-dots]

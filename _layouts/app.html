@@ -74,8 +74,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       {% include contact.html %}
     </footer>
     <script type="module">
-        import * as config from './config.js';
-        window.APP_CONFIG = config;
+        window.APP_CONFIG = {{ config.app | jsonify }};
     </script>
     <script src="/app/app.js" type="module"></script>
   </body>

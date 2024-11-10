@@ -21,7 +21,7 @@ import { TAG } from "./OpenType.js"
 import { FontRemapper, PUA_OFFSET } from "./FontRemapper.js"
 
 const SAMPLE_TEXT = APP_CONFIG.SAMPLE_TEXT;
-const STAORAGE_KEY = APP_CONFIG.STAORAGE_KEY;
+const STORAGE_KEY = APP_CONFIG.STORAGE_KEY;
 
 class Layout {
   constructor(font, buffer, text) {
@@ -333,9 +333,9 @@ export class View {
     let layout = this._layout;
     if (layout === null) {
       if (this._text === null)
-        this._text = JSON.parse(window.localStorage.getItem(STAORAGE_KEY) || SAMPLE_TEXT);
+        this._text = JSON.parse(window.localStorage.getItem(STORAGE_KEY)) || SAMPLE_TEXT;
       else
-        window.localStorage.setItem(STAORAGE_KEY, JSON.stringify(this._text));
+        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(this._text));
 
       this._layout = layout = new Layout(this._font, this._buffer, this._text);
       this._updateInput();
