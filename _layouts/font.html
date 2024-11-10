@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 {% assign project = page.dir | remove_first: "/" | remove_last: "/" | split: "/" | first %}
 {% assign messages = site.data.messages[page.language] %}
 {% assign config = site.data.config[project] %}
-<!DOCTYPE html>
 <html lang="{{ page.language }}" dir="{{ page.direction | default: rtl }}">
   <head>
     {% include analytics.html %}
