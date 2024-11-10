@@ -4,6 +4,8 @@ subtitle: مسبك حروف عربي
 layout: default
 language: ar
 direction: rtl
+redirect_from:
+  - /arabic
 ---
 
 أميري

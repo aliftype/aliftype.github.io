@@ -2,6 +2,8 @@
 layout: font
 language: ar
 direction: rtl
+redirect_from:
+  - /qahiri/arabic
 ---
 
 «قاهري» هو خط حاسوبي [كوفي] مبني على القاعدة الحديثة لخط كوفي المصاحف التي وضعها الأستاذ [محمد عبد القادر] رحمه الله.
