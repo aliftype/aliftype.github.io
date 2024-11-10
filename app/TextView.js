@@ -158,12 +158,15 @@ class Layout {
       let extents = this._font.getGlyphExtents(glyph)
       let ns = "http://www.w3.org/2000/svg";
       let svg = document.createElementNS(ns, "svg");
+
+      let height = this.clipAscender + this.clipDescender;
       svg.setAttribute("xmlns", ns);
       svg.setAttributeNS(ns, "version", '1.1');
       svg.setAttributeNS(ns, "width", extents.width);
-      svg.setAttributeNS(ns, "height", this.clipAscender + this.clipDescender);
+      svg.setAttributeNS(ns, "height", height);
 
-      let x = -extents.x_bearing, y = this.ascender;
+      let x = -extents.x_bearing
+      let y = extents.y_bearing + (height + extents.height) / 2;
       let path = document.createElementNS(ns, "path");
       path.setAttributeNS(ns, "transform", `translate(${x},${y})`);
       path.setAttributeNS(ns, "d", this._font.getGlyphOutline(glyph));
@@ -554,6 +557,12 @@ export class View {
       let div = document.createElement("div");
       div.className = "alternates-group"
       alternates.appendChild(div);
+
+      const style = getComputedStyle(div);
+      const cellSize = style.getPropertyValue("--cell-size");
+      const columns = Math.floor((parseInt(style.width) + parseInt(style.columnGap)) / (parseInt(cellSize) + parseInt(style.columnGap)));
+
+      div.style.gridTemplateColumns = `repeat(${columns}, ${cellSize}px)`;
       for (let i = 0; i < alts.length; i++) {
         let alt = alts[i];
         let button = document.createElement("a");
@@ -561,12 +570,13 @@ export class View {
 
         button.title = setting;
         button.href = "#";
+        button.style.width = button.style.height = `${cellSize}px`;
+        div.appendChild(button);
 
         let img = document.createElement('img');
-        img.height = 70;
         img.src = this._layout.getGlyphSVG(alt);
+        img.height = cellSize * .9;
         button.appendChild(img);
-        div.appendChild(button);
 
         button.onclick = e => {
           e.preventDefault();

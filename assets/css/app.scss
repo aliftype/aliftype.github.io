@@ -141,10 +141,8 @@ footer
   font-family: var(--latin-font);
 }
 
-// App styles
 section {
   overflow: scroll;
-  //height: 100vh;
 }
 
 #toolbar {
@@ -193,58 +191,39 @@ input[type=checkbox]:checked + label {
   opacity: 1;
 }
 
-#nocolor-dots + label {
-  background-image: url(/assets/images/app/nocolor-dots.svg);
-}
-
-#remove-dots + label {
-  background-image: url(/assets/images/app/remove-dots.svg);
-}
-
-#small-dots + label {
-  background-image: url(/assets/images/app/small-dots.svg);
-}
-
-#adjust-dots + label {
-  background-image: url(/assets/images/app/adjust-dots.svg);
-}
-
-#onum + label {
-  background-image: url(/assets/images/app/onum.svg);
-}
-
-#round-dots + label {
-  background-image: url(/assets/images/app/round-dots.svg);
-}
-
 .alternates-header {
   font-family: var(--ui-family);
 }
 
 .alternates-group {
+  --cell-size: 35;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .alternate {
   background-color: var(--button-background-color);
   color: var(--button-color);
-  text-align: center;
   border: none;
-  padding: 5px;
-  display: inline-block;
-  //opacity: 0.7;
   transition: 0.3s;
-}
-
-.alternate.selected img {
-    opacity: 1;
+  position: relative;
 }
 
 .alternate img {
+  vertical-align: middle;
   opacity: 0.4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.alternate.selected img {
+  opacity: 1;
 }
 
 .alternate:hover,
@@ -290,7 +269,6 @@ input[type=range]::-moz-range-thumb {
   text-align: center;
   border: none;
   border-radius: 25px;
-  height: 25px;
   background: var(--button-background-color);
   color: var(--button-color);
   width: 4ch;
@@ -302,7 +280,7 @@ input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   footer
   {
     display: revert;
@@ -315,7 +293,7 @@ input[type=range]::-moz-range-thumb {
 
   body {
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto 50px auto auto auto;
     max-width: 700px;
     padding: 0 20px;
     grid-template-areas:
@@ -362,9 +340,7 @@ input[type=range]::-moz-range-thumb {
     margin: revert;
     padding-block-start: 20px;
   }
-}
 
-@media (max-width: 650px) {
   #toolbar {
     flex-direction: column;
   }

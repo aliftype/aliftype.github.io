@@ -55,7 +55,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
           <div class="left">
             {% for option in config.app.toolbar %}
                 <input type="checkbox" class="opts" id="{{ option }}">
-                <label for="{{ option }}" title="{{ messages.app[option] }}"></label>
+                <label for="{{ option }}" title="{{ messages.app[option] }}">
+                    <img src="/assets/images/app/{{ option }}.svg" alt="{{ messages.app[option] }}">
+                </label>
             {% endfor %}
           </div>
         </div>
