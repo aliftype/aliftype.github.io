@@ -2,6 +2,7 @@
 ---
 
 @import "variables";
+
 :root {
   --title-family: "Qahiri", serif;
   --title-font-size: 95pt;
@@ -30,20 +31,41 @@ body {
   gap: var(--main-gap);
 }
 
-.lang-switcher-top { grid-area: lang-switcher; }
-header  { grid-area: header; }
-#title  { grid-area: title; }
-section { grid-area: section; }
-footer  { grid-area: footer; }
+.lang-switcher-top {
+  grid-area: lang-switcher;
+}
 
-h1, h2, h3, h4, h5, h6 {
+header {
+  grid-area: header;
+}
+
+#title {
+  grid-area: title;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-family);
   margin-block-start: 20px;
   margin-block-end: 5px;
   color: var(--kufi-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.4;
 }
 
@@ -51,7 +73,8 @@ h1 {
   font-size: var(--h1-font-size);
 }
 
-p, li {
+p,
+li {
   text-align: justify;
   line-height: normal;
   hyphens: auto;
@@ -96,11 +119,11 @@ em.button,
 img.button,
 em.زر,
 img.زر {
-    @extend .button;
-    height: revert;
-    font-style: normal;
-    font-size: 10pt;
-    padding: 8.3px 11px;
+  @extend .button;
+  height: revert;
+  font-style: normal;
+  font-size: 10pt;
+  padding: 8.3px 11px;
 }
 
 #sitedesigner {
@@ -109,8 +132,7 @@ img.زر {
 }
 
 header p,
-footer p
-{
+footer p {
   text-align: start;
   margin-block-end: 20%;
   hyphens: none;
@@ -124,8 +146,7 @@ footer {
   top: var(--top-bottom-margin);
 }
 
-footer p
-{
+footer p {
   text-align: center;
 }
 
@@ -181,19 +202,22 @@ footer p
   font-family: var(--latin-font);
 }
 
-.kufi p, .كوفي p {
+.kufi p,
+.كوفي p {
   font-family: var(--kufi-family);
   color: var(--kufi-color);
 }
 
-@media print, screen and (max-width: 1280px) {
+@media print,
+screen and (max-width: 1280px) {
   #title {
     font-size: 10vw;
     font-variation-settings: "SPAC" -100;
   }
 }
 
-@media print, screen and (max-width: 1100px) {
+@media print,
+screen and (max-width: 1100px) {
   body {
     grid-template-columns: auto;
     max-width: 700px;
@@ -222,21 +246,18 @@ footer p
   }
 
   header,
-  header p
-  {
+  header p {
     text-align: center;
   }
 
   header p,
-  footer p
-  {
+  footer p {
     margin-block-end: 10%;
     margin-block-end: 10%;
   }
 
   header,
-  footer
-  {
+  footer {
     padding: revert;
     margin: revert;
     padding-block-start: 20px;
@@ -262,8 +283,9 @@ footer p
   }
 }
 
-@media print, screen and (max-width: 700px) {
-  section > p:lang(en-US) {
+@media print,
+screen and (max-width: 700px) {
+  section>p:lang(en-US) {
     text-align: start;
     hyphens: revert;
   }
@@ -288,8 +310,14 @@ footer p
   }
 
   body,
-  .kufi p, .كوفي p,
-  h1, h2, h3, h4, h5, h6,
+  .kufi p,
+  .كوفي p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   #title,
   #logo {
     color: revert;
@@ -299,7 +327,12 @@ footer p
     break-after: page;
   }
 
-  h1, h2, h3, h4, h5, h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   blockquote {
     break-after: avoid-page;
   }

@@ -25,19 +25,37 @@ body {
   gap: var(--main-gap);
 }
 
-.lang-switcher-top { grid-area: lang-switcher; }
-header  { grid-area: header; }
-section { grid-area: section; }
-footer  { grid-area: footer; }
+.lang-switcher-top {
+  grid-area: lang-switcher;
+}
 
-h1, h2, h3, h4, h5, h6 {
+header {
+  grid-area: header;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-family);
   margin-block-start: 20px;
   margin-block-end: 5px;
   color: var(--kufi-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.4;
 }
 
@@ -45,7 +63,8 @@ h1 {
   font-size: var(--h1-font-size);
 }
 
-p, li {
+p,
+li {
   text-align: justify;
   line-height: normal;
   hyphens: auto;
@@ -70,8 +89,7 @@ img {
 }
 
 header p,
-footer p
-{
+footer p {
   text-align: start;
   margin-block-end: 20%;
   hyphens: none;
@@ -85,9 +103,8 @@ footer {
   top: var(--top-bottom-margin);
 }
 
-footer
-{
-    display: none;
+footer {
+  display: none;
 }
 
 #logo {
@@ -138,14 +155,13 @@ footer
   flex-grow: 1;
 }
 
-@media print, screen and (max-width: 1100px) {
-  footer
-  {
+@media print,
+screen and (max-width: 1100px) {
+  footer {
     display: revert;
   }
 
-  header .contact
-  {
+  header .contact {
     display: none;
   }
 
@@ -166,7 +182,8 @@ footer
     display: revert;
   }
 
-  .lang-switcher-side, header .description {
+  .lang-switcher-side,
+  header .description {
     display: none;
   }
 
@@ -178,21 +195,18 @@ footer
   header,
   header p,
   footer,
-  footer p
-  {
+  footer p {
     text-align: center;
   }
 
   header p,
-  footer p
-  {
+  footer p {
     margin-block-end: 10%;
     margin-block-end: 10%;
   }
 
   header,
-  footer
-  {
+  footer {
     align-self: revert;
     position: revert;
     top: revert;
@@ -202,8 +216,9 @@ footer
   }
 }
 
-@media print, screen and (max-width: 700px) {
-  section > p:lang(en-US) {
+@media print,
+screen and (max-width: 700px) {
+  section>p:lang(en-US) {
     text-align: start;
     hyphens: revert;
   }
