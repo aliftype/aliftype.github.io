@@ -1,10 +1,7 @@
 let CACHE = 'app-cache-v-8';
 let FILES = [
-  '/assets/images/app/clear.svg',
-  '/assets/images/app/open.svg',
   '/assets/images/app/remove-dots.svg',
   '/assets/images/app/small-dots.svg',
-  '/assets/images/app/save.svg',
   '/assets/fonts/RanaKufi.otf',
   '/app/app.js',
   '/app/HarfBuzz.js',
@@ -15,7 +12,6 @@ let FILES = [
   '/assets/css/app.css',
   './',
   './app.webmanifest',
-  './override.css',
   './index.html',
 ]
 
