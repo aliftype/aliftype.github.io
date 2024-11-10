@@ -33,20 +33,20 @@ self.addEventListener('fetch', e => {
     return;
   e.respondWith(
     get(request, 400)
-    .then(response => {
-      return caches.open(CACHE).then(cache => {
-        return cache.put(request, response.clone()).then(() => {
-          return response;
+      .then(response => {
+        return caches.open(CACHE).then(cache => {
+          return cache.put(request, response.clone()).then(() => {
+            return response;
+          });
         });
-      });
-    })
-    .catch(() => {
-      return caches.open(CACHE).then(cache => {
-        return caches.match(request).then(match => {
-          return match || Promise.reject('no-match');
+      })
+      .catch(() => {
+        return caches.open(CACHE).then(cache => {
+          return caches.match(request).then(match => {
+            return match || Promise.reject('no-match');
+          });
         });
-      });
-    })
+      })
   );
 });
 
