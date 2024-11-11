@@ -1,4 +1,5 @@
 ---
+title: حروف ألف
 subtitle: أعمال فنية
 layout: default
 language: ar

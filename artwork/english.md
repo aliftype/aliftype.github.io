@@ -1,5 +1,5 @@
 ---
-title: Raqq
+title: AlifType
 subtitle: Artwork
 layout: default
 language: en-US
