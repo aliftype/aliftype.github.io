@@ -1,42 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Mada:wght@400&display=block');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=block');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 @font-face {
   font-family: "Raqq";
   src: url("/assets/fonts/Raqq.woff2");
   font-weight: 400;
+  font-display: block;
 }
 
 @font-face {
   font-family: "logo";
   src: url("/assets/fonts/logo.woff2");
   font-weight: 400;
+  font-display: block;
 }
 
 @font-face {
   font-family: "Qahiri";
   src: url("/assets/fonts/Qahiri-Regular.woff2");
   font-weight: 400;
+  font-display: block;
 }
 
 @font-face {
   font-family: "Rana Kufi";
   src: url("/assets/fonts/RanaKufi.woff2");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Amiri";
   src: url("/assets/fonts/Amiri-Regular.woff2");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   src: url("/assets/fonts/Amiri-Bold.woff2");
   font-family: "Amiri";
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
@@ -44,6 +50,7 @@
   src: url("/assets/fonts/Amiri-Italic.woff2");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -51,6 +58,7 @@
   font-family: "Amiri";
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-feature-values "Raqq" {
