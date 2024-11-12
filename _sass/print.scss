@@ -40,7 +40,7 @@
   }
 
   blockquote.kufi {
-    break-after: default;
+    break-after: auto;
   }
 
   h1,
@@ -50,6 +50,6 @@
   h5,
   h6,
   blockquote {
-    break-after: avoid-page;
+    break-after: avoid;
   }
 }
