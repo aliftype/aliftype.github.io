@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mada:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 @font-face {
   font-family: "Raqq";
@@ -90,6 +89,10 @@ body {
   font-size: var(--main-font-size);
   font-weight: 400;
   font-variant-numeric: proportional-nums;
+}
+
+code {
+  font-family: "Inconsolata", monospace;
 }
 
 .arrow {
