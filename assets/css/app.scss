@@ -24,6 +24,7 @@
 @import "fonts";
 @import "nav";
 @import "button";
+@import "logo";
 
 body {
   max-width: 1240px;
@@ -132,14 +133,6 @@ footer {
 
 footer {
   display: none;
-}
-
-#logo {
-  font-family: var(--kufi-family);
-  color: var(--kufi-color);
-  font-size: 55pt;
-  margin-block-end: 5%;
-  margin-block-start: 0;
 }
 
 #logo a,

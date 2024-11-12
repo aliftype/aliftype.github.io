@@ -12,6 +12,7 @@
 @import "fonts";
 @import "nav";
 @import "print";
+@import "logo";
 
 body {
   max-width: 1240px;
@@ -137,14 +138,6 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-#logo {
-  font-family: var(--kufi-family);
-  color: var(--kufi-color);
-  font-size: 55pt;
-  margin-block-end: 5%;
-  margin-block-start: 0;
 }
 
 #logo a,
