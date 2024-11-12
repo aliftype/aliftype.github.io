@@ -9,8 +9,8 @@
 
     <title>{{ page.title | default: site.title }} | {{ page.subtitle | default: site.description }}</title>
     <meta property="og:locale" content="{{ page.language }}">
-    <meta        name="description" content="{{ messages.description | strip_html }}">
-    <meta property="og:description" content="{{ messages.description | strip_html }}">
+    <meta        name="description" content="{{ messages.description | strip_html | strip }}">
+    <meta property="og:description" content="{{ messages.description | strip_html | strip }}">
     <link      rel="canonical" href="{{ site.url }}{{ page.url }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
