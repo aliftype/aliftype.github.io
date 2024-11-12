@@ -49,6 +49,7 @@ en-US:
     small-dots: Small dots
     adjust-dots: Adjust dots
     alternates: Glyph alternates
+    font-size: Font size
 
 ar:
   suffix: ""
@@ -98,3 +99,4 @@ ar:
     small-dots: نقاط صغيرة
     adjust-dots: اضبط النقاط
     alternates: بدائل الحروف
+    font-size: حجم الخط
