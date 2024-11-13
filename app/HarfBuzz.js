@@ -43,23 +43,28 @@ class Pointer {
   constructor(arg) {
     if (arg instanceof ArrayBuffer) {
       this.byteLength = arg.byteLength;
-      this.ptr = M.stackAlloc(this.byteLength);
+      this.ptr = M._malloc(this.byteLength);
       M.HEAPU8.set(new Uint8Array(arg), this.ptr);
     } else {
       this.byteLength = arg;
-      this.ptr = M.stackAlloc(this.byteLength);
+      this.ptr = M._malloc(this.byteLength);
     }
   }
 
   get int32Array() { return M.HEAP32.slice(this.ptr / 4, (this.ptr + this.byteLength) / 4); }
   get int32() { return M.HEAP32[this.ptr / 4]; }
   get uint32() { return M.HEAPU32[this.ptr / 4]; }
+
+  release() {
+    M._free(this.ptr);
+  }
 }
 
 export class Font {
   constructor(data, dpr) {
     let dataPtr = new Pointer(data);
-    let blob = M._hb_blob_create(dataPtr.ptr, dataPtr.byteLength, 2/*writable*/, 0, 0);
+    let blob = M._hb_blob_create(dataPtr.ptr, dataPtr.byteLength, 0/*HB_MEMORY_MODE_DUPLICATE*/, 0, 0);
+    dataPtr.release();
     this.face = M._hb_face_create(blob, 0);
     this.ptr = M._hb_font_create(this.face);
     this.upem = M._hb_face_get_upem(this.face);
@@ -68,8 +73,9 @@ export class Font {
     M._hb_font_set_scale(this.ptr, scale, scale);
 
     this._outlines = [];
-    this._extents = [];
+    this._glyph_extents = [];
     this._layers = [];
+    this._font_extents = undefined;
     this._colr = undefined;
     this._cpal = undefined;
     this._gsub = undefined;
@@ -77,20 +83,21 @@ export class Font {
   }
 
   getGlyphExtents(glyph) {
-    if (this._extents[glyph] !== undefined)
-      return this._extents[glyph];
+    if (this._glyph_extents[glyph] == undefined) {
+      let extentsPtr = new Pointer(4 * 4);
+      M._hb_font_get_glyph_extents(this.ptr, glyph, extentsPtr.ptr);
 
-    let extentsPtr = new Pointer(4 * 4);
-    M._hb_font_get_glyph_extents(this.ptr, glyph, extentsPtr.ptr);
+      let extents = extentsPtr.int32Array;
+      this._glyph_extents[glyph] = {
+        x_bearing: extents[0],
+        y_bearing: extents[1],
+        width: extents[2],
+        height: extents[3],
+      };
+      extentsPtr.release();
+    }
 
-    let extents = extentsPtr.int32Array;
-    this._extents[glyph] = {
-      x_bearing: extents[0],
-      y_bearing: extents[1],
-      width: extents[2],
-      height: extents[3],
-    };
-    return this._extents[glyph];
+    return this._glyph_extents[glyph];
   }
 
   getGlyphColorLayers(glyph) {
@@ -141,7 +148,7 @@ export class Font {
     outlines[glyph] = "";
     // I’m abusing pointers here to pass the actual glyph id instead of a user
     // data pointer, don’t shoot me.
-    M._hb_font_get_glyph_shape(this.ptr, glyph, this._draw_funcs, glyph);
+    M._hb_font_draw_glyph(this.ptr, glyph, this._draw_funcs, glyph);
 
     return outlines[glyph];
   }
@@ -150,9 +157,11 @@ export class Font {
     let lenPtr = new Pointer(4);
     let blob = M._hb_face_reference_table(this.face, TAG(name));
     let data = M._hb_blob_get_data(blob, lenPtr.ptr);
+    let table = null
     if (lenPtr.uint32 != 0)
-      return new klass(M.HEAPU8.slice(data, data + lenPtr.uint32));
-    return null;
+      table = new klass(M.HEAPU8.slice(data, data + lenPtr.uint32));
+    lenPtr.release();
+    return table;
   }
 
   get COLR() {
@@ -183,24 +192,30 @@ export class Font {
   }
 
   get extents() {
-    let extentsPtr = new Pointer(12 * 4);
-    M._hb_font_get_h_extents(this.ptr, extentsPtr.ptr);
-    let extents = extentsPtr.int32Array;
-    let clipAscender = extents[0];
-    let clipDescender = extents[1];
-    let clipPtr = new Pointer(4);
-    if (M._hb_ot_metrics_get_position(this.ptr, TAG("hcla"), clipPtr.ptr))
-      clipAscender = clipPtr.int32;
-    if (M._hb_ot_metrics_get_position(this.ptr, TAG("hcld"), clipPtr.ptr))
-      clipDescender = clipPtr.int32;
+    if (this._font_extents == undefined) {
+      let extentsPtr = new Pointer(12 * 4);
+      M._hb_font_get_h_extents(this.ptr, extentsPtr.ptr);
+      let extents = extentsPtr.int32Array;
+      let clipAscender = extents[0];
+      let clipDescender = extents[1];
+      let clipPtr = new Pointer(4);
+      if (M._hb_ot_metrics_get_position(this.ptr, TAG("hcla"), clipPtr.ptr))
+        clipAscender = clipPtr.int32;
+      if (M._hb_ot_metrics_get_position(this.ptr, TAG("hcld"), clipPtr.ptr))
+        clipDescender = clipPtr.int32;
 
-    return {
-      ascender: extents[0],
-      descender: extents[1],
-      line_gap: extents[2],
-      clipAscender: clipAscender,
-      clipDescender: clipDescender,
-    };
+      this._font_extents = {
+        ascender: extents[0],
+        descender: extents[1],
+        line_gap: extents[2],
+        clipAscender: clipAscender,
+        clipDescender: clipDescender,
+      };
+
+      extentsPtr.release();
+      clipPtr.release();
+    }
+    return this._font_extents;
   }
 }
 
@@ -283,6 +298,7 @@ export class Buffer {
 
     let featuresPtr = new Pointer(new Uint32Array(features).buffer);
     M._hb_shape(font.ptr, this.ptr, featuresPtr.ptr, features.length / 4);
+    featuresPtr.release();
 
     let length = M._hb_buffer_get_length(this.ptr);
     let infosPtr32 = M._hb_buffer_get_glyph_infos(this.ptr, 0) / 4;
