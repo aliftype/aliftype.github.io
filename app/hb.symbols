@@ -24,8 +24,6 @@ _hb_font_get_face
 _hb_font_get_glyph_extents
 _hb_font_get_h_extents
 _hb_font_set_scale
-_hb_ot_layout_collect_lookups
-_hb_ot_layout_lookup_get_glyph_alternates
 _hb_ot_metrics_get_position
 _hb_set_create
 _hb_set_next
