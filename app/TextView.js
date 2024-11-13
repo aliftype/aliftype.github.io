@@ -255,9 +255,9 @@ class Layout {
     for (const g of this._glyphs) {
       if (g.layers.length && !this._nocolorDots)
         for (const l of g.layers)
-          this._appendPathElement(svg, l, g.isDot);
+          this._appendPathElement(svg, l);
       else
-        this._appendPathElement(svg, g, g.isDot);
+        this._appendPathElement(svg, g);
     }
 
     svg.dataset.text = JSON.stringify(text);
@@ -266,10 +266,14 @@ class Layout {
     return window.URL.createObjectURL(blob);
   }
 
-  _appendPathElement(svg, g, isDot) {
-    let fill = g.color && g.color.slice(0, -2);
-    // Inkscape does not support RGBA colors, opacity must be set separately.
-    let opacity = g.color && parseInt(g.color.slice(-2), 16) / 255;
+  _appendPathElement(svg, g) {
+    let fill = null;
+    let opacity = 1;
+    if (g.color) {
+      fill = `rgb(${g.color.red}, ${g.color.green}, ${g.color.blue})`;
+      // Inkscape does not support RGBA colors, opacity must be set separately.
+      opacity = g.color.alpha / 255;
+    }
 
     if (!g.index && !fill)
       fill = "red";

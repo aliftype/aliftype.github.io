@@ -30,5 +30,15 @@ _hb_ot_metrics_get_position
 _hb_set_create
 _hb_set_next
 _hb_shape
+_hb_ot_color_has_palettes
+_hb_ot_color_has_layers
+_hb_ot_color_glyph_get_layers
+_hb_ot_color_palette_get_count
+_hb_ot_color_palette_get_colors
+_hb_ot_color_palette_get_flags
+_hb_color_get_alpha
+_hb_color_get_blue
+_hb_color_get_green
+_hb_color_get_red
 _malloc
 _free

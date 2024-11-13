@@ -4,3 +4,4 @@
 #undef HB_NO_VAR
 #undef HB_NO_LAYOUT_RARELY_USED
 #undef HB_NO_METRICS
+#undef HB_NO_COLOR

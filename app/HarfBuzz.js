@@ -37,7 +37,7 @@
  *
  */
 
-import { GSUB, COLR, CPAL, TAG } from "./OpenType.js"
+import { GSUB, TAG } from "./OpenType.js"
 
 class Pointer {
   constructor(arg) {
@@ -52,12 +52,26 @@ class Pointer {
   }
 
   get int32Array() { return M.HEAP32.slice(this.ptr / 4, (this.ptr + this.byteLength) / 4); }
+  get uint32Array() { return M.HEAPU32.slice(this.ptr / 4, (this.ptr + this.byteLength) / 4); }
   get int32() { return M.HEAP32[this.ptr / 4]; }
+  set int32(value) { M.HEAP32[this.ptr / 4] = value; }
   get uint32() { return M.HEAPU32[this.ptr / 4]; }
+  set uint32(value) { M.HEAPU32[this.ptr / 4] = value; }
 
   release() {
     M._free(this.ptr);
   }
+}
+
+export class Color {
+  constructor(color) {
+    this._color = color;
+  }
+
+  get red() { return M._hb_color_get_red(this._color); }
+  get green() { return M._hb_color_get_green(this._color); }
+  get blue() { return M._hb_color_get_blue(this._color); }
+  get alpha() { return M._hb_color_get_alpha(this._color); }
 }
 
 export class Font {
@@ -74,10 +88,9 @@ export class Font {
 
     this._outlines = [];
     this._glyph_extents = [];
-    this._layers = [];
+    this._color_layers = [];
+    this._color_palettes = [];
     this._font_extents = undefined;
-    this._colr = undefined;
-    this._cpal = undefined;
     this._gsub = undefined;
     this._draw_funcs = null;
   }
@@ -100,19 +113,53 @@ export class Font {
     return this._glyph_extents[glyph];
   }
 
+  _getColorPalette(index) {
+    if (!M._hb_ot_color_has_palettes(this.face))
+      return null;
+
+    if (this._color_palettes[index] == undefined) {
+      let numColorsPtr = new Pointer(4);
+      numColorsPtr.uint32 = M._hb_ot_color_palette_get_colors(this.face, index, 0, 0, 0);
+      let colorsPtr = new Pointer(numColorsPtr.uint32 * 4);
+      M._hb_ot_color_palette_get_colors(this.face, index, 0, numColorsPtr.ptr, colorsPtr.ptr);
+      let palette = [];
+      colorsPtr.uint32Array.forEach(x => palette.push(new Color(x)));
+      this._color_palettes[index] = palette;
+      colorsPtr.release();
+      numColorsPtr.release();
+    }
+    return this._color_palettes[index];
+  }
+
   getGlyphColorLayers(glyph) {
-    if (this._layers[glyph] == undefined) {
-      let palettes = this.CPAL ? this.CPAL.colors : [];
-      let layers = this.COLR ? this.COLR.layers[glyph] || [] : [];
-      this._layers[glyph] = [];
-      for (const layer of layers) {
-        this._layers[glyph].push({
-          index: layer[0],
-          color: palettes[0][layer[1]],
+    if (!M._hb_ot_color_has_layers(this.face))
+      return [];
+
+    let palette = this._getColorPalette(0);
+
+    if (this._color_layers[glyph] == undefined) {
+      let numLayersPtr = new Pointer(4);
+      numLayersPtr.uint32 = M._hb_ot_color_glyph_get_layers(this.face, glyph, 0, 0, 0);
+      if (numLayersPtr.uint32 == 0) {
+        numLayersPtr.release();
+        return [];
+      }
+      let layersPtr = new Pointer(numLayersPtr.uint32 * 8);
+
+      M._hb_ot_color_glyph_get_layers(this.face, glyph, 0, numLayersPtr.ptr, layersPtr.ptr);
+
+      let layers = layersPtr.uint32Array;
+      this._color_layers[glyph] = [];
+      for (let i = 0; i < numLayersPtr.uint32; i++) {
+        this._color_layers[glyph].push({
+          index: layers[i * 2],
+          color: palette[layers[i * 2 + 1]],
         });
       }
+      layersPtr.release();
+      numLayersPtr.release();
     }
-    return this._layers[glyph];
+    return this._color_layers[glyph];
   }
 
   getGlyphOutline(glyph) {
@@ -162,16 +209,6 @@ export class Font {
       table = new klass(M.HEAPU8.slice(data, data + lenPtr.uint32));
     lenPtr.release();
     return table;
-  }
-
-  get COLR() {
-    if (!this._colr) this._colr = this._getTable("COLR", COLR);
-    return this._colr;
-  }
-
-  get CPAL() {
-    if (!this._cpal) this._cpal = this._getTable("CPAL", CPAL);
-    return this._cpal;
   }
 
   get GSUB() {
