@@ -133,7 +133,7 @@ export class Font {
 
   getGlyphColorLayers(glyph) {
     if (!M._hb_ot_color_has_layers(this.face))
-      return [];
+      return;
 
     let palette = this._getColorPalette(0);
 
@@ -142,7 +142,7 @@ export class Font {
       numLayersPtr.uint32 = M._hb_ot_color_glyph_get_layers(this.face, glyph, 0, 0, 0);
       if (numLayersPtr.uint32 == 0) {
         numLayersPtr.release();
-        return [];
+        return;
       }
       let layersPtr = new Pointer(numLayersPtr.uint32 * 8);
 
@@ -276,11 +276,13 @@ class Glyph {
   }
 
   get isDot() {
-    let layers = this.font.getGlyphColorLayers(this.index);
-    return layers.length;
+    return !!this.font.getGlyphColorLayers(this.index);
   }
+
   get layers() {
     let layers = this.font.getGlyphColorLayers(this.index);
+    if (!layers)
+      return;
     return layers.map(l => {
       let glyph = { ...this, index: l.index, color: l.color };
       Object.setPrototypeOf(glyph, Glyph.prototype);

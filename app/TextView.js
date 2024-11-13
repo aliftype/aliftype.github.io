@@ -253,7 +253,7 @@ class Layout {
     svg.setAttributeNS(ns, "viewBox", `0 0 ${this.width} ${this.height}`);
 
     for (const g of this._glyphs) {
-      if (g.layers.length && !this._nocolorDots)
+      if (g.layers && !this._nocolorDots)
         for (const l of g.layers)
           this._appendPathElement(svg, l);
       else
@@ -413,17 +413,20 @@ export class View {
       ctx.direction = "ltr";
       ctx.textAlign = "left";
 
-      // Draw glyphs.
-      const glyphs = layout.glyphs;
+      // Draw glyphs. We draw plain glyphs first, then color glyphs on top.
+      const allGlyphs = layout.glyphs;
+      const plainGlyphs = allGlyphs.filter(g => !g.layers);
+      const colorGlyphs = allGlyphs.filter(g => g.layers);
 
-      glyphs.forEach(g => {
-        ctx.save();
-        ctx.fillStyle = g.index ? fillStyle : "red";
-        ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
-        ctx.restore();
+      [plainGlyphs, colorGlyphs].forEach(glyphs => {
+        glyphs.forEach(g => {
+          ctx.save();
+          ctx.fillStyle = g.index ? fillStyle : "red";
+          ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
+          ctx.restore();
+        });
       });
     });
-
   }
 
   open() {
