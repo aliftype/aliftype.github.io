@@ -12,7 +12,41 @@ raqq:
   title: رَقّ
   subtitle: كُوفِي المَصاحفِ الأولَى
   title-separator: "\u200A۝\u200A"
-  app: False
+  app:
+    FONT_FILE: /assets/fonts/Raqq.ttf
+    FONT_SIZE: 48
+    SAMPLE_TEXT:
+      [
+        { "code": 1575 },
+        { "code": 1604 },
+        { "code": 1582 },
+        { "code": 1614 },
+        { "code": 1591 },
+        { "code": 1615 },
+        { "code": 32 },
+        { "code": 1575 },
+        { "code": 1604 },
+        { "code": 1603 },
+        { "code": 1615 },
+        { "code": 1608 },
+        { "code": 1601 },
+        { "code": 1616 },
+        { "code": 1610 },
+        { "code": 32 },
+        { "code": 1575 },
+        { "code": 1604 },
+        { "code": 1605 },
+        { "code": 1615 },
+        { "code": 1589 },
+        { "code": 1581 },
+        { "code": 1614 },
+        { "code": 1601 },
+        { "code": 1610, "features": ["salt=2"] },
+      ]
+
+    STORAGE_KEY: raqq.text-v1
+    SERVICE_WORKER: /raqq/app/ServiceWorker.js
+    toolbar: [remove-dots, nocolor-dots]
 
 qahiri:
   name: Qahiri
