@@ -49,7 +49,7 @@ class OStream {
   }
 }
 
-let DROP_TABLES = [TAG("GSUB"), TAG("GPOS"), TAG("GDEF"), TAG("DSIG")];
+let DROP_TABLES = [TAG("GSUB"), TAG("GPOS"), TAG("GDEF"), TAG("DSIG"), TAG("COLR"), TAG("CPAL")];
 
 let TABLES_OFFSET = 12;
 let TABLE_ENTRY_SIZE = 16;

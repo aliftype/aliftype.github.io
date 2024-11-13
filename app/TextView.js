@@ -296,7 +296,6 @@ export class View {
     this._blob = blob;
 
     this._fontFace = null;
-    this._colorFontFace = null;
 
     this._canvas = document.getElementById("canvas");
     this._input = document.getElementById("hiddeninput");
@@ -321,19 +320,11 @@ export class View {
   }
 
   get fontFace() {
-    if (this._layout.nocolorDots) {
-      if (this._fontFace === null) {
-        let remapper = new FontRemapper(this._blob, [TAG("COLR"), TAG("CPAL")]);
-        this._fontFace = new FontFace("TextViewFont", remapper.remap());
-      }
-      return this._fontFace;
-    } else {
-      if (this._colorFontFace === null) {
-        let remapper = new FontRemapper(this._blob);
-        this._colorFontFace = new FontFace("ColorTextViewFont", remapper.remap());
-      }
-      return this._colorFontFace
+    if (this._fontFace === null) {
+      let remapper = new FontRemapper(this._blob);
+      this._fontFace = new FontFace("TextViewFont", remapper.remap());
     }
+    return this._fontFace;
   };
 
   update(manualFontSize) {
@@ -420,10 +411,20 @@ export class View {
 
       [plainGlyphs, colorGlyphs].forEach(glyphs => {
         glyphs.forEach(g => {
-          ctx.save();
-          ctx.fillStyle = g.index ? fillStyle : "red";
-          ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
-          ctx.restore();
+          if (g.layers && !layout.nocolorDots)
+            g.layers.forEach(l => {
+              ctx.save();
+              ctx.fillStyle = `rgb(${l.color.red}, ${l.color.green}, ${l.color.blue})`;
+              ctx.globalAlpha = l.color.alpha / 255;
+              ctx.fillText(String.fromCodePoint(PUA_OFFSET + l.index), l.x, l.y);
+              ctx.restore();
+            });
+          else {
+            ctx.save();
+            ctx.fillStyle = g.index ? fillStyle : "red";
+            ctx.fillText(String.fromCodePoint(PUA_OFFSET + g.index), g.x, g.y);
+            ctx.restore();
+          }
         });
       });
     });
