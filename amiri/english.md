@@ -26,11 +26,9 @@ Amiri supports a large number of Arabic characters supported by Unicode, which i
 
 All contributions are highly appreciated; you can help by:
 
-**Testing the font** and reporting any issues or suggesting improvement, especially if you are a native speaker of any language using Arabic script other than Arabic language.
-
-**Improving glyph outlines** and adding more variants, especially if you have experience with Arabic calligraphy.
-
-**Supporting the project**. If you like the font and use it, I don’t mind receiving an email telling me so, and maybe some words of admiration `:)` You can also spread the word, the more people using it, the more the incentive to develop it more and more.
+- **Testing the font** and reporting any issues or suggesting improvement, especially if you are a native speaker of any language using Arabic script other than Arabic language.
+- **Improving glyph outlines** and adding more variants, especially if you have experience with Arabic calligraphy.
+- **Supporting the project**. If you like the font and use it, I don’t mind receiving an email telling me so.
 
 ## Reporting issues
 
