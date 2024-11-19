@@ -14,7 +14,7 @@ _Qahiri_ is a free and open-source project, anyone is welcome to use and modify 
 ## The app
 The font provides many alternate shapes for many of its glyphs, which should be usable in any OpenType-savvy application. But since many apps have poor OpenType support or bad UI or don’t allow controlling features for single glyphs, _Qahiri_ comes with a web application that provides easy access to glyph alternates.
 
-Visit the app [web page][4] and type Arabic in the text area. Below the text will appear the alternates of the character before the text cursor (the gray bar). Clicking on an alternate form will cause it to be used instead of the current form:
+Visit the app [web page](./app/english) and type Arabic in the text area. Below the text will appear the alternates of the character before the text cursor (the gray bar). Clicking on an alternate form will cause it to be used instead of the current form:
 
 ![Screen shot of the app](/assets/images/qahiri/screenshot.png)
 
@@ -47,5 +47,4 @@ The performance of the application is also far from being optimal, so pasting la
 [1]: https://en.wikipedia.org/wiki/Kufic
 [2]: https://ar.wikipedia.org/wiki/محمد_عبد_القادر_عبد_الله_(خطاط)
 [3]: https://github.com/aliftype/qahiri/releases/latest
-[4]: https://aliftype.com/qahiri/app/
 [5]: https://github.com/aliftype/qahiri/blob/main/OFL.txt
