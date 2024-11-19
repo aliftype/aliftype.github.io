@@ -30,19 +30,6 @@ The ![rounded dots](/assets/images/app/round-dots.svg){:.button} button, on the 
 
 The app allows exporting SVG files that can be further modified in any vector graphics application. Pressing *Export*{:.button} button will download the SVG. The SVG contains also the current text with the selected alternates, and can be loaded any time in the app again using the *Open*{:.button} button. Pressing the *Clear*{:.button} button will delete all the text.
 
-### Installing on mobile devices
-The application also works offline and supports mobile browsers and small screens. It is also possible to add the application to the home screen for quick access without opening the browser.
-
-On Android devices, open the [application web page][4] in _Google Chrome_ and go to the menu, click on __Add to Home screen__ and you will be prompted to add the application to your home screen:
-
-![Installing on Android](/assets/images/qahiri//install-android-1-en.png#install)
-![Installing on Android](/assets/images/qahiri//install-android-2-en.png#install)
-
-On iOS devices, open the [application web page][4] in _Safari_, click on the download icon, then on __Add to Home Screen__, and you will be prompted to add the application to your home screen:
-
-![Installing on iOS](/assets/images/qahiri//install-ios-1-en.png#install)
-![Installing on iOS](/assets/images/qahiri//install-ios-2-en.png#install)
-
 ## Font features
 The font tries to remain faithful to the rules laid out by _Mohammad Abdul Qadir_, and one aspect of that is spacing. The space between letters, connected or not, as well as between words, is always about half the thickness of vertical stems. There is a distinction between inter-word and inter-letter spacing. Inserting more than one space character will increase the inter-word spacing.
 
