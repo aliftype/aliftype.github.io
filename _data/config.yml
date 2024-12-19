@@ -4,6 +4,7 @@ amiri:
   title: أميري
   subtitle: خط عربي للمتون
   title-separator: "\u200A—\u200A"
+  download: True
   app: False
 
 raqq:
@@ -12,6 +13,7 @@ raqq:
   title: رَقّ
   subtitle: كُوفِي المَصاحفِ الأولَى
   title-separator: "\u200A۝\u200A"
+  download: True
   app:
     FONT_FILE: /assets/fonts/Raqq.ttf
     FONT_SIZE: 48
@@ -54,6 +56,7 @@ qahiri:
   title: قاهري
   subtitle: خط كوفي مصحفي
   title-separator: "—"
+  download: True
   app:
     FONT_FILE: /assets/fonts/Qahiri-Regular.ttf
     SAMPLE_TEXT:
@@ -88,6 +91,7 @@ rana-kufi:
   title: كوفي رنا
   subtitle: خط كوفي فاطمي
   title-separator: "\u200A۝\u200A"
+  download: False
   app:
     FONT_FILE: /assets/fonts/RanaKufi.otf
     SAMPLE_TEXT:
