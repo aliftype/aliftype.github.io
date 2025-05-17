@@ -1,6 +1,6 @@
 amiri:
   name: Amiri
-  version: "1.001"
+  version: "1.002"
   title: أميري
   subtitle: خط عربي للمتون
   title-separator: "\u200A—\u200A"
