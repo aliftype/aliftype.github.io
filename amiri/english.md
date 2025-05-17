@@ -12,7 +12,7 @@ Amiri is a classical Arabic typeface in the Naskh style for typesetting books an
 
 Amiri is a revival of the beautiful typeface pioneered in the early 20<sup>th</sup> century by Bulaq Press in Cairo, also known as Amiria Press, after which the font is named.
 
-The uniqueness of this typeface comes from its superb balance between the beauty of Naskh calligraphy on the one hand and the constraints and requirements of elegant typography on the other. Also, it is one of the few metal typefaces that were used in typesetting the Koran, making it a good source for a digital typeface to be used in typesetting Koranic verses.
+The uniqueness of this typeface comes from its superb balance between the beauty of Naskh calligraphy on the one hand and the constraints and requirements of elegant typography on the other. Also, it is one of the few metal typefaces that were used in typesetting the Quran, making it a good source for a digital typeface to be used in typesetting Quranic verses.
 
 Amiri project aims at the revival of the aesthetics and traditions of Arabic typesetting and adapting it to the era of digital typesetting in a publicly available form.
 
