@@ -12,4 +12,4 @@ _Alif Type’s_ vision is to adapt and develop technology to meet the needs and 
 
 _Alif Type_ develops many free and open-source typefaces and offers custom type design services, as well as font and font tools development for others.
 
-_Alif Type_ was founded by Khaled Hosny, an Egyptian based in Cairo. Khaled studied medicine and worked as a doctor for a while before pursuing a career in type design and development, as well as developing text layout and font handling software. Khaled is an active contributor to many free and open-source projects, especially in areas related to Arabic support.
+_Alif Type_ was founded by Khaled Hosny, an Egyptian based in Cairo. Khaled studied medicine and worked as a doctor for a while before pursuing a career in type design and development, as well as developing text layout and font handling software. Khaled is an active contributor to many free and open-source projects, especially in areas related to Arabic support. You can read more about Khaled Hosny on [his website](https://khaledhosny.com).
