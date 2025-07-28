@@ -4,4 +4,5 @@ description: مسبك حروف رقمي
 google_analytics: G-3DGD02NENY
 
 plugins:
+  - jekyll-sitemap
   - jekyll-redirect-from
