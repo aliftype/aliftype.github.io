@@ -6,3 +6,5 @@ google_analytics: G-3DGD02NENY
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+exclude:
+  - app/harfbuzz
