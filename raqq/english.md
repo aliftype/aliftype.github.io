@@ -35,7 +35,7 @@ Similarly, line breaks frequently happen inside the word as long as calligraphic
 ### Elongation
 Another prominent Kufic feature is _mashq_, which is the elongation of some letters. _Raqq_ provides another custom font variation axis, Mashq (`MSHQ`), for this.
 
-In Kufic, letters that can be elongated are the mostly horizontal ones, namely _dal_, _tah_, _kaf_, _sad_, _beh_, and _feh_. These letters can expand or shrink as needed, though expansion is usually preferred:
+In Kufic, letters that can be elongated are the mostly horizontal ones, namely _dal_, _tah_, _kaf_, and _sad_, as well as _beh_, and _feh_ (only in their _initial_ and _medial_ positions). These letters can expand or shrink as needed, though expansion is usually preferred:
 > د *د*{:.ش١٠٠} *د*{:.ش٠}<br>
 > ط *ط*{:.ش١٠٠} *ط*{:.ش٠}<br>
 > ك *ك*{:.ش١٠٠} *ك*{:.ش٠}<br>
