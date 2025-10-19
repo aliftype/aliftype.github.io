@@ -309,7 +309,7 @@ footer p {
   }
 }
 
-{% for i in (1..125) %}
+{% for i in (0..125) %}
   {% assign ai = i
     | replace: "0", "٠"
     | replace: "1", "١"
