@@ -54,9 +54,9 @@ Also, final _alef_ can shrink a little:
 {:.kufi}
 
 The rest of the letters do not elongate but can be elongated by inserting _tatweel_ (_kashida_) after them when needed:
-> سائِلون
-> سائـِلون
-{:.kufi .m100}
+> سا يِلون
+> سايـِلون
+{:.kufi .m100 .ss01}
 
 ### Diacritical Dots
 Kufi Qur’an are often written with or without [diacritical dots] or I‘jam. _Raqq_ supports both. By default the letters are dotted:
