@@ -10,9 +10,8 @@ redirect_from:
 
 أميري
 -----
-![أميري](assets/images/amiri.svg "أميري")
+[![أميري](assets/images/amiri.svg "أميري")](/amiri)
 {:.sample}
-
 [اعرف أكثر...](/amiri){:.more}
 [ويكيبيديا](https://ar.wikipedia.org/wiki/الخط_الأميري) |
 [خطوط جوجل](https://fonts.google.com/specimen/Amiri)
@@ -20,7 +19,7 @@ redirect_from:
 
 مدى
 ----
-![مدى](assets/images/mada.svg "مدى")
+[![مدى](assets/images/mada.svg "مدى")](https://github.com/aliftype/mada/releases/latest)
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/mada/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/mada) |
@@ -29,7 +28,7 @@ redirect_from:
 
 كوفي ريم
 --------
-![كوفي ريم](assets/images/reem-kufi.svg "كوفي ريم")
+[![كوفي ريم](assets/images/reem-kufi.svg "كوفي ريم")](https://github.com/aliftype/reem-kufi/releases/latest)
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/reem-kufi) |
@@ -38,7 +37,7 @@ redirect_from:
 
 رقعة عارف
 ---------
-![رقعة عارف](assets/images/aref-ruqaa.svg "رقعة عارف")
+[![رقعة عارف](assets/images/aref-ruqaa.svg "رقعة عارف")](https://github.com/aliftype/aref-ruqaa/releases/latest)
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/aref-ruqaa) |
@@ -47,7 +46,7 @@ redirect_from:
 
 قاهري
 -----
-![قاهري](assets/images/qahiri.svg "قاهري")
+[![قاهري](assets/images/qahiri.svg "قاهري")](/qahiri)
 {:.sample}
 [اعرف أكثر...](/qahiri){:.more}
 [خطوط جوجل](https://fonts.google.com/specimen/Qahiri)
@@ -55,7 +54,7 @@ redirect_from:
 
 أنت
 ---
-![أنت](assets/images/anti.svg "أنت")
+[![أنت](assets/images/anti.svg "أنت")](https://github.com/aliftype/anti/releases/latest)
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/anti/releases/latest){:.more}
 [جت‌هب](https://github.com/aliftype/anti)
@@ -63,21 +62,21 @@ redirect_from:
 
 رَقّ
 ----
-![رَقّ](assets/images/raqq.svg "رَقّ")
+[![رَقّ](assets/images/raqq.svg "رَقّ")](/raqq)
 {:.sample}
 [اعرف أكثر...](/raqq){:.more}
 {:.links}
 
 كوفي رنا ⚠️🚧
 --------
-![كوفي رنا](assets/images/rana-kufi.svg "كوفي رنا")
+[![كوفي رنا](assets/images/rana-kufi.svg "كوفي رنا")](/rana-kufi)
 {:.sample}
 [اعرف أكثر...](/rana-kufi){:.more}
 {:.links}
 
 XITS Math
 ---------
-![XITS Math](assets/images/xits.svg "XITS Math")
+[![XITS Math](assets/images/xits.svg "XITS Math")](https://github.com/aliftype/xits/releases/latest)
 {:.sample}
 [نزّل الخط...](https://github.com/aliftype/xits/releases/latest){:.more}
 [ويكيبيديا](https://en.wikipedia.org/wiki/XITS_font_project) |

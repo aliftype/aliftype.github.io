@@ -8,9 +8,8 @@ direction: ltr
 
 Amiri
 -----
-![Amiri](assets/images/amiri.svg "Amiri")
+[![Amiri](assets/images/amiri.svg "Amiri")](/amiri/english)
 {:.sample}
-
 [Read more...](/amiri/english){:.more}
 [Wikipedia](https://en.wikipedia.org/wiki/Amiri_(typeface)) |
 [Google Fonts](https://fonts.google.com/specimen/Amiri)
@@ -18,7 +17,7 @@ Amiri
 
 Mada
 ----
-![Mada](assets/images/mada.svg "Mada")
+[![Mada](assets/images/mada.svg "Mada")](https://github.com/aliftype/mada/releases/latest)
 {:.sample}
 [Download...](https://github.com/aliftype/mada/releases/latest){:.more}
 [Github](https://github.com/aliftype/mada) |
@@ -27,7 +26,7 @@ Mada
 
 Reem Kufi
 ---------
-![Reem Kufi](assets/images/reem-kufi.svg "Reem Kufi")
+[![Reem Kufi](assets/images/reem-kufi.svg "Reem Kufi")](https://github.com/aliftype/reem-kufi/releases/latest)
 {:.sample}
 [Download...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
 [Github](https://github.com/aliftype/reem-kufi) |
@@ -36,7 +35,7 @@ Reem Kufi
 
 Aref Ruqaa
 ----------
-![Aref Ruqaa](assets/images/aref-ruqaa.svg "Aref Ruqaa")
+[![Aref Ruqaa](assets/images/aref-ruqaa.svg "Aref Ruqaa")](https://github.com/aliftype/aref-ruqaa/releases/latest)
 {:.sample}
 [Download...](https://github.com/aliftype/aref-ruqaa/releases/latest){:.more}
 [Github](https://github.com/aliftype/aref-ruqaa) |
@@ -45,7 +44,7 @@ Aref Ruqaa
 
 Qahiri
 ------
-![](assets/images/qahiri.svg "Qahiri")
+[![Qahiri](assets/images/qahiri.svg "Qahiri")](/qahiri/english)
 {:.sample}
 [Read more...](/qahiri/english){:.more}
 [Google Fonts](https://fonts.google.com/specimen/Qahiri)
@@ -53,7 +52,7 @@ Qahiri
 
 Anti
 ----
-![](assets/images/anti.svg "Anti")
+[![Anti](assets/images/anti.svg "Anti")](https://github.com/aliftype/anti/releases/latest)
 {:.sample}
 [Download...](https://github.com/aliftype/anti/releases/latest){:.more}
 [Github](https://github.com/aliftype/anti)
@@ -61,21 +60,21 @@ Anti
 
 Raqq
 ----
-![](assets/images/raqq.svg "Raqq")
+[![Raqq](assets/images/raqq.svg "Raqq")](/raqq/english)
 {:.sample}
 [Read more...](/raqq/english){:.more}
 {:.links}
 
 Rana Kufi ⚠️🚧
 ---------
-![](assets/images/rana-kufi.svg "Rana Kufi")
+[![Rana Kufi](assets/images/rana-kufi.svg "Rana Kufi")](/rana-kufi/english)
 {:.sample}
 [Read more...](/rana-kufi/english){:.more}
 {:.links}
 
 XITS Math
 ---------
-![](assets/images/xits.svg "XITS Math")
+[![XITS Math](assets/images/xits.svg "XITS Math")](https://github.com/aliftype/xits/releases/latest)
 {:.sample}
 [Download...](https://github.com/aliftype/xits/releases/latest){:.more}
 [Wikipedia](https://en.wikipedia.org/wiki/XITS_font_project) |
