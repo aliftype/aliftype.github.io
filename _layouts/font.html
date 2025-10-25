@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="/assets/images/{{ project }}/favicon.svg">
 
     <title>{{ page.title | default: config.title }} | {{ page.subtitle | default: config.subtitle }}</title>
+    <meta     name="author" content="Khaled Hosny" />
+    <meta     name="fediverse:creator" content="@khaled@typo.social" />
     <meta property="og:locale" content="{{ page.language }}">
     <meta        name="description" content="{{ messages[project].description | strip_html | strip }}">
     <meta property="og:description" content="{{ messages[project].description | strip_html | strip }}">

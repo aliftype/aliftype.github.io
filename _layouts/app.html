@@ -25,6 +25,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/assets/images/{{ project }}/favicon.svg">
     <title>{{ page.title | default: config.title }} | {{ page.subtitle | default: config.subtitle }}</title>
+    <meta     name="author" content="Khaled Hosny" />
+    <meta     name="fediverse:creator" content="@khaled@typo.social" />
+    <meta property="og:locale" content="{{ page.language }}">
+
     <link rel="apple-touch-icon" href="/assets/images/logo.png">
     <link rel="manifest" href="./app.webmanifest">
     <link rel="stylesheet" href="{{ "/assets/css/app.css?v=" | append: site.github.build_revision }}">
