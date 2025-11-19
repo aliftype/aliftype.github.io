@@ -1,4 +1,1 @@
-<picture>
- <source srcset="{{ include.src }}_dark.svg" media="(prefers-color-scheme: dark)" />
- <img src="{{ include.src }}.svg" />
-</picture>
+<picture><source srcset="{{ include.src }}_dark.svg" media="(prefers-color-scheme: dark)" /><img src="{{ include.src }}.svg" {% if include.alt %}alt="{{ include.alt }}" title="{{ include.alt }}"{% endif %} /></picture>
