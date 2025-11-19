@@ -1,0 +1,4 @@
+<picture>
+ <source srcset="{{ include.src }}_dark.svg" media="(prefers-color-scheme: dark)" />
+ <img src="{{ include.src }}.svg" />
+</picture>

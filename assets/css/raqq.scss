@@ -94,21 +94,12 @@ blockquote p {
   text-align: center;
 }
 
-blockquote.kufi p,
-blockquote.كوفي p {
-  font-size: 8cqw;
-  direction: rtl;
-  font-weight: normal;
-}
-
-blockquote.big p,
-blockquote.كبير p {
-  margin-block-start: 0px;
-  margin-block-end: .4em;
-}
-
 img {
   max-width: 100%;
+  margin: auto;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 #sitedesigner {
@@ -178,49 +169,6 @@ footer p {
 .lang-switcher-side,
 .lang-switcher-top {
   font-family: var(--latin-font);
-}
-
-.kufi p,
-.كوفي p {
-  font-family: var(--kufi-family);
-  color: var(--kufi-color);
-}
-
-.big p,
-.كبير p {
-  font-size: 500% !important;
-}
-
-.kufi em,
-.كوفي em {
-  font-style: normal;
-}
-
-.aligned p,
-.محاذى p {
-  text-align: start;
-  text-align-last: start;
-}
-
-.justified p,
-.مساوى p {
-  text-align: justify;
-  text-align-last: center;
-}
-
-.salt1,
-.بف١ {
-  font-variant-alternates: stylistic(alt-one);
-}
-
-.salt2,
-.بف٢ {
-  font-variant-alternates: stylistic(alt-two);
-}
-
-.ss01,
-.مف١ {
-  font-variant-alternates: styleset(dotless);
 }
 
 @media (max-width: 1280px) {
@@ -308,21 +256,3 @@ footer p {
     hyphens: revert;
   }
 }
-
-{% for i in (0..125) %}
-  {% assign ai = i
-    | replace: "0", "٠"
-    | replace: "1", "١"
-    | replace: "2", "٢"
-    | replace: "3", "٣"
-    | replace: "4", "٤"
-    | replace: "5", "٥"
-    | replace: "6", "٦"
-    | replace: "7", "٧"
-    | replace: "8", "٨"
-    | replace: "9", "٩"
-  %}
-  .m{{ i }},  .ش{{ ai }}  { font-variation-settings: 'MSHQ'  {{ i }}; }
-  .s{{ i }},  .س{{ ai }}  { font-variation-settings: 'SPAC'  {{ i }}; }
-  .s-{{ i }}, .س-{{ ai }} { font-variation-settings: 'SPAC' -{{ i }}; }
-{% endfor %}
