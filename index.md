@@ -67,6 +67,13 @@ redirect_from:
 [اعرف أكثر...](/raqq){:.more}
 {:.links}
 
+أسطرلاب
+-------
+[{% include picture src='assets/images/astrolabe' alt='أسطرلاب' %}](/astrolabe)
+{:.sample}
+[اعرف أكثر...](/astrolabe){:.more}
+{:.links}
+
 كوفي رنا ⚠️🚧
 --------
 [{% include picture src='assets/images/rana-kufi' alt='كوفي رنا' %}](/rana-kufi)

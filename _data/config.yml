@@ -119,3 +119,11 @@ rana-kufi:
     STORAGE_KEY: rana-kufi.text-v3
     SERVICE_WORKER: /rana-kufi/app/ServiceWorker.js
     toolbar: [remove-dots, nocolor-dots, small-dots, adjust-dots]
+
+astrolabe:
+  name: Astrolabe
+  version: "1.00"
+  title: أسطرلاب
+  subtitle: خط  بروح العلوم القديمة
+  title-separator:  "—"
+  download: True

@@ -65,6 +65,13 @@ Raqq
 [Read more...](/raqq/english){:.more}
 {:.links}
 
+Astrolabe
+---------
+[{% include picture src='assets/images/astrolabe' alt='Astrolabe' %}](/astrolabe/english)
+{:.sample}
+[Read more...](/astrolabe/english){:.more}
+{:.links}
+
 Rana Kufi ⚠️🚧
 ---------
 [{% include picture src='assets/images/rana-kufi' alt='Rana Kufi' %}](/rana-kufi/english)
