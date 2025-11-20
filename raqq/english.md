@@ -10,9 +10,7 @@ _Raqq_ (رَقّ) is a manuscript [Kufic] typeface that intends to revive (as fa
 
 _Raqq_ design is based mostly on the Quran that was endowed to a mosque in Tire in 262 AH by [Amajor al-Turki], then Damascus governor for the Abbasid caliph al-Mu’tamid, and specifically Cambridge University Library manuscript [MS Add.1116].
 
-_Raqq_ Raqq is a free, open-source project, and anyone is welcome to use and modify it under the terms of version 3 of [GNU Affero General Public License].
-
-_Raqq_ is designed and developed by _Khaled Hosny_, founder of Alif Type.
+_Raqq_ is a free, open-source project, and anyone is welcome to use and modify it under the terms of version 3 of [GNU Affero General Public License].
 
 ## Typeface Features
 Kufic is one of the oldest forms of Arabic writing, and all early Qur’ans we have access to have been written in some form of it. Kufic has many characteristic features that _Raqq_ tries to capture.
