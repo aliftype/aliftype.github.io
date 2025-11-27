@@ -132,9 +132,10 @@ footer {
 
 .links {
   padding: 0;
+  margin-block-end: 0;
   margin-block-start: 0;
-  border-block-start: 1px solid #e5e5e5;
-  border-width: 1px 0;
+  border-block-end: 1px solid #e5e5e5;
+  border-width: 2px 0;
   display: flex;
   justify-content: space-between;
   gap: 10px;
