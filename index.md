@@ -8,31 +8,41 @@ redirect_from:
   - /arabic
 ---
 
-أميري
------
-[{% include picture src='assets/images/amiri' alt='أميري' %}](/amiri)
+أسطرلاب
+-------
+[{% include picture src='assets/images/astrolabe' alt='أسطرلاب' %}](/astrolabe)
 {:.sample}
-[اعرف أكثر...](/amiri){:.more}
-[ويكيبيديا](https://ar.wikipedia.org/wiki/الخط_الأميري) |
-[خطوط جوجل](https://fonts.google.com/specimen/Amiri)
+[اعرف أكثر...](/astrolabe){:.more}
 {:.links}
 
-مدى
+رَقّ
 ----
-[{% include picture src='assets/images/mada' alt='مدى' %}](https://github.com/aliftype/mada/releases/latest)
+[{% include picture src='assets/images/raqq' alt='رَقّ' %}](/raqq)
 {:.sample}
-[نزّل الخط...](https://github.com/aliftype/mada/releases/latest){:.more}
-[جت‌هب](https://github.com/aliftype/mada) |
-[خطوط جوجل](https://fonts.google.com/specimen/Mada)
+[اعرف أكثر...](/raqq){:.more}
 {:.links}
 
-كوفي ريم
---------
-[{% include picture src='assets/images/reem-kufi' alt='كوفي ريم' %}](https://github.com/aliftype/reem-kufi/releases/latest)
+أنت
+---
+[{% include picture src='assets/images/anti' alt='أنت' %}](https://github.com/aliftype/anti/releases/latest)
 {:.sample}
-[نزّل الخط...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
-[جت‌هب](https://github.com/aliftype/reem-kufi) |
-[خطوط جوجل](https://fonts.google.com/specimen/Reem+Kufi)
+[نزّل الخط...](https://github.com/aliftype/anti/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/anti)
+{:.links}
+
+قاهري
+-----
+[{% include picture src='assets/images/qahiri' alt='قاهري' %}](/qahiri)
+{:.sample}
+[اعرف أكثر...](/qahiri){:.more}
+[خطوط جوجل](https://fonts.google.com/specimen/Qahiri)
+{:.links}
+
+كوفي رنا ⚠️🚧
+--------
+[{% include picture src='assets/images/rana-kufi' alt='كوفي رنا' %}](/rana-kufi)
+{:.sample}
+[اعرف أكثر...](/rana-kufi){:.more}
 {:.links}
 
 رقعة عارف
@@ -44,41 +54,31 @@ redirect_from:
 [خطوط جوجل](https://fonts.google.com/specimen/Aref+Ruqaa)
 {:.links}
 
-قاهري
------
-[{% include picture src='assets/images/qahiri' alt='قاهري' %}](/qahiri)
-{:.sample}
-[اعرف أكثر...](/qahiri){:.more}
-[خطوط جوجل](https://fonts.google.com/specimen/Qahiri)
-{:.links}
-
-أنت
----
-[{% include picture src='assets/images/anti' alt='أنت' %}](https://github.com/aliftype/anti/releases/latest)
-{:.sample}
-[نزّل الخط...](https://github.com/aliftype/anti/releases/latest){:.more}
-[جت‌هب](https://github.com/aliftype/anti)
-{:.links}
-
-رَقّ
-----
-[{% include picture src='assets/images/raqq' alt='رَقّ' %}](/raqq)
-{:.sample}
-[اعرف أكثر...](/raqq){:.more}
-{:.links}
-
-أسطرلاب
--------
-[{% include picture src='assets/images/astrolabe' alt='أسطرلاب' %}](/astrolabe)
-{:.sample}
-[اعرف أكثر...](/astrolabe){:.more}
-{:.links}
-
-كوفي رنا ⚠️🚧
+كوفي ريم
 --------
-[{% include picture src='assets/images/rana-kufi' alt='كوفي رنا' %}](/rana-kufi)
+[{% include picture src='assets/images/reem-kufi' alt='كوفي ريم' %}](https://github.com/aliftype/reem-kufi/releases/latest)
 {:.sample}
-[اعرف أكثر...](/rana-kufi){:.more}
+[نزّل الخط...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/reem-kufi) |
+[خطوط جوجل](https://fonts.google.com/specimen/Reem+Kufi)
+{:.links}
+
+مدى
+----
+[{% include picture src='assets/images/mada' alt='مدى' %}](https://github.com/aliftype/mada/releases/latest)
+{:.sample}
+[نزّل الخط...](https://github.com/aliftype/mada/releases/latest){:.more}
+[جت‌هب](https://github.com/aliftype/mada) |
+[خطوط جوجل](https://fonts.google.com/specimen/Mada)
+{:.links}
+
+أميري
+-----
+[{% include picture src='assets/images/amiri' alt='أميري' %}](/amiri)
+{:.sample}
+[اعرف أكثر...](/amiri){:.more}
+[ويكيبيديا](https://ar.wikipedia.org/wiki/الخط_الأميري) |
+[خطوط جوجل](https://fonts.google.com/specimen/Amiri)
 {:.links}
 
 XITS Math

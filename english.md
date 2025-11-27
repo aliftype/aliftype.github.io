@@ -6,31 +6,41 @@ language: en-US
 direction: ltr
 ---
 
-Amiri
------
-[{% include picture src='assets/images/amiri' alt='Amiri' %}](/amiri/english)
-{:.sample}
-[Read more...](/amiri/english){:.more}
-[Wikipedia](https://en.wikipedia.org/wiki/Amiri_(typeface)) |
-[Google Fonts](https://fonts.google.com/specimen/Amiri)
-{:.links}
-
-Mada
-----
-[{% include picture src='assets/images/mada' alt='Mada' %}](https://github.com/aliftype/mada/releases/latest)
-{:.sample}
-[Download...](https://github.com/aliftype/mada/releases/latest){:.more}
-[Github](https://github.com/aliftype/mada) |
-[Google Fonts](https://fonts.google.com/specimen/Mada)
-{:.links}
-
-Reem Kufi
+Astrolabe
 ---------
-[{% include picture src='assets/images/reem-kufi' alt='Reem Kufi' %}](https://github.com/aliftype/reem-kufi/releases/latest)
+[{% include picture src='assets/images/astrolabe' alt='Astrolabe' %}](/astrolabe/english)
 {:.sample}
-[Download...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
-[Github](https://github.com/aliftype/reem-kufi) |
-[Google Fonts](https://fonts.google.com/specimen/Reem+Kufi)
+[Read more...](/astrolabe/english){:.more}
+{:.links}
+
+Raqq
+----
+[{% include picture src='assets/images/raqq' alt='Raqq' %}](/raqq/english)
+{:.sample}
+[Read more...](/raqq/english){:.more}
+{:.links}
+
+Anti
+----
+[{% include picture src='assets/images/anti' alt='Anti' %}](https://github.com/aliftype/anti/releases/latest)
+{:.sample}
+[Download...](https://github.com/aliftype/anti/releases/latest){:.more}
+[Github](https://github.com/aliftype/anti)
+{:.links}
+
+Qahiri
+------
+[{% include picture src='assets/images/qahiri' alt='Qahiri' %}](/qahiri/english)
+{:.sample}
+[Read more...](/qahiri/english){:.more}
+[Google Fonts](https://fonts.google.com/specimen/Qahiri)
+{:.links}
+
+Rana Kufi ⚠️🚧
+---------
+[{% include picture src='assets/images/rana-kufi' alt='Rana Kufi' %}](/rana-kufi/english)
+{:.sample}
+[Read more...](/rana-kufi/english){:.more}
 {:.links}
 
 Aref Ruqaa
@@ -42,41 +52,31 @@ Aref Ruqaa
 [Google Fonts](https://fonts.google.com/specimen/Aref+Ruqaa)
 {:.links}
 
-Qahiri
-------
-[{% include picture src='assets/images/qahiri' alt='Qahiri' %}](/qahiri/english)
-{:.sample}
-[Read more...](/qahiri/english){:.more}
-[Google Fonts](https://fonts.google.com/specimen/Qahiri)
-{:.links}
-
-Anti
-----
-[{% include picture src='assets/images/anti' alt='Anti' %}](https://github.com/aliftype/anti/releases/latest)
-{:.sample}
-[Download...](https://github.com/aliftype/anti/releases/latest){:.more}
-[Github](https://github.com/aliftype/anti)
-{:.links}
-
-Raqq
-----
-[{% include picture src='assets/images/raqq' alt='Raqq' %}](/raqq/english)
-{:.sample}
-[Read more...](/raqq/english){:.more}
-{:.links}
-
-Astrolabe
+Reem Kufi
 ---------
-[{% include picture src='assets/images/astrolabe' alt='Astrolabe' %}](/astrolabe/english)
+[{% include picture src='assets/images/reem-kufi' alt='Reem Kufi' %}](https://github.com/aliftype/reem-kufi/releases/latest)
 {:.sample}
-[Read more...](/astrolabe/english){:.more}
+[Download...](https://github.com/aliftype/reem-kufi/releases/latest){:.more}
+[Github](https://github.com/aliftype/reem-kufi) |
+[Google Fonts](https://fonts.google.com/specimen/Reem+Kufi)
 {:.links}
 
-Rana Kufi ⚠️🚧
----------
-[{% include picture src='assets/images/rana-kufi' alt='Rana Kufi' %}](/rana-kufi/english)
+Mada
+----
+[{% include picture src='assets/images/mada' alt='Mada' %}](https://github.com/aliftype/mada/releases/latest)
 {:.sample}
-[Read more...](/rana-kufi/english){:.more}
+[Download...](https://github.com/aliftype/mada/releases/latest){:.more}
+[Github](https://github.com/aliftype/mada) |
+[Google Fonts](https://fonts.google.com/specimen/Mada)
+{:.links}
+
+Amiri
+-----
+[{% include picture src='assets/images/amiri' alt='Amiri' %}](/amiri/english)
+{:.sample}
+[Read more...](/amiri/english){:.more}
+[Wikipedia](https://en.wikipedia.org/wiki/Amiri_(typeface)) |
+[Google Fonts](https://fonts.google.com/specimen/Amiri)
 {:.links}
 
 XITS Math
