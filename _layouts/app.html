@@ -36,8 +36,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <body>
     {% include nav.html %}
     <header>
-      <p id="logo">أ</p>
-      <h1>{{ messages.foundry }}</h1>
+      <p id="logo"><a href="/{{ messages.suffix }}">أ</a></p>
+      <h1 id="foundry"><a href="/{{ messages.suffix }}">{{ messages.foundry }}</a></h1>
       <p class="lang-switcher-side">
       {% include language-switcher.html %}
       </p>
