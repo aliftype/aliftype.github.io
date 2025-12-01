@@ -1,9 +1,9 @@
 en-US:
   suffix: "english"
   foundry: Alif Type
-  description: <em>Alif Type</em> is a type foundry founded by <a target="_blank" href="https://khaledhosny.com"><em>Khaled Hosny</em></a>, and specializes in Arabic and mathematical typefaces.
+  description: <em>Alif Type</em> is a virtual type foundry that specializes in Arabic and mathematical typefaces.
   contact: Contact
-  contact-detail: Do you have questions or suggestions about our typefaces? Reach out!
+  contact-detail: Do you have questions or suggestions about my typefaces? Reach out by email
   facebook: Facebook
   instagram: Instagram
   google-fonts: Google Fonts
@@ -54,9 +54,9 @@ en-US:
 ar:
   suffix: ""
   foundry: حروف ألف
-  description: «حروف ألف» هو مسبك حروف رقمي أسسه <a target="_blank" href="https://khaledhosny.com">خالد حسني</a>، ويتخصص في الخطوط العربية والرياضياتية.
-  contact: تواصل معنا
-  contact-detail: هل لديك أي أسئلة أو اقتراحات عن خطوطنا؟ يمكن التواصل معنا عبر
+  description: «حروف ألف» هو مسبك حروف رقمي افتراضي يتخصص في الخطوط العربية والرياضياتية.
+  contact: تواصل معي
+  contact-detail: هل لديك أي أسئلة أو اقتراحات عن خطوطي؟ يمكن التواصل معي عبر بريدي الإلكتروني
   facebook: فيسبوك
   instagram: إنستاجرام
   google-fonts: خطوط جوجل
@@ -67,7 +67,7 @@ ar:
   try: جرِّب الخط
   artwork: أعمال فنية
   fonts: الخطوط
-  about: من نحن
+  about: من أنا
   amiri:
     name: أميري
     description: >
