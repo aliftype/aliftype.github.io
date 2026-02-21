@@ -6,7 +6,7 @@ language: en-US
 direction: ltr
 ---
 
-_Raqq_ (رَقّ) is a manuscript [Kufic] typeface that intends to revive (as faithfully as possible) the style of Kufic script used in writing the Qur’an in the third century AH. _Raqq_ is Arabic for parchment, on which early Qur’ans were written.
+_Raqq_ (رَقّ) is a manuscript [Kufic] typeface intended to revive (as faithfully as possible) the style of Kufic script used in writing the Qur’an in the third century AH. _Raqq_ is Arabic for parchment, on which early Qur’ans were written.
 
 _Raqq_ design is based mostly on the Quran that was endowed to a mosque in Tire in 262 AH by [Amajor al-Turki], then Damascus governor for the Abbasid caliph al-Mu’tamid, and specifically Cambridge University Library manuscript [MS Add.1116].
 
