@@ -32,7 +32,7 @@ All contributions are highly appreciated; you can help by:
 
 ## Reporting issues
 
-We use a bug tracker where bug reports and other suggestions should be sent.
+We use a [bug tracker](https://github.com/aliftype/amiri/issues) where bug reports and other suggestions should be sent.
 
 ## Thanks
 
