@@ -2,9 +2,11 @@ name: Alif Type
 title: حروف ألف
 description: مسبك حروف رقمي
 google_analytics: G-3DGD02NENY
+repository: aliftype/aliftype.github.io
 
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-github-metadata
 exclude:
   - app/harfbuzz
