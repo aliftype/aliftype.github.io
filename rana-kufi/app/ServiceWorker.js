@@ -1,4 +1,4 @@
-let CACHE = 'app-cache-v-8';
+let CACHE = 'app-cache-v-9';
 let FILES = [
   '/assets/images/app/remove-dots.svg',
   '/assets/images/app/small-dots.svg',
