@@ -38,6 +38,11 @@ en-US:
       Rana Kufi (كوفي رنا) is a Fatimid Kufic that follows the Fatimid Kufic
       rules and measurements pioneered by the late master of Arabic calligraphy
       Mohammad Abdul Qadir.
+  qashib:
+    name: Qashib
+    description: >
+      Qashib (قشيب) is a Kufic typeface that reimagines manuscript Kufic style
+      in a contemporary context.
   app:
     open: Open
     save: Save
@@ -88,6 +93,11 @@ ar:
     description: >
       «رنا كوفي» كوفي هو خط حاسوبي كوفي فاطمي يتبع القواعد الفنية الصحيحة للخط
       الكوفي الفاطمي كما وضعها الأستاذ محمد عبد القادر.
+  qashib:
+    name: قشيب
+    description: >
+      «قَشِيب» هو خط حاسوبي كوفي يهدف إلى إعادة تصوّر الخط الكوفي المصحفي في
+      سياق معاصر.
   app:
     open: افتح
     save: احفظ
