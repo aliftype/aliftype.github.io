@@ -3,24 +3,18 @@
 {% assign messages = site.data.messages[page.language] %}
 {% assign config = site.data.config[project] %}
 <html lang="{{ page.language }}" dir="{{ page.direction | default: rtl }}">
+  {% assign favicon_path = "/assets/images/" | append: project | append: "/favicon.svg" %}
+  {% assign og_image_path = "/assets/images/" | append: project | append: "/card.png" %}
+  {% assign description = messages[project].description %}
   <head>
-    {% include analytics.html %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/images/{{ project }}/favicon.svg">
-
-    <title>{{ page.title | default: config.title }} | {{ page.subtitle | default: config.subtitle }}</title>
-    <meta     name="author" content="Khaled Hosny" />
-    <meta     name="fediverse:creator" content="@khaled@typo.social" />
-    <meta property="og:locale" content="{{ page.language }}">
-    <meta        name="description" content="{{ messages[project].description | strip_html | strip }}">
-    <meta property="og:description" content="{{ messages[project].description | strip_html | strip }}">
-    <link      rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:site_name" content="{{ config.title }}">
-    <meta property="og:image" content="/assets/images/{{ project }}/card.png">
-
-    <link rel="stylesheet" href="{{ "/assets/css/" | append: project | append: ".css?v=" | append: site.github.build_revision }}">
+    {% include head.html
+      css=project
+      favicon=favicon_path
+      title=config.title
+      subtitle=config.subtitle
+      description=description
+      site_name=config.title
+      og_image=og_image_path %}
   </head>
   <body>
     {% include nav.html %}

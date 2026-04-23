@@ -2,23 +2,14 @@
 {% assign messages = site.data.messages[page.language] %}
 <html lang="{{ page.language }}" dir="{{ page.direction | default: rtl }}">
   <head>
-    {% include analytics.html %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/images/favicon.svg">
-
-    <title>{{ page.title | default: site.title }} | {{ page.subtitle | default: site.description }}</title>
-    <meta     name="author" content="Khaled Hosny" />
-    <meta     name="fediverse:creator" content="@khaled@typo.social" />
-    <meta property="og:locale" content="{{ page.language }}">
-    <meta        name="description" content="{{ messages.description | strip_html | strip }}">
-    <meta property="og:description" content="{{ messages.description | strip_html | strip }}">
-    <link      rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:image" content="{{ "/assets/images/card.png" | relative_url }}">
-
-    <link rel="stylesheet" href="{{ "/assets/css/default.css?v=" | append: site.github.build_revision }}">
+    {% include head.html
+      css="default"
+      favicon="/assets/images/favicon.svg"
+      title=site.title
+      subtitle=site.description
+      description=messages.description
+      site_name=site.title
+      og_image="/assets/images/card.png" %}
   </head>
   <body>
     {% include nav.html %}
