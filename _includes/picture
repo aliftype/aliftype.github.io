@@ -1,1 +1,2 @@
-<picture><source srcset="{{ include.src | append: '_dark.svg' | relative_url }}" media="(prefers-color-scheme: dark)" /><img src="{{ include.src | append: '.svg' | relative_url }}" {% if include.alt %}alt="{{ include.alt }}" title="{{ include.alt }}"{% endif %} /></picture>
+{% assign ext = include.ext | default: 'svg' -%}
+<picture><source srcset="{{ include.src | append: '_dark.' | append: ext | relative_url }}" media="(prefers-color-scheme: dark)" /><img src="{{ include.src | append: '.' | append: ext | relative_url }}" {% if include.alt %}alt="{{ include.alt }}" title="{{ include.alt }}"{% endif %} /></picture>
