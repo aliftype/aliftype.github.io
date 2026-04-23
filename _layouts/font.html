@@ -32,12 +32,12 @@
     {% include language-switcher.html %}
     </p>
     <h1 dir="rtl" id="title">{{ config.title }}{{ config.title-separator }}{{ config.subtitle }}</h1>
-    <section>
+    <main>
       {% if page.subtitle %}
       <h1>{{ page.title | default: config.title }} — {{ page.subtitle }}</h1>
       {% endif %}
       {{ content }}
-    </section>
+    </main>
 
     <footer>
       {% if project == "amiri" %}

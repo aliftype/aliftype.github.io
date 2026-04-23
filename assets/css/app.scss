@@ -40,7 +40,7 @@ body {
   grid-template-areas:
     ". nav nav"
     "header toolbar toolbar"
-    "header section alternates";
+    "header main alternates";
   gap: var(--main-gap);
 }
 
@@ -52,8 +52,8 @@ header {
   grid-area: header;
 }
 
-section {
-  grid-area: section;
+main {
+  grid-area: main;
 }
 
 footer {
@@ -152,7 +152,7 @@ footer {
   font-family: var(--latin-font);
 }
 
-section {
+main {
   overflow: scroll;
 }
 
@@ -309,7 +309,7 @@ input[type=range]::-moz-range-thumb {
       "nav"
       "lang-switcher"
       "toolbar"
-      "section"
+      "main"
       "alternates"
       "footer"
     ;

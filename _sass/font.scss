@@ -20,7 +20,7 @@ body {
   grid-template-areas:
     ". nav nav"
     "header title title"
-    "header section footer";
+    "header main footer";
   gap: var(--main-gap);
 }
 
@@ -36,8 +36,8 @@ header {
   grid-area: title;
 }
 
-section {
-  grid-area: section;
+main {
+  grid-area: main;
 }
 
 footer {
@@ -189,7 +189,7 @@ footer p {
       "nav"
       "lang-switcher"
       "title"
-      "section"
+      "main"
       "footer"
       "header"
     ;
@@ -246,7 +246,7 @@ footer p {
 }
 
 @media (max-width: 700px) {
-  section>p:lang(en-US) {
+  main>p:lang(en-US) {
     text-align: start;
     hyphens: revert;
   }

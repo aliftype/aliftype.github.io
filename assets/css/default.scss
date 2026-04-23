@@ -21,8 +21,8 @@ body {
   justify-content: space-between;
   grid-template-areas:
     ". nav nav"
-    "header section ."
-    "header section .";
+    "header main ."
+    "header main .";
   gap: var(--main-gap);
 }
 
@@ -34,8 +34,8 @@ header {
   grid-area: header;
 }
 
-section {
-  grid-area: section;
+main {
+  grid-area: main;
 }
 
 footer {
@@ -162,7 +162,7 @@ footer {
       "nav"
       "lang-switcher"
       "header"
-      "section"
+      "main"
       "footer"
     ;
   }
@@ -201,7 +201,7 @@ footer {
 }
 
 @media (max-width: 700px) {
-  section>p:lang(en-US) {
+  main>p:lang(en-US) {
     text-align: start;
     hyphens: revert;
   }
