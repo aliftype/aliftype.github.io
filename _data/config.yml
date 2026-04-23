@@ -118,7 +118,7 @@ rana-kufi:
       ]
     STORAGE_KEY: rana-kufi.text-v3
     SERVICE_WORKER: /rana-kufi/app/ServiceWorker.js
-    toolbar: [remove-dots, nocolor-dots, small-dots, adjust-dots]
+    toolbar: [remove-dots, small-dots, adjust-dots]
 
 astrolabe:
   name: Astrolabe
