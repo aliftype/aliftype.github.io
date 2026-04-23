@@ -1,5 +1,4 @@
 ---
-layout: font
 language: ar
 direction: rtl
 redirect_from:

@@ -1,7 +1,6 @@
 ---
 title: Qahiri
 subtitle: A manuscript Kufic typeface
-layout: font
 language: en-US
 direction: ltr
 ---

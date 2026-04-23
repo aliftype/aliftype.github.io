@@ -1,7 +1,6 @@
 ---
 title: Rana Kufi
 subtitle: A Fatimid Kufic typeface
-layout: font
 language: en-US
 direction: ltr
 ---

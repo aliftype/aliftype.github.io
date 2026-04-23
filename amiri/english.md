@@ -1,7 +1,6 @@
 ---
 title: Amiri
 subtitle: An Arabic text typeface
-layout: font
 language: en-US
 direction: ltr
 ---

@@ -10,3 +10,17 @@ plugins:
   - jekyll-github-metadata
 exclude:
   - app/harfbuzz
+
+defaults:
+  - scope: { path: amiri }
+    values: { layout: font }
+  - scope: { path: astrolabe }
+    values: { layout: font }
+  - scope: { path: qahiri }
+    values: { layout: font }
+  - scope: { path: qashib }
+    values: { layout: font }
+  - scope: { path: rana-kufi }
+    values: { layout: font }
+  - scope: { path: raqq }
+    values: { layout: font }

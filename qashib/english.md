@@ -1,7 +1,6 @@
 ---
 title: Qashib
 subtitle: A Kufic typeface in fresh garb
-layout: font
 language: en-US
 direction: ltr
 ---

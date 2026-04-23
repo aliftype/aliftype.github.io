@@ -1,7 +1,6 @@
 ---
 title: Raqq
 subtitle: Early manuscript Kufic typeface
-layout: font
 language: en-US
 direction: ltr
 ---
