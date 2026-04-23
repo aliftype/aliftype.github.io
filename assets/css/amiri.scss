@@ -1,18 +1,17 @@
 ---
 ---
 
-@import "variables";
+@use "variables";
+@use "colors";
+@use "fonts";
+@use "nav";
+@use "print";
+@use "logo";
 
 :root {
   --title-family: "Amiri", serif;
   --title-font-size: 84pt;
 }
-
-@import "colors";
-@import "fonts";
-@import "nav";
-@import "print";
-@import "logo";
 
 body {
   max-width: 1240px;

@@ -1,19 +1,18 @@
 ---
 ---
 
-@import "variables";
+@use "variables";
+@use "colors";
+@use "fonts";
+@use "nav";
+@use "button";
+@use "print";
+@use "logo";
 
 :root {
   --title-family: "Qahiri", serif;
   --title-font-size: 95pt;
 }
-
-@import "colors";
-@import "fonts";
-@import "nav";
-@import "button";
-@import "print";
-@import "logo";
 
 body {
   max-width: 1240px;

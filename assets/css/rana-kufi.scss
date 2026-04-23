@@ -1,18 +1,17 @@
 ---
 ---
 
-@import "variables";
+@use "variables";
+@use "colors";
+@use "fonts";
+@use "nav";
+@use "print";
+@use "logo";
 
 :root {
   --title-family: "Rana Kufi", serif;
   --title-font-size: 80pt;
 }
-
-@import "colors";
-@import "fonts";
-@import "nav";
-@import "print";
-@import "logo";
 
 body {
   max-width: 1240px;

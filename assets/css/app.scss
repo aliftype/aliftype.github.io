@@ -19,12 +19,12 @@
  *
  */
 
-@import "variables";
-@import "colors";
-@import "fonts";
-@import "nav";
-@import "button";
-@import "logo";
+@use "variables";
+@use "colors";
+@use "fonts";
+@use "nav";
+@use "button";
+@use "logo";
 
 body {
   max-width: 1240px;

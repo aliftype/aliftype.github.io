@@ -1,17 +1,16 @@
 ---
 ---
-@import "variables";
+@use "variables";
+@use "colors";
+@use "fonts";
+@use "nav";
+@use "print";
+@use "logo";
 
 :root {
   --title-family: "Astrolabe", serif;
   --title-font-size: 55pt;
 }
-
-@import "colors";
-@import "fonts";
-@import "nav";
-@import "print";
-@import "logo";
 
 body {
   max-width: 1240px;
