@@ -52,7 +52,6 @@ en-US:
     remove-dots: No dots
     nocolor-dots: No color dots
     small-dots: Small dots
-    adjust-dots: Adjust dots
     alternates: Glyph alternates
     font-size: Font size
 
@@ -107,6 +106,5 @@ ar:
     remove-dots: لا نقاط
     nocolor-dots: نقاط غير ملونة
     small-dots: نقاط صغيرة
-    adjust-dots: اضبط النقاط
     alternates: بدائل الحروف
     font-size: حجم الخط

@@ -31,7 +31,6 @@ class Layout {
 
     this.fontSize = document.getElementById("font-size-slider").value;
 
-    this._adjustDots = false;
     this._removeDots = false;
     this._smallDots = false;
     this._roundDots = false;
@@ -64,12 +63,6 @@ class Layout {
     from = this._text[from];
     to = this._text[to];
     return (from.x + from.ax) + (to.x + to.ax);
-  }
-
-  set adjustDots(v) {
-    if (v != this._adjustDots)
-      this._glyphs = null;
-    this._adjustDots = v;
   }
 
   set removeDots(v) {
@@ -213,13 +206,9 @@ class Layout {
     glyphs = this._buffer.shape(this._font, this._text, true, features);
 
     let x = this.start, y = this.baseline;
-    let maxY = Number.NEGATIVE_INFINITY;
     this._width = 0;
     glyphs.forEach(g => {
       let c = this._text[g.cl];
-
-      if (g.dy > 0 && g.isDot)
-        maxY = Math.max(maxY, g.dy);
 
       g.x = x + g.dx;
       g.y = y - g.dy;
@@ -231,11 +220,6 @@ class Layout {
       c.x = Math.min(c.x, g.x);
       if (g.x + g.ax > c.x + c.ax)
         c.ax += (g.x + g.ax) - (c.x + c.ax)
-    });
-
-    glyphs.forEach(g => {
-      if (g.isDot && this._adjustDots && g.dy > 0 && g.dy < maxY)
-        g.y += g.dy - maxY;
     });
 
     this._glyphs = glyphs;
@@ -347,14 +331,12 @@ export class View {
     }
     layout.fontSize = fontSize.value;
 
-    const adjustDots = document.getElementById("adjust-dots");
     const removeDots = document.getElementById("remove-dots");
     const nocolorDots = document.getElementById("nocolor-dots");
     const smallDots = document.getElementById("small-dots");
     const roundDots = document.getElementById("round-dots");
     const onum = document.getElementById("onum");
 
-    layout.adjustDots = adjustDots && adjustDots.checked;
     layout.removeDots = removeDots && removeDots.checked;
     layout.nocolorDots = nocolorDots && nocolorDots.checked;
     layout.smallDots = smallDots && smallDots.checked;
