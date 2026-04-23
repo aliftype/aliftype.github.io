@@ -14,7 +14,7 @@
 <link      rel="canonical" href="{{ page.url | absolute_url }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:site_name" content="{{ include.site_name }}">
-<meta property="og:image" content="{{ include.og_image }}">
+<meta property="og:image" content="{{ include.og_image | absolute_url }}">
 {% endif %}
 {% if include.manifest %}
 <link rel="apple-touch-icon" href="/assets/images/logo.png">
