@@ -59,7 +59,7 @@ _Qashib_ contains contextual alternates that are enabled automatically, like rai
 It also includes a number of stylistic sets that can be enabled manually for richer designs:
 
 `ss01` — Dot-less Letter Forms
-: Removes dots, mirroring the dotless style of early Kufic Qur’ans.
+: Losses the dots of dotted letters like ـbehـ, ـtehـ, etc.
 
 `ss02` — Rectangular Dots
 : Replaces the default round dots with the small rectangular dots characteristic of early Kufic manuscripts.
