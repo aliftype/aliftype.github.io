@@ -8,6 +8,13 @@ redirect_from:
   - /arabic
 ---
 
+قشيب
+----
+[{% include picture src='assets/images/qashib' alt='قشيب' %}](/qashib)
+{:.sample}
+[اعرف أكثر...](/qashib){:.more}
+{:.links}
+
 أسطرلاب
 -------
 [{% include picture src='assets/images/astrolabe' alt='أسطرلاب' %}](/astrolabe)

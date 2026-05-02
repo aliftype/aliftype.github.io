@@ -6,6 +6,13 @@ language: en-US
 direction: ltr
 ---
 
+Qashib
+------
+[{% include picture src='assets/images/qashib' alt='Qashib' %}](/qashib/english)
+{:.sample}
+[Read more...](/qashib/english){:.more}
+{:.links}
+
 Astrolabe
 ---------
 [{% include picture src='assets/images/astrolabe' alt='Astrolabe' %}](/astrolabe/english)
