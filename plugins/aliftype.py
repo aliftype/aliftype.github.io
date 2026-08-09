@@ -7,7 +7,6 @@ import unicodedata
 import sass
 from markdown.extensions import Extension
 from pelican import signals
-from pelican.contents import Page
 
 # Characters Ruby’s /\p{Word}/ matches, used by kramdown’s GFM parser to build
 # heading IDs.
@@ -48,30 +47,22 @@ def jsonify(value):
     return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
 
 
-def page_metadata(page):
+def page_metadata(generator, metadata):
     """Fill in what Jekyll used to derive from the page path."""
-    if not isinstance(page, Page):
-        return
-
-    fonts = page.settings["FONTS"]
-    parts = os.path.splitext(page.relative_source_path)[0].split(os.sep)
+    fonts = generator.settings["FONTS"]
+    parts = metadata["slug"].split("/")
     project = parts[0] if len(parts) > 1 and parts[0] in fonts else None
 
-    page.project = project
-    page.dir = "/".join(["", *parts[:-1], ""])
+    metadata["project"] = project
+    metadata["dir"] = "/".join(["", *parts[:-1], ""])
 
     if project:
-        # These were the per-path defaults in Jekyll’s _config.yml.
-        if "template" not in page.metadata:
-            page.template = "font"
-        if "title" not in page.metadata:
-            page.title = fonts[project]["title"]
+        # These were the per-path defaults in Jekyll's _config.yml.
+        metadata.setdefault("template", "font")
+        metadata.setdefault("title", fonts[project]["title"])
 
-    page.override_save_as = "/".join(parts) + ".html"
     if parts[-1] == "index":
-        page.override_url = "/".join(["", *parts[:-1], ""]).lstrip("/")
-    else:
-        page.override_url = page.override_save_as
+        metadata["url"] = "/".join([*parts[:-1], ""])
 
 
 def write_redirects(generator, writer):
@@ -108,6 +99,6 @@ def compile_sass(pelican):
 
 
 def register():
-    signals.content_object_init.connect(page_metadata)
+    signals.page_generator_context.connect(page_metadata)
     signals.page_writer_finalized.connect(write_redirects)
     signals.finalized.connect(compile_sass)
