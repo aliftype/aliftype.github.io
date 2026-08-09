@@ -1,7 +1,6 @@
 ---
 title: Alif Type
 subtitle: About
-template: default
 lang: en-US
 direction: ltr
 ---

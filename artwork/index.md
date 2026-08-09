@@ -1,7 +1,6 @@
 ---
 title: حروف ألف
 subtitle: أعمال فنية
-template: default
 lang: ar
 direction: rtl
 redirect_from: /raqq/artwork

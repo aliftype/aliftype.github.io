@@ -1,7 +1,6 @@
 ---
 title: حروف ألف
 subtitle: من أنا
-template: default
 lang: ar
 direction: rtl
 ---

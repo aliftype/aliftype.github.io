@@ -1,7 +1,6 @@
 ---
 title: حروف ألف
 subtitle: مسبك حروف عربي
-template: default
 lang: ar
 direction: rtl
 redirect_from: /arabic

@@ -1,7 +1,6 @@
 ---
 title: AlifType
 subtitle: Artwork
-template: default
 lang: en-US
 direction: ltr
 redirect_from: /raqq/artwork/english

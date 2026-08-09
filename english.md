@@ -1,7 +1,6 @@
 ---
 title: Alif Type
 subtitle: An Arabic type foundry
-template: default
 lang: en-US
 direction: ltr
 ---
