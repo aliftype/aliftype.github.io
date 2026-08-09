@@ -25,7 +25,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - uses: actions/configure-pages@v6
-      - run: pelican --settings publishconf.py
+      - run: pelican --settings publishconf.py --fatal errors
       - uses: actions/upload-pages-artifact@v5
         with:
           path: output
