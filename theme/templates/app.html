@@ -15,41 +15,40 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-{% assign project = page.dir | remove_first: "/" | remove_last: "/" | split: "/" | first %}
-{% assign messages = site.data.messages[page.language] %}
-{% assign config = site.data.config[project] %}
-<html lang="{{ page.language }}" dir="{{ page.direction | default: rtl }}">
-  {% assign favicon_path = "/assets/images/" | append: project | append: "/favicon.svg" %}
+{% import 'head.html' as _head with context %}
+{% set messages = MESSAGES[page.lang] %}
+{% set config = FONTS[page.project] %}
+<html lang="{{ page.lang }}" dir="{{ page.direction }}">
   <head>
-    {% include head.html
-      css="app"
-      favicon=favicon_path
-      title=config.title
-      subtitle=config.subtitle
-      manifest="./app.webmanifest" %}
+    {{ _head.head(
+      css="app",
+      favicon="/assets/images/" + page.project + "/favicon.svg",
+      title=page.title,
+      subtitle=page.subtitle,
+      manifest=page.dir + "app.webmanifest") }}
   </head>
   <body>
-    {% include nav.html %}
+    {% include 'nav.html' %}
     <header>
       <p id="logo"><a href="/{{ messages.suffix }}">أ</a></p>
       <h1 id="foundry"><a href="/{{ messages.suffix }}">{{ messages.foundry }}</a></h1>
       <p class="lang-switcher-side">
-      {% include language-switcher.html %}
+      {% include 'language-switcher.html' %}
       </p>
       <p class="description">{{ messages.description }}</p>
-      {% include contact.html %}
+      {% include 'contact.html' %}
     </header>
 
     <p class="lang-switcher-top">
-      {% include language-switcher.html %}
+      {% include 'language-switcher.html' %}
     </p>
 
     <div id="toolbar">
         <div id="menu">
           <div class="right">
-            <button type="button" class="button" id="open">{{ messages.app.open }}</button>
-            <button type="button" class="button" id="save">{{ messages.app.save }}</button>
-            <button type="button" class="button" id="clear">{{ messages.app.clear }}</button>
+            <button type="button" class="button" id="open">{{ messages.app['open'] }}</button>
+            <button type="button" class="button" id="save">{{ messages.app['save'] }}</button>
+            <button type="button" class="button" id="clear">{{ messages.app['clear'] }}</button>
           </div>
           <div class="left">
             {% for option in config.app.toolbar %}
@@ -61,22 +60,22 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
           </div>
         </div>
         <div class="font-size">
-          {% assign fontSize =  config.app.FONT_SIZE | default: 100 %}
-          <input type="range"  id="font-size-slider" min="10" max="500" value="{{ fontSize }}" title="{{ messages.app.font-size }}">
-          <input type="number" id="font-size-number" min="10" max="500" value="{{ fontSize }}" title="{{ messages.app.font-size }}">
+          {% set fontSize = config.app.FONT_SIZE|default(100) %}
+          <input type="range"  id="font-size-slider" min="10" max="500" value="{{ fontSize }}" title="{{ messages.app['font-size'] }}">
+          <input type="number" id="font-size-number" min="10" max="500" value="{{ fontSize }}" title="{{ messages.app['font-size'] }}">
         </div>
     </div>
     <main dir="rtl">
       <canvas tabindex="0" id="canvas"></canvas>
       <input type="text" id="hiddeninput">
     </main>
-    <p class="alternates-header" style="display: none;">{{ messages.app.alternates }}</p>
+    <p class="alternates-header" style="display: none;">{{ messages.app['alternates'] }}</p>
     <div id="alternates"></div>
     <footer>
-      {% include contact.html %}
+      {% include 'contact.html' %}
     </footer>
     <script type="module">
-        window.APP_CONFIG = {{ config.app | jsonify }};
+        window.APP_CONFIG = {{ config.app|jsonify }};
     </script>
     <script src="/app/app.js" type="module"></script>
   </body>

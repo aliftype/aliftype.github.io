@@ -1,11 +1,10 @@
 ---
 title: AlifType
 subtitle: Artwork
-layout: default
-language: en-US
+template: default
+lang: en-US
 direction: ltr
-redirect_from:
-    - /raqq/artwork/english
+redirect_from: /raqq/artwork/english
 ---
 
 ## Last three _Suras_ of the _Quran_

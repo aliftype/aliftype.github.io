@@ -1,8 +1,8 @@
 ---
 title: حروف ألف
 subtitle: من أنا
-layout: default
-language: ar
+template: default
+lang: ar
 direction: rtl
 ---
 

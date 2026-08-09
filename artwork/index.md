@@ -1,11 +1,10 @@
 ---
 title: حروف ألف
 subtitle: أعمال فنية
-layout: default
-language: ar
+template: default
+lang: ar
 direction: rtl
-redirect_from:
-    - /raqq/artwork
+redirect_from: /raqq/artwork
 ---
 
 ## سورة الإخلاص والمعوذتين

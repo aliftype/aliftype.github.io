@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% import 'head.html' as _head with context %}
+{% set messages = MESSAGES[page.lang] %}
+<html lang="{{ page.lang }}" dir="{{ page.direction }}">
+  <head>
+    {{ _head.head(
+      css="default",
+      favicon="/assets/images/favicon.svg",
+      title=page.title,
+      subtitle=page.subtitle,
+      description=messages.description,
+      site_name=SITENAME,
+      og_image="/assets/images/card.png") }}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <header>
+      <p id="logo"><a href="/{{ messages.suffix }}">أ</a></p>
+      <h1 id="foundry"><a href="/{{ messages.suffix }}">{{ messages.foundry }}</a></h1>
+      <p class="lang-switcher-side">
+      {% include 'language-switcher.html' %}
+      </p>
+      <p class="description">{{ messages.description }}</p>
+      {% include 'contact.html' %}
+    </header>
+
+    <p class="lang-switcher-top">
+    {% include 'language-switcher.html' %}
+    </p>
+    <main>
+      {{ page.content }}
+    </main>
+    <footer>
+      {% include 'contact.html' %}
+    </footer>
+  </body>
+</html>

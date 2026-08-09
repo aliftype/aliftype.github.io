@@ -1,11 +1,8 @@
----
----
-
-@use "variables";
-@use "fonts";
-@use "colors";
-@use "nav";
-@use "logo";
+@import "variables";
+@import "fonts";
+@import "colors";
+@import "nav";
+@import "logo";
 
 
 body {

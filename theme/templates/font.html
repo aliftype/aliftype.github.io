@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% import 'head.html' as _head with context %}
+{% set messages = MESSAGES[page.lang] %}
+{% set config = FONTS[page.project] %}
+<html lang="{{ page.lang }}" dir="{{ page.direction }}">
+  <head>
+    {{ _head.head(
+      css=page.project,
+      favicon="/assets/images/" + page.project + "/favicon.svg",
+      title=page.title,
+      subtitle=page.subtitle|default(config.subtitle),
+      description=messages.get(page.project, {}).description,
+      site_name=config.title,
+      og_image="/assets/images/" + page.project + "/card.png") }}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <header>
+      <p id="logo"><a href="/{{ messages.suffix }}">أ</a></p>
+      <h1 id="foundry"><a href="/{{ messages.suffix }}">{{ messages.foundry }}</a></h1>
+      <p class="lang-switcher-side">
+      {% include 'language-switcher.html' %}
+      </p>
+      <p>{{ messages.description }}</p>
+      {% include 'contact.html' %}
+    </header>
+
+    <p class="lang-switcher-top">
+    {% include 'language-switcher.html' %}
+    </p>
+    <h1 dir="rtl" id="title">{{ config.title }}{{ config['title-separator'] }}{{ config.subtitle }}</h1>
+    <main>
+      {% if page.subtitle %}
+      <h1>{{ page.title }} — {{ page.subtitle }}</h1>
+      {% endif %}
+      {{ page.content }}
+    </main>
+
+    <footer>
+      {% set version = config.version if page.project == "amiri" else "v" + config.version %}
+      {% if config.download %}
+      <p class="downloads"><a href="{{ GITHUB_OWNER_URL }}/{{ page.project }}/releases/download/{{ version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
+      {% endif %}
+      {% if config.app and page.project != "raqq" %}
+      <p class="downloads"><a href="{{ page.dir }}app/{{ messages.suffix }}">{{ messages.try }}</a></p>
+      {% endif %}
+      <p>{{ messages['github-long'] }} <br/><a href="{{ GITHUB_OWNER_URL }}/{{ page.project }}"><code>{{ GITHUB_HOSTNAME }}/{{ GITHUB_OWNER }}/{{ page.project }}</code></a></p>
+    </footer>
+  </body>
+</html>

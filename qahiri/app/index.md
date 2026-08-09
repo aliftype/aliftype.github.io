@@ -1,6 +1,6 @@
 ---
 subtitle: جرب الخط
-layout: app
-language: ar
+template: app
+lang: ar
 direction: rtl
 ---

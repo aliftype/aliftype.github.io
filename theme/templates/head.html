@@ -1,0 +1,26 @@
+{% macro head(css, favicon, title, subtitle, description=None, site_name=None, og_image=None, manifest=None) %}
+{% include 'analytics.html' %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{{ favicon }}">
+
+<title>{{ title }} | {{ subtitle }}</title>
+<meta     name="author" content="{{ AUTHOR }}" />
+<meta     name="fediverse:creator" content="{{ FEDIVERSE_CREATOR }}" />
+<meta property="og:locale" content="{{ page.lang }}">
+<meta property="og:type" content="website">
+{% if description %}
+{% set description = description|striptags|trim %}
+<meta        name="description" content="{{ description }}">
+<meta property="og:description" content="{{ description }}">
+<link      rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+<meta property="og:url" content="{{ SITEURL }}/{{ page.url }}">
+<meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:image" content="{{ SITEURL }}{{ og_image }}">
+{% endif %}
+{% if manifest %}
+<link rel="apple-touch-icon" href="/assets/images/logo.png">
+<link rel="manifest" href="{{ manifest }}">
+{% endif %}
+<link rel="stylesheet" href="/assets/css/{{ css }}.css?v={{ BUILD_REVISION }}">
+{% endmacro %}

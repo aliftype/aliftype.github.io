@@ -1,7 +1,7 @@
 ---
 title: Amiri
 subtitle: An Arabic text typeface
-language: en-US
+lang: en-US
 direction: ltr
 ---
 
@@ -19,7 +19,7 @@ Amiri is a free, open-source project that everyone is encouraged to use and modi
 
 ## Font features
 
-Amiri supports a large number of Arabic characters supported by Unicode, which includes support for Quranic notation, as well as many languages that use the Arabic script. The font also provides a wide range of OpenType features. Please refer to the [font documentation](./documentation/Documentation-Arabic.html) that describes many of these features.
+Amiri supports a large number of Arabic characters supported by Unicode, which includes support for Quranic notation, as well as many languages that use the Arabic script. The font also provides a wide range of OpenType features. Please refer to the [font documentation](/amiri/documentation/Documentation-Arabic.html) that describes many of these features.
 
 ## Participation
 

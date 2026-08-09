@@ -1,5 +1,5 @@
 ---
-language: ar
+lang: ar
 direction: rtl
 ---
 

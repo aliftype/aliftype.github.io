@@ -1,0 +1,6 @@
+invoke
+livereload
+libsass
+pelican[markdown]
+pelican-jinja2content
+PyYAML

@@ -1,7 +1,7 @@
 ---
 title: Raqq
 subtitle: Try the font
-layout: app
-language: en-US
+template: app
+lang: en-US
 direction: ltr
 ---

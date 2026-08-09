@@ -1,0 +1,5 @@
+{% if page.lang == "ar" %}
+  عربي | <a lang="en-US" href="{{ page.dir }}english" hreflang="en-US">English</a>
+{% else %}
+  English | <a lang="ar" href="{{ page.dir }}" hreflang="ar">عربي</a>
+{% endif %}

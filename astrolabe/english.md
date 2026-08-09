@@ -1,7 +1,7 @@
 ---
 title: Astrolabe
 subtitle: A Kufic typeface inspired by old sciences
-language: en-US
+lang: en-US
 direction: ltr
 ---
 
