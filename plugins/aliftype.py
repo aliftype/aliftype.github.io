@@ -5,7 +5,6 @@ import os
 import unicodedata
 
 import sass
-from jinja2 import Environment, FileSystemLoader
 from markdown.extensions import Extension
 from pelican import signals
 from pelican.contents import Page
@@ -15,9 +14,6 @@ from pelican.contents import Page
 WORD_CATEGORIES = frozenset(
     ("Lu", "Ll", "Lt", "Lm", "Lo", "Mn", "Mc", "Me", "Nd", "Nl", "Pc")
 )
-
-_pages = []
-
 
 def slugify(value, separator):
     """Generate heading IDs the way kramdown’s GFM parser does."""
@@ -78,27 +74,18 @@ def page_metadata(page):
         page.override_url = page.override_save_as
 
 
-def collect_pages(generator):
-    # Kept for write_redirects, which runs once the output has been written.
-    _pages[:] = generator.pages
-
-
-def write_redirects(pelican):
+def write_redirects(generator, writer):
     """Redirect pages for the old URLs, was jekyll-redirect-from."""
-    settings = pelican.settings
-    env = Environment(
-        loader=FileSystemLoader(os.path.join(settings["THEME"], "templates"))
-    )
-    template = env.get_template("redirect.html")
-    for page in _pages:
+    template = generator.get_template("redirect")
+    for page in generator.pages:
         if "redirect_from" not in page.metadata:
             continue
-        source = page.metadata["redirect_from"].strip("/") + ".html"
-        path = os.path.join(settings["OUTPUT_PATH"], source)
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        target = f"{settings['SITEURL']}/{page.url}"
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(template.render(target=target))
+        writer.write_file(
+            page.metadata["redirect_from"].strip("/") + ".html",
+            template,
+            generator.context,
+            target=f"{generator.settings['SITEURL']}/{page.url}",
+        )
 
 
 def compile_sass(pelican):
@@ -122,6 +109,5 @@ def compile_sass(pelican):
 
 def register():
     signals.content_object_init.connect(page_metadata)
-    signals.page_generator_finalized.connect(collect_pages)
+    signals.page_writer_finalized.connect(write_redirects)
     signals.finalized.connect(compile_sass)
-    signals.finalized.connect(write_redirects)
