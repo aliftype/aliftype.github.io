@@ -60,6 +60,7 @@ IGNORE_FILES = [".*"]
 PATH_METADATA = r"(?P<slug>.+)\.md"
 PAGE_URL = PAGE_LANG_URL = PAGE_SAVE_AS = PAGE_LANG_SAVE_AS = "{slug}.html"
 PAGE_TRANSLATION_ID = None
+PAGE_ORDER_BY = "relative_source_path"
 
 DIRECT_TEMPLATES = ["sitemap", "robots"]
 TEMPLATE_EXTENSIONS = [".html", ".xml", ".txt"]
