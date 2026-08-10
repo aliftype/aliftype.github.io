@@ -1,5 +1,5 @@
 {% if page.lang == "ar" %}
-  عربي | <a lang="en-US" href="{{ page.dir }}english" hreflang="en-US">English</a>
+  عربي | <a lang="en-US" href="{{ counterpart|default(page.dir ~ "english", true) }}" hreflang="en-US">English</a>
 {% else %}
-  English | <a lang="ar" href="{{ page.dir }}" hreflang="ar">عربي</a>
+  English | <a lang="ar" href="{{ counterpart|default(page.dir, true) }}" hreflang="ar">عربي</a>
 {% endif %}

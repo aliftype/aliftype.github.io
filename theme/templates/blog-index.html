@@ -1,15 +1,16 @@
+{% set messages = MESSAGES[lang] %}
+{% set page = {"lang": lang, "dir": "/blog/", "url": url, "direction": direction} %}
 <!DOCTYPE html>
 {% import 'head.html' as _head with context %}
-{% set messages = MESSAGES[page.lang] %}
-<html lang="{{ page.lang }}" dir="{{ page.direction }}">
+<html lang="{{ lang }}" dir="{{ direction }}">
   <head>
     {{ _head.head(
-      lang=page.lang,
-      url=page.url,
+      lang=lang,
+      url=url,
       css="default",
       favicon="/assets/images/favicon.svg",
-      title=page.title,
-      subtitle=page.subtitle,
+      title=messages.foundry,
+      subtitle=messages.blog,
       description=messages.description,
       site_name=SITENAME,
       og_image="/assets/images/card.png") }}
@@ -30,7 +31,13 @@
     {% include 'language-switcher.html' %}
     </p>
     <main>
-      {{ page.content }}
+      {% for post in posts if post.lang == lang %}
+      <h2><a href="/{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="date"><time datetime="{{ post.date.isoformat() }}">{{ post.locale_date }}</time></p>
+      {{ post.summary }}
+      {% else %}
+      <p>{{ messages['blog-empty'] }}</p>
+      {% endfor %}
     </main>
     <footer>
       {% include 'contact.html' %}

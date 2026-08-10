@@ -13,6 +13,8 @@ en-US:
   try: Try the font
   download: Download the font
   artwork: Artwork
+  blog: Blog
+  blog-empty: Nothing here yet.
   fonts: Fonts
   about: About
   amiri:
@@ -70,6 +72,8 @@ ar:
   download: نزِّل الخط
   try: جرِّب الخط
   artwork: أعمال فنية
+  blog: المدونة
+  blog-empty: لا شيء هنا حاليا.
   fonts: الخطوط
   about: من أنا
   amiri:

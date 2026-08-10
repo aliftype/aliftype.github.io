@@ -21,6 +21,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <html lang="{{ page.lang }}" dir="{{ page.direction }}">
   <head>
     {{ _head.head(
+      lang=page.lang,
+      url=page.url,
       css="app",
       favicon="/assets/images/" + page.project + "/favicon.svg",
       title=page.title,

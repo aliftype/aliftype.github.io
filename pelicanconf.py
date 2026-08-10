@@ -43,7 +43,7 @@ OUTPUT_PATH = "output"
 CACHE_PATH = "cache"
 THEME = "theme"
 
-ARTICLE_PATHS = []
+ARTICLE_PATHS = ["blog"]
 PAGE_PATHS = ["index.md", "english.md", "about", "artwork", *FONTS]
 PAGE_EXCLUDES = ["amiri/documentation"]
 STATIC_PATHS = [
@@ -59,10 +59,22 @@ IGNORE_FILES = [".*"]
 # URLs and file names follow the source tree, as they did under Jekyll.
 PATH_METADATA = r"(?P<slug>.+)\.md"
 PAGE_URL = PAGE_LANG_URL = PAGE_SAVE_AS = PAGE_LANG_SAVE_AS = "{slug}.html"
+ARTICLE_URL = "{slug}/english"
+ARTICLE_SAVE_AS = "{slug}/english.html"
+ARTICLE_LANG_URL, ARTICLE_LANG_SAVE_AS = ARTICLE_URL, ARTICLE_SAVE_AS
+ARTICLE_ORDER_BY = "reversed-date"
+DEFAULT_DATE_FORMAT = "%Y-%m-%d"
+
+# No categories, tags or authors: without templates for them Pelican falls
+# back to its own bundled theme, which looks nothing like the site.
+USE_FOLDER_AS_CATEGORY = False
+CATEGORY_SAVE_AS = TAG_SAVE_AS = AUTHOR_SAVE_AS = ""
 PAGE_TRANSLATION_ID = None
 PAGE_ORDER_BY = "relative_source_path"
 
-DIRECT_TEMPLATES = ["sitemap", "robots"]
+DIRECT_TEMPLATES = ["blog", "blog_english", "sitemap", "robots"]
+BLOG_SAVE_AS = "blog/index.html"
+BLOG_ENGLISH_SAVE_AS = "blog/english.html"
 TEMPLATE_EXTENSIONS = [".html", ".xml", ".txt"]
 SITEMAP_SAVE_AS = "sitemap.xml"
 ROBOTS_SAVE_AS = "robots.txt"
@@ -106,6 +118,7 @@ MARKDOWN = {
 
 DELETE_OUTPUT_DIRECTORY = True
 
+FEED_ALL_RSS = "blog/feed.xml"
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None

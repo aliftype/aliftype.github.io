@@ -65,6 +65,27 @@ def page_metadata(generator, metadata):
         metadata["url"] = "/".join([*parts[:-1], ""])
 
 
+def article_metadata(generator, metadata):
+    """Posts are a directory: index.md is the Arabic one, english.md the other.
+
+    Both share a slug, which is what pairs them as translations, and either can
+    stand alone.
+    """
+    parts = metadata["slug"].split("/")
+    metadata["slug"] = "/".join(parts[:-1])
+    metadata["dir"] = "/".join(["", *parts[:-1], ""])
+    if parts[-1] == "index":
+        metadata["url"] = "/".join([*parts[:-1], ""])
+        metadata["save_as"] = "/".join(parts) + ".html"
+
+
+def collect_posts(generator):
+    """Every post in every language. The context carries only the originals,
+    so a translated post would otherwise be missing from its own index."""
+    posts = [p for a in generator.articles for p in (a, *a.translations)]
+    generator.context["posts"] = sorted(posts, key=lambda p: p.date, reverse=True)
+
+
 def write_redirects(generator, writer):
     """Redirect pages for the old URLs, was jekyll-redirect-from."""
     template = generator.get_template("redirect")
@@ -100,5 +121,7 @@ def compile_sass(pelican):
 
 def register():
     signals.page_generator_context.connect(page_metadata)
+    signals.article_generator_context.connect(article_metadata)
+    signals.article_generator_finalized.connect(collect_posts)
     signals.page_writer_finalized.connect(write_redirects)
     signals.finalized.connect(compile_sass)

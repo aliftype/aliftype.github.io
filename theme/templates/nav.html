@@ -1,8 +1,9 @@
 <nav>
-    {% for entry in ["fonts", "artwork", "about"] %}
+    {% for entry in ["fonts", "blog", "artwork", "about"] %}
         {% set url = "/" if entry == "fonts" else "/" + entry + "/" %}
         {% set class = " fonts" if entry == "fonts" else "" %}
-        {% set class = class + " current" if url == page.dir else class %}
+        {% set here = page.dir == url if url == "/" else (page.dir or "").startswith(url) %}
+        {% set class = class + " current" if here else class %}
         <span class="{{ class }}">
             <a class="{{ class }}" href="{{ url }}{{ messages.suffix }}">{{ messages[entry] }}</a>
             {% if entry == "fonts" and page.project %}

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 {% import 'head.html' as _head with context %}
+{% set page = article %}
 {% set messages = MESSAGES[page.lang] %}
+{% set other = page.translations|first %}
+{% set counterpart = "/" ~ other.url if other else ("/blog/english" if page.lang == "ar" else "/blog/") %}
 <html lang="{{ page.lang }}" dir="{{ page.direction }}">
   <head>
     {{ _head.head(
@@ -9,8 +12,8 @@
       css="default",
       favicon="/assets/images/favicon.svg",
       title=page.title,
-      subtitle=page.subtitle,
-      description=messages.description,
+      subtitle=messages.blog,
+      description=page.summary|striptags|trim,
       site_name=SITENAME,
       og_image="/assets/images/card.png") }}
   </head>
@@ -30,6 +33,8 @@
     {% include 'language-switcher.html' %}
     </p>
     <main>
+      <h1>{{ page.title }}</h1>
+      <p class="date"><time datetime="{{ page.date.isoformat() }}">{{ page.locale_date }}</time></p>
       {{ page.content }}
     </main>
     <footer>
