@@ -17,3 +17,17 @@ nav .fonts {
 nav .current {
   color: light-dark(black, white);
 }
+
+.theme {
+  grid-area: theme;
+  margin: 0;
+}
+
+.theme-switcher {
+  font-size: 130%;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

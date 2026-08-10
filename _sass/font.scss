@@ -18,7 +18,7 @@ body {
   grid-template-rows: auto auto auto;
   justify-content: space-between;
   grid-template-areas:
-    ". nav nav"
+    "theme nav nav"
     "header title title"
     "header main footer";
   gap: var(--main-gap);
@@ -186,6 +186,7 @@ footer p {
     max-width: 700px;
     padding: 0 20px;
     grid-template-areas:
+      "theme"
       "nav"
       "lang-switcher"
       "title"

@@ -2,6 +2,14 @@
   color-scheme: light dark;
 }
 
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 body {
   background-color: var(--body-background-color);
   color: var(--body-color);
@@ -11,4 +19,13 @@ body {
   body * {
     font-palette: dark;
   }
+}
+
+/* font-palette cannot see color-scheme, so the choice is repeated here */
+:root[data-theme="dark"] body * {
+  font-palette: dark;
+}
+
+:root[data-theme="light"] body * {
+  font-palette: light;
 }

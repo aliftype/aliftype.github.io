@@ -35,7 +35,7 @@ body {
   grid-template-rows: auto 50px auto auto;
   justify-content: space-between;
   grid-template-areas:
-    ". nav nav"
+    "theme nav nav"
     "header toolbar toolbar"
     "header main alternates";
   gap: var(--main-gap);
@@ -303,6 +303,7 @@ input[type=range]::-moz-range-thumb {
     max-width: 700px;
     padding: 0 20px;
     grid-template-areas:
+      "theme"
       "nav"
       "lang-switcher"
       "toolbar"

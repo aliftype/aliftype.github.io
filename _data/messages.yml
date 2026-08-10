@@ -14,6 +14,10 @@ en-US:
   download: Download the font
   artwork: Artwork
   blog: Blog
+  theme:
+    auto: Auto
+    light: Light
+    dark: Dark
   blog-empty: Nothing here yet.
   fonts: Fonts
   about: About
@@ -73,6 +77,10 @@ ar:
   try: جرِّب الخط
   artwork: أعمال فنية
   blog: المدونة
+  theme:
+    auto: تلقائي
+    light: فاتح
+    dark: داكن
   blog-empty: لا شيء هنا حاليا.
   fonts: الخطوط
   about: من أنا

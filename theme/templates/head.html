@@ -26,4 +26,42 @@
 <link rel="alternate" type="application/rss+xml" title="{{ MESSAGES[lang].blog }}" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}">
 {% endif %}
 <link rel="stylesheet" href="/assets/css/{{ css }}.css?v={{ BUILD_REVISION }}">
+<script>
+  // Runs before the first paint, or the page flashes the wrong colours.
+  (function () {
+    var order = ["auto", "light", "dark"], labels = {{ MESSAGES[lang].theme|jsonify }};
+    var emoji = {auto: "\u25D0", light: "\u2600\uFE0E", dark: "\u263E"};
+    var chosen = localStorage.getItem("theme") || "auto";
+    function apply(theme) {
+      var root = document.documentElement;
+      if (theme === "auto") root.removeAttribute("data-theme");
+      else root.setAttribute("data-theme", theme);
+      document.querySelectorAll(".theme-switcher").forEach(function (button) {
+        button.textContent = emoji[theme];
+        button.title = labels[theme];
+        button.setAttribute("aria-label", labels[theme]);
+        button.hidden = false;
+      });
+      // <picture> picks its source by media query, which cannot see the
+      // choice, so the dark variants are switched on and off by hand.
+      document.querySelectorAll("picture > source[media]").forEach(function (source) {
+        if (!source.dataset.media) source.dataset.media = source.media;
+        if (source.dataset.media.indexOf("prefers-color-scheme") < 0) return;
+        source.media = theme === "auto" ? source.dataset.media
+                     : theme === "dark" ? "all" : "not all";
+      });
+    }
+    apply(chosen);
+    document.addEventListener("DOMContentLoaded", function () {
+      apply(chosen);
+      document.querySelectorAll(".theme-switcher").forEach(function (button) {
+        button.addEventListener("click", function () {
+          chosen = order[(order.indexOf(chosen) + 1) % order.length];
+          localStorage.setItem("theme", chosen);
+          apply(chosen);
+        });
+      });
+    });
+  })();
+</script>
 {% endmacro %}
