@@ -1,6 +1,6 @@
 amiri:
   name: Amiri
-  version: "1.003"
+  version: "1.003"  # amiri
   title: أميري
   subtitle: خط عربي للمتون
   title-separator: "\u200A—\u200A"
@@ -9,7 +9,7 @@ amiri:
 
 raqq:
   name: Raqq
-  version: "2.00"
+  version: "2.00"  # raqq
   title: رَقّ
   subtitle: كُوفِي المَصاحفِ الأولَى
   title-separator: "\u200A۝\u200A"
@@ -52,7 +52,7 @@ raqq:
 
 qahiri:
   name: Qahiri
-  version: "4.00"
+  version: "4.00"  # qahiri
   title: قاهري
   subtitle: خط كوفي مصحفي
   title-separator: "—"
@@ -87,7 +87,7 @@ qahiri:
 
 rana-kufi:
   name: Rana Kufi
-  version: "0.4"
+  version: "0.4"  # rana-kufi
   title: كوفي رنا
   subtitle: خط كوفي فاطمي
   title-separator: "\u200A۝\u200A"
@@ -122,7 +122,7 @@ rana-kufi:
 
 astrolabe:
   name: Astrolabe
-  version: "1.00"
+  version: "1.00"  # astrolabe
   title: أسطرلاب
   subtitle: خط  بروح العلوم القديمة
   title-separator: "—"
@@ -130,7 +130,7 @@ astrolabe:
 
 qashib:
   name: Qashib
-  version: "2.00"
+  version: "2.00"  # qashib
   title: قشيب
   subtitle: خط كوفي في ثوب قشيب
   title-separator: "—"

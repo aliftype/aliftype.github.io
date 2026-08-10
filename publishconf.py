@@ -4,7 +4,7 @@
 import os
 import sys
 
-sys.path.append(os.curdir)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pelicanconf import *  # noqa: F403
 
 SITEURL = "https://aliftype.com"

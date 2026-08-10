@@ -1,0 +1,49 @@
+name: Update fonts
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-fonts
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt uharfbuzz playwright
+      - run: playwright install --with-deps chromium
+      - run: sudo apt-get install --yes woff2
+
+      - name: Update the fonts
+        run: scripts/update-fonts.sh "$RUNNER_TEMP/body.md"
+
+      - name: Open a pull request
+        run: |
+          if git diff --quiet; then
+            echo "Fonts are up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C update-fonts
+          git commit -am "Update fonts"
+          git push -f origin update-fonts
+          if gh pr view update-fonts --json number >/dev/null 2>&1; then
+            gh pr edit update-fonts --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh pr create --title "Update fonts" --body-file "$RUNNER_TEMP/body.md"
+          fi
