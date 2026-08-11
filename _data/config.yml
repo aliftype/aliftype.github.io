@@ -87,7 +87,7 @@ qahiri:
 
 rana-kufi:
   name: Rana Kufi
-  version: "0.4"  # rana-kufi
+  version: "0.002"  # rana-kufi
   title: كوفي رنا
   subtitle: خط كوفي فاطمي
   title-separator: "\u200A۝\u200A"
