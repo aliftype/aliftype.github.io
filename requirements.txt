@@ -1,3 +1,4 @@
+PyICU
 invoke
 livereload
 libsass

@@ -4,9 +4,11 @@ import json
 import os
 import unicodedata
 
+import icu
 import sass
 from markdown.extensions import Extension
 from pelican import signals
+from pelican.contents import Article
 
 # Characters Ruby’s /\p{Word}/ matches, used by kramdown’s GFM parser to build
 # heading IDs.
@@ -41,6 +43,24 @@ def picture(src, alt=None, ext="svg"):
         f' media="(prefers-color-scheme: dark)" />'
         f'<img src="{src}.{ext}"{attrs} /></picture>'
     )
+
+
+def long_date(date, locale):
+    calendar = icu.GregorianCalendar(icu.TimeZone.getGMT())
+    calendar.set(date.year, date.month - 1, date.day)
+    when = calendar.getTime()
+
+    gregorian = icu.Locale(locale)
+    hijri = icu.Locale(locale)
+    hijri.setKeywordValue("calendar", "islamic-umalqura")
+    pattern = icu.DateTimePatternGenerator.createInstance(gregorian).getBestPattern("yMMMMd")
+
+    def written(locale):
+        formatter = icu.SimpleDateFormat(pattern, locale)
+        formatter.setTimeZone(icu.TimeZone.getGMT())
+        return formatter.format(when)
+
+    return f"{written(hijri)} — {written(gregorian)}"
 
 
 def jsonify(value):
@@ -119,7 +139,15 @@ def compile_sass(pelican):
             f.write(css)
 
 
+def forget_default_author(content):
+    if isinstance(content, Article) and "author" not in content.metadata:
+        for attribute in ("author", "authors"):
+            if hasattr(content, attribute):
+                delattr(content, attribute)
+
+
 def register():
+    signals.content_object_init.connect(forget_default_author)
     signals.page_generator_context.connect(page_metadata)
     signals.article_generator_context.connect(article_metadata)
     signals.article_generator_finalized.connect(collect_posts)

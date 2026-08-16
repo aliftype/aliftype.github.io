@@ -18,6 +18,7 @@ en-US:
     auto: Auto
     light: Light
     dark: Dark
+  byline: "By {author} on {date}"
   blog-empty: Nothing here yet.
   fonts: Fonts
   about: About
@@ -81,6 +82,7 @@ ar:
     auto: تلقائي
     light: فاتح
     dark: داكن
+  byline: "كتبه {author} في {date}"
   blog-empty: لا شيء هنا حاليا.
   fonts: الخطوط
   about: من أنا

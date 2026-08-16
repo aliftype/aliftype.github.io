@@ -24,6 +24,8 @@ FEDIVERSE_CREATOR = "@khaled@typo.social"
 
 TIMEZONE = "Africa/Cairo"
 DEFAULT_LANG = "ar"
+# ICU locales, for formatting like calendar and digits
+LOCALES = {"ar": "ar@numbers=arab", "en-US": "en_GB"}
 
 FONTS = _data("config.yml")
 MESSAGES = _data("messages.yml")
@@ -87,7 +89,7 @@ JINJA_ENVIRONMENT = {
     "keep_trailing_newline": True,
 }
 JINJA_GLOBALS = {"picture": aliftype.picture}
-JINJA_FILTERS = {"jsonify": aliftype.jsonify}
+JINJA_FILTERS = {"jsonify": aliftype.jsonify, "long_date": aliftype.long_date}
 
 MARKDOWN = {
     "extensions": [

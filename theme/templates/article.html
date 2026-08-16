@@ -35,7 +35,8 @@
     </p>
     <main>
       <h1>{{ page.title }}</h1>
-      <p class="date"><time datetime="{{ page.date.isoformat() }}">{{ page.locale_date }}</time></p>
+      {% set stamp %}<time datetime="{{ page.date.isoformat() }}">{{ page.date|long_date(LOCALES[page.lang]) }}</time>{% endset %}
+      <p class="byline">{% if page.author %}{{ messages.byline.format(author=page.author, date=stamp) }}{% else %}{{ stamp }}{% endif %}</p>
       {{ page.content }}
     </main>
     <footer>

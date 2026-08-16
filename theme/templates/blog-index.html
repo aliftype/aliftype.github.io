@@ -34,7 +34,8 @@
     <main>
       {% for post in posts if post.lang == lang %}
       <h2><a href="/{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="date"><time datetime="{{ post.date.isoformat() }}">{{ post.locale_date }}</time></p>
+      {% set stamp %}<time datetime="{{ post.date.isoformat() }}">{{ post.date|long_date(LOCALES[lang]) }}</time>{% endset %}
+      <p class="byline">{% if post.author %}{{ messages.byline.format(author=post.author, date=stamp) }}{% else %}{{ stamp }}{% endif %}</p>
       {{ post.summary }}
       {% else %}
       <p>{{ messages['blog-empty'] }}</p>
