@@ -5,6 +5,11 @@
 <loc>{{ SITEURL }}/{{ page.url }}</loc>
 </url>
 {% endfor %}
+{% for messages in MESSAGES.values() %}
+<url>
+<loc>{{ SITEURL }}/blog/{{ messages.suffix }}</loc>
+</url>
+{% endfor %}
 {% for file in staticfiles if file.url.endswith(".html") %}
 <url>
 <loc>{{ SITEURL }}/{{ file.url }}</loc>

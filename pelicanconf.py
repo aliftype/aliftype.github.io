@@ -60,7 +60,8 @@ IGNORE_FILES = [".*"]
 
 # URLs and file names follow the source tree, as they did under Jekyll.
 PATH_METADATA = r"(?P<slug>.+)\.md"
-PAGE_URL = PAGE_LANG_URL = PAGE_SAVE_AS = PAGE_LANG_SAVE_AS = "{slug}.html"
+PAGE_URL = PAGE_LANG_URL = "{slug}"
+PAGE_SAVE_AS = PAGE_LANG_SAVE_AS = "{slug}.html"
 ARTICLE_URL = "{slug}/english"
 ARTICLE_SAVE_AS = "{slug}/english.html"
 ARTICLE_LANG_URL, ARTICLE_LANG_SAVE_AS = ARTICLE_URL, ARTICLE_SAVE_AS

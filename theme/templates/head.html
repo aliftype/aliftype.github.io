@@ -9,13 +9,17 @@
 <meta     name="fediverse:creator" content="{{ FEDIVERSE_CREATOR }}" />
 <meta property="og:locale" content="{{ lang }}">
 <meta property="og:type" content="website">
+<link      rel="canonical" href="{{ SITEURL }}/{{ url }}">
+<meta property="og:url" content="{{ SITEURL }}/{{ url }}">
 {% if description %}
 {% set description = description|striptags|trim %}
 <meta        name="description" content="{{ description }}">
 <meta property="og:description" content="{{ description }}">
-<link      rel="canonical" href="{{ SITEURL }}/{{ url }}">
-<meta property="og:url" content="{{ SITEURL }}/{{ url }}">
+{% endif %}
+{% if site_name %}
 <meta property="og:site_name" content="{{ site_name }}">
+{% endif %}
+{% if og_image %}
 <meta property="og:image" content="{{ SITEURL }}{{ og_image }}">
 {% endif %}
 {% if manifest %}
