@@ -45,6 +45,11 @@ en-US:
       Rana Kufi (كوفي رنا) is a Fatimid Kufic that follows the Fatimid Kufic
       rules and measurements pioneered by the late master of Arabic calligraphy
       Mohammad Abdul Qadir.
+  astrolabe:
+    name: Astrolabe
+    description: >
+      Astrolabe is a Kufic typeface inspired by Arabic inscription on old
+      scientific instruments like Astrolabes and Quadrants.
   qashib:
     name: Qashib
     description: >
@@ -106,6 +111,11 @@ ar:
     description: >
       «رنا كوفي» كوفي هو خط حاسوبي كوفي فاطمي يتبع القواعد الفنية الصحيحة للخط
       الكوفي الفاطمي كما وضعها الأستاذ محمد عبد القادر.
+  astrolabe:
+    name: أسطرلاب
+    description: >
+      «أسطرلاب» هو خط كوفي مستوحى من خطوط الآلات الفلكية القديمة مثل
+      الأسطرلابات والأرباع.
   qashib:
     name: قشيب
     description: >
