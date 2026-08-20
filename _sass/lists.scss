@@ -1,0 +1,8 @@
+@counter-style arabic-indic-dash {
+  system: extends arabic-indic;
+  suffix: "– ";
+}
+
+ol:lang(ar) {
+  list-style-type: arabic-indic-dash;
+}
