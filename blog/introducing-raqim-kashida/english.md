@@ -10,7 +10,7 @@ I’m working on a new project and the question of Arabic justification came up 
 
 [_Kashida_](https://en.wikipedia.org/wiki/Kashida) (which is a Persian word, also known as _tatweel_ —elongation— in Arabic, among other names) is a horizontal extension of the connecting stroke between two Arabic letters. It is one of the two commonly used ways of elongating Arabic words to fill the line during justification (the other way is using alternate wide forms of some letters).
 
-Here is Arabic poetry justified with a mix of _kashida_ and alternate glyphs (calligraphy by the infamous [Mehmed Şevki Efendi](https://en.wikipedia.org/wiki/Mehmed_%C5%9Eevk%C3%AE_Efendi)):
+Here is Arabic poetry justified with a mix of _kashida_ and alternate glyphs (by the renowned calligrapher [Mehmed Şevki Efendi](https://en.wikipedia.org/wiki/Mehmed_%C5%9Eevk%C3%AE_Efendi)):
 
 ![Kashida in calligraphy]({attach}calligraphy.jpg "Kashida in calligraphy")
 
