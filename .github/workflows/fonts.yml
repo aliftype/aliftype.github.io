@@ -40,11 +40,21 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -C update-fonts
-          git commit -am "Update fonts"
-          git push -f origin update-fonts
-          if gh pr view update-fonts --json number >/dev/null 2>&1; then
-            gh pr edit update-fonts --body-file "$RUNNER_TEMP/body.md"
+          open_pr=$(gh pr list --state open \
+            --search "author:app/github-actions head:update-fonts-" \
+            --json number --jq '.[0].number // ""')
+          if [ -n "$open_pr" ]; then
+            branch=$(gh pr view "$open_pr" --json headRefName --jq .headRefName)
           else
-            gh pr create --title "Update fonts" --body-file "$RUNNER_TEMP/body.md"
+            branch="update-fonts-$(date -u +%Y-%m-%d)"
+          fi
+          git switch -C "$branch"
+          git commit -am "Update fonts"
+          git push -f origin "$branch"
+          if [ -n "$open_pr" ]; then
+            gh pr edit "$open_pr" --body-file "$RUNNER_TEMP/body.md"
+          elif ! gh pr create --head "$branch" --title "Update fonts" \
+              --body-file "$RUNNER_TEMP/body.md"; then
+            git push --delete origin "$branch"
+            exit 1
           fi
