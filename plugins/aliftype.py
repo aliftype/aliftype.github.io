@@ -121,20 +121,17 @@ def redirect_path(url):
 def write_redirects(generator, writer):
     """Redirect pages for the old URLs, was jekyll-redirect-from."""
     template = generator.get_template("redirect")
-    redirects = dict(generator.settings["REDIRECTS"])
     for page in generator.pages:
         sources = page.metadata.get("redirect_from", [])
         if isinstance(sources, str):
             sources = [sources]
         for source in sources:
-            redirects[source] = f"/{page.url}"
-    for source, target in redirects.items():
-        writer.write_file(
-            redirect_path(source),
-            template,
-            generator.context,
-            target=f"{generator.settings['SITEURL']}{target}",
-        )
+            writer.write_file(
+                redirect_path(source),
+                template,
+                generator.context,
+                target=f"{generator.settings['SITEURL']}/{page.url}",
+            )
 
 
 def compile_sass(pelican):

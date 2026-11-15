@@ -1,6 +1,6 @@
 #!/bin/sh
-# Bring the fonts in line with the upstream releases: versions, whole fonts and
-# documentation from the release archives, web fonts subset to the characters
+# Bring the fonts in line with the upstream releases: versions and whole fonts
+# from the release archives, web fonts subset to the characters
 # the site renders and compressed with woff2_compress.
 #
 # Writes a combined report to $1 if given. Needs python with the requirements

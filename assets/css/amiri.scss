@@ -17,3 +17,27 @@
     font-size: 15vi;
   }
 }
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 2px solid var(--kufi-color);
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+.tnum { font-variant-numeric: tabular-nums; }
+.ss01 { font-feature-settings: "ss01" 1; }
+.ss02 { font-feature-settings: "ss02" 1; }
+.ss03 { font-feature-settings: "ss03" 1; }
+.ss04 { font-feature-settings: "ss04" 1; }
+.ss05 { font-feature-settings: "ss05" 1; }
+.ss06 { font-feature-settings: "ss06" 1; }
+.ss07 { font-feature-settings: "ss07" 1; }
+.ss08 { font-feature-settings: "ss08" 1; }

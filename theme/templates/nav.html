@@ -8,8 +8,9 @@
             <a class="{{ class }}" href="{{ url }}{{ messages.suffix }}">{{ messages[entry] }}</a>
             {% if entry == "fonts" and page.project %}
                     <span> <span class="arrow">></span>
-                    {% if page.template == "app" %}
-                        <a href="/fonts/{{ page.project }}/{{ messages.suffix }}">{{ messages.get(page.project, {}).name }}</a> <span class="arrow">></span> {{ messages.try }}
+                    {% set breadcrumb = "try" if page.template == "app" else page.breadcrumb %}
+                    {% if breadcrumb %}
+                        <a href="/fonts/{{ page.project }}/{{ messages.suffix }}">{{ messages.get(page.project, {}).name }}</a> <span class="arrow">></span> {{ messages[breadcrumb] }}
                     {% else %}
                         {{ messages.get(page.project, {}).name }}
                     {% endif %}

@@ -2,8 +2,7 @@
 """Sync the font versions and assets with the upstream releases.
 
 Asks GitHub for the latest release of every font in _data/config.yml, then
-updates the version, the fonts under assets/fonts and the documentation pages
-to match it.
+updates the version and the fonts under assets/fonts to match it.
 """
 
 import argparse
@@ -66,7 +65,6 @@ def set_version(text, font, version):
 
 
 def sync(font, config, release, paths, changed, notes):
-    docs = paths.root / "fonts" / font / "documentation"
     with release_files(font, config, release) as files:
         if files is None:
             notes.append(f"{config['name']}: no archive in `{release}`, skipped")
@@ -74,19 +72,19 @@ def sync(font, config, release, paths, changed, notes):
         for source in sorted(files.rglob("*")):
             if source.is_dir():
                 continue
-            for target in (paths.fonts / source.name, docs / source.name):
-                if not target.exists():
-                    continue
-                if target.read_bytes() == source.read_bytes():
-                    continue
-                shutil.copyfile(source, target)
-                changed.append(target.relative_to(paths.root))
+            target = paths.fonts / source.name
+            if not target.exists():
+                continue
+            if target.read_bytes() == source.read_bytes():
+                continue
+            shutil.copyfile(source, target)
+            changed.append(target.relative_to(paths.root))
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=pathlib.Path, required=True,
-                        help="the site, holding the per font documentation")
+                        help="the site")
     parser.add_argument("--config", type=pathlib.Path, required=True,
                         help="the yaml listing the fonts")
     parser.add_argument("--fonts", type=pathlib.Path, required=True,
