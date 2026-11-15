@@ -66,7 +66,7 @@ def set_version(text, font, version):
 
 
 def sync(font, config, release, paths, changed, notes):
-    docs = paths.root / font / "documentation"
+    docs = paths.root / "fonts" / font / "documentation"
     with release_files(font, config, release) as files:
         if files is None:
             notes.append(f"{config['name']}: no archive in `{release}`, skipped")

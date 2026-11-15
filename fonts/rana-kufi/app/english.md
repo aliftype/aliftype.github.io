@@ -1,7 +1,8 @@
 ---
-title: Raqq
+title: Rana Kufi
 subtitle: Try the font
 template: app
 lang: en-US
 direction: ltr
+redirect_from: /rana-kufi/app/english
 ---

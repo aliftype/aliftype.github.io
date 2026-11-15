@@ -3,6 +3,7 @@ title: Rana Kufi
 subtitle: A Fatimid Kufic typeface
 lang: en-US
 direction: ltr
+redirect_from: /rana-kufi/english
 ---
 
 _Rana Kufi_ (كوفي رنا) is a Fatimid [Kufic][1] that follows the Fatimid Kufic rules and
@@ -29,5 +30,5 @@ glyph alternates.
 
 [1]: https://en.wikipedia.org/wiki/Kufic
 [2]: https://ar.wikipedia.org/wiki/محمد_عبد_القادر_عبد_الله_(خطاط)
-[3]: https://aliftype.com/rana-kufi/app/
+[3]: https://aliftype.com/fonts/rana-kufi/app/
 [4]: https://github.com/aliftype/rana-kufi/blob/master/LICENSE

@@ -7,26 +7,26 @@ direction: ltr
 
 Qashib
 ------
-[{{ picture('assets/images/qashib', 'Qashib') }}](/qashib/english)
+[{{ picture('assets/images/qashib', 'Qashib') }}](/fonts/qashib/english)
 {:.sample}
 
-[Read more...](/qashib/english){:.more}
+[Read more...](/fonts/qashib/english){:.more}
 {:.links}
 
 Astrolabe
 ---------
-[{{ picture('assets/images/astrolabe', 'Astrolabe') }}](/astrolabe/english)
+[{{ picture('assets/images/astrolabe', 'Astrolabe') }}](/fonts/astrolabe/english)
 {:.sample}
 
-[Read more...](/astrolabe/english){:.more}
+[Read more...](/fonts/astrolabe/english){:.more}
 {:.links}
 
 Raqq
 ----
-[{{ picture('assets/images/raqq', 'Raqq') }}](/raqq/english)
+[{{ picture('assets/images/raqq', 'Raqq') }}](/fonts/raqq/english)
 {:.sample}
 
-[Read more...](/raqq/english){:.more}
+[Read more...](/fonts/raqq/english){:.more}
 {:.links}
 
 Anti
@@ -40,19 +40,19 @@ Anti
 
 Qahiri
 ------
-[{{ picture('assets/images/qahiri', 'Qahiri') }}](/qahiri/english)
+[{{ picture('assets/images/qahiri', 'Qahiri') }}](/fonts/qahiri/english)
 {:.sample}
 
-[Read more...](/qahiri/english){:.more}
+[Read more...](/fonts/qahiri/english){:.more}
 [Google Fonts](https://fonts.google.com/specimen/Qahiri)
 {:.links}
 
 Rana Kufi ⚠️🚧
 ---------
-[{{ picture('assets/images/rana-kufi', 'Rana Kufi') }}](/rana-kufi/english)
+[{{ picture('assets/images/rana-kufi', 'Rana Kufi') }}](/fonts/rana-kufi/english)
 {:.sample}
 
-[Read more...](/rana-kufi/english){:.more}
+[Read more...](/fonts/rana-kufi/english){:.more}
 {:.links}
 
 Aref Ruqaa
@@ -87,10 +87,10 @@ Mada
 
 Amiri
 -----
-[{{ picture('assets/images/amiri', 'Amiri') }}](/amiri/english)
+[{{ picture('assets/images/amiri', 'Amiri') }}](/fonts/amiri/english)
 {:.sample}
 
-[Read more...](/amiri/english){:.more}
+[Read more...](/fonts/amiri/english){:.more}
 [Wikipedia](https://en.wikipedia.org/wiki/Amiri_(typeface)) |
 [Google Fonts](https://fonts.google.com/specimen/Amiri)
 {:.links}

@@ -71,7 +71,9 @@ def page_metadata(generator, metadata):
     """Fill in what Jekyll used to derive from the page path."""
     fonts = generator.settings["FONTS"]
     parts = metadata["slug"].split("/")
-    project = parts[0] if len(parts) > 1 and parts[0] in fonts else None
+    project = None
+    if len(parts) > 2 and parts[0] == "fonts" and parts[1] in fonts:
+        project = parts[1]
 
     metadata["project"] = project
     metadata["dir"] = "/".join(["", *parts[:-1], ""])
@@ -106,17 +108,32 @@ def collect_posts(generator):
     generator.context["posts"] = sorted(posts, key=lambda p: p.date, reverse=True)
 
 
+def redirect_path(url):
+    """The file that serves a URL."""
+    path = url.strip("/")
+    if url.endswith("/"):
+        return f"{path}/index.html"
+    if path.endswith(".html"):
+        return path
+    return f"{path}.html"
+
+
 def write_redirects(generator, writer):
     """Redirect pages for the old URLs, was jekyll-redirect-from."""
     template = generator.get_template("redirect")
+    redirects = dict(generator.settings["REDIRECTS"])
     for page in generator.pages:
-        if "redirect_from" not in page.metadata:
-            continue
+        sources = page.metadata.get("redirect_from", [])
+        if isinstance(sources, str):
+            sources = [sources]
+        for source in sources:
+            redirects[source] = f"/{page.url}"
+    for source, target in redirects.items():
         writer.write_file(
-            page.metadata["redirect_from"].strip("/") + ".html",
+            redirect_path(source),
             template,
             generator.context,
-            target=f"{generator.settings['SITEURL']}/{page.url}",
+            target=f"{generator.settings['SITEURL']}{target}",
         )
 
 

@@ -3,6 +3,7 @@ title: Qahiri
 subtitle: A manuscript Kufic typeface
 lang: en-US
 direction: ltr
+redirect_from: /qahiri/english
 ---
 _Qahiri_ is a [Kufic][1] typeface based on the modernized and regularized old manuscript Kufic calligraphy style of the late master of Arabic calligraphy [_Mohammad Abdul Qadir_][2].
 
@@ -13,7 +14,7 @@ _Qahiri_ is a free and open-source project, anyone is welcome to use and modify 
 ## The app
 The font provides many alternate shapes for many of its glyphs, which should be usable in any OpenType-savvy application. But since many apps have poor OpenType support or bad UI or don’t allow controlling features for single glyphs, _Qahiri_ comes with a web application that provides easy access to glyph alternates.
 
-Visit the app [web page](/qahiri/app/english) and type Arabic in the text area. Next to the text, the alternates of the character before the text cursor will appear (the gray bar). Clicking on an alternate will cause it to be used instead of the current form:
+Visit the app [web page](/fonts/qahiri/app/english) and type Arabic in the text area. Next to the text, the alternates of the character before the text cursor will appear (the gray bar). Clicking on an alternate will cause it to be used instead of the current form:
 
 {{ picture('/assets/images/qahiri/screenshot', 'Screen shot of the app', 'png') }}
 

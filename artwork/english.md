@@ -8,7 +8,7 @@ redirect_from: /raqq/artwork/english
 
 ## Last three _Suras_ of the _Quran_
 
-This uses [_Raqq_](/raqq/english) typeface.
+This uses [_Raqq_](/fonts/raqq/english) typeface.
 
 The pages are laid out following the layout of Kufi _mushafs_, where _sura_ titles are written in gold and outlined with a darker color. Letters in _sura_ titles are also dotless, and the text is void of vowel marks, and with eliminated inter-letter space to the point of overlap at times
 

@@ -1,7 +1,8 @@
 ---
-title: Rana Kufi
+title: Qahiri
 subtitle: Try the font
 template: app
 lang: en-US
 direction: ltr
+redirect_from: /qahiri/app/english
 ---

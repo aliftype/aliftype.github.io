@@ -8,26 +8,26 @@ redirect_from: /arabic
 
 قشيب
 ----
-[{{ picture('assets/images/qashib', 'قشيب') }}](/qashib)
+[{{ picture('assets/images/qashib', 'قشيب') }}](/fonts/qashib)
 {:.sample}
 
-[اعرف أكثر...](/qashib){:.more}
+[اعرف أكثر...](/fonts/qashib){:.more}
 {:.links}
 
 أسطرلاب
 -------
-[{{ picture('assets/images/astrolabe', 'أسطرلاب') }}](/astrolabe)
+[{{ picture('assets/images/astrolabe', 'أسطرلاب') }}](/fonts/astrolabe)
 {:.sample}
 
-[اعرف أكثر...](/astrolabe){:.more}
+[اعرف أكثر...](/fonts/astrolabe){:.more}
 {:.links}
 
 رَقّ
 ----
-[{{ picture('assets/images/raqq', 'رَقّ') }}](/raqq)
+[{{ picture('assets/images/raqq', 'رَقّ') }}](/fonts/raqq)
 {:.sample}
 
-[اعرف أكثر...](/raqq){:.more}
+[اعرف أكثر...](/fonts/raqq){:.more}
 {:.links}
 
 أنت
@@ -41,19 +41,19 @@ redirect_from: /arabic
 
 قاهري
 -----
-[{{ picture('assets/images/qahiri', 'قاهري') }}](/qahiri)
+[{{ picture('assets/images/qahiri', 'قاهري') }}](/fonts/qahiri)
 {:.sample}
 
-[اعرف أكثر...](/qahiri){:.more}
+[اعرف أكثر...](/fonts/qahiri){:.more}
 [خطوط جوجل](https://fonts.google.com/specimen/Qahiri)
 {:.links}
 
 كوفي رنا ⚠️🚧
 --------
-[{{ picture('assets/images/rana-kufi', 'كوفي رنا') }}](/rana-kufi)
+[{{ picture('assets/images/rana-kufi', 'كوفي رنا') }}](/fonts/rana-kufi)
 {:.sample}
 
-[اعرف أكثر...](/rana-kufi){:.more}
+[اعرف أكثر...](/fonts/rana-kufi){:.more}
 {:.links}
 
 رقعة عارف
@@ -88,10 +88,10 @@ redirect_from: /arabic
 
 أميري
 -----
-[{{ picture('assets/images/amiri', 'أميري') }}](/amiri)
+[{{ picture('assets/images/amiri', 'أميري') }}](/fonts/amiri)
 {:.sample}
 
-[اعرف أكثر...](/amiri){:.more}
+[اعرف أكثر...](/fonts/amiri){:.more}
 [ويكيبيديا](https://ar.wikipedia.org/wiki/الخط_الأميري) |
 [خطوط جوجل](https://fonts.google.com/specimen/Amiri)
 {:.links}

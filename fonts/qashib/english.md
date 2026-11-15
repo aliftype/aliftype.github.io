@@ -3,6 +3,7 @@ title: Qashib
 subtitle: A Kufic typeface in fresh garb
 lang: en-US
 direction: ltr
+redirect_from: /qashib/english
 ---
 
 Manuscript [Kufic] is a magnificent Arabic calligraphy style of epic proportions, lending any text written in it a sense of heritage and authority. However, some of its letter forms are so archaic that they are undecipherable to the untrained modern reader, which makes it unsuitable for use in modern contexts. _Qashib_ is an attempt to reimagine manuscript Kufic by replacing its most unfamiliar letter forms with alternatives that are closer to contemporary Arabic letter forms, while maintaining its distinctive spirit.

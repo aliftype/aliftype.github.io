@@ -1,6 +1,7 @@
 ---
 lang: ar
 direction: rtl
+redirect_from: /astrolabe/
 ---
 
 «أسطرلاب» هو خط [كوفي](https://ar.wikipedia.org/wiki/خط_كوفي) مستوحى من خطوط الآلات  الفلكية القديمة مثل [الأسطرلابات](https://ar.wikipedia.org/wiki/أسطرلاب) و[الأرباع](https://ar.wikipedia.org/wiki/ربع_(آلة)). مصدر الإلهام الأساسي الكتابات على أرباع أسطرلابات من صنع [شمس الدين المزي الميقاتي](https://shamela.ws/book/6677/352#p3) (٦٩٠–٧٥٠هـ / ١٢٩١–١٣٤٩م) مثل الموجود في متحف الفن الإسلامي بالقاهرة، و[آخر](https://www.britishmuseum.org/collection/object/W_1888-1201-276) موجود بالمتحف البريطاني بلندن.

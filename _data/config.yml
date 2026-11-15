@@ -47,7 +47,7 @@ raqq:
       ]
 
     STORAGE_KEY: raqq.text-v1
-    SERVICE_WORKER: /raqq/app/ServiceWorker.js
+    SERVICE_WORKER: /fonts/raqq/app/ServiceWorker.js
     toolbar: [remove-dots, nocolor-dots]
 
 qahiri:
@@ -82,7 +82,7 @@ qahiri:
         { "code": 1610, "features": ["salt=5"] },
       ]
     STORAGE_KEY: qahiri.text-v3
-    SERVICE_WORKER: /qahiri/app/ServiceWorker.js
+    SERVICE_WORKER: /fonts/qahiri/app/ServiceWorker.js
     toolbar: [onum, round-dots, remove-dots]
 
 rana-kufi:
@@ -117,7 +117,7 @@ rana-kufi:
         { "code": 1610, "features": ["cv01=12"] },
       ]
     STORAGE_KEY: rana-kufi.text-v3
-    SERVICE_WORKER: /rana-kufi/app/ServiceWorker.js
+    SERVICE_WORKER: /fonts/rana-kufi/app/ServiceWorker.js
     toolbar: [remove-dots, small-dots]
 
 astrolabe:

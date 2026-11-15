@@ -46,16 +46,20 @@ CACHE_PATH = "cache"
 THEME = "theme"
 
 ARTICLE_PATHS = ["blog"]
-PAGE_PATHS = ["index.md", "english.md", "about", "artwork", *FONTS]
-PAGE_EXCLUDES = ["amiri/documentation"]
+PAGE_PATHS = ["index.md", "english.md", "about", "artwork", "fonts"]
+PAGE_EXCLUDES = ["fonts/amiri/documentation"]
 STATIC_PATHS = [
     "CNAME",
     "app",
     "assets",
-    "amiri/documentation",
-    *(f"{font}/app" for font in FONTS if FONTS[font].get("app")),
+    "fonts/amiri/documentation",
+    *(f"fonts/{font}/app" for font in FONTS if FONTS[font].get("app")),
 ]
 STATIC_EXCLUDES = ["app/harfbuzz", "assets/css"]
+# Old URLs of static files. Pages use the “redirect_from” metadata instead.
+REDIRECTS = {
+    "/amiri/documentation/Documentation-Arabic.html": "/fonts/amiri/documentation/Documentation-Arabic.html",
+}
 IGNORE_FILES = [".*"]
 
 # URLs and file names follow the source tree, as they did under Jekyll.

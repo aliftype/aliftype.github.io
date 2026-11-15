@@ -9,7 +9,7 @@
             {% if entry == "fonts" and page.project %}
                     <span> <span class="arrow">></span>
                     {% if page.template == "app" %}
-                        <a href="/{{ page.project }}/{{ messages.suffix }}">{{ messages.get(page.project, {}).name }}</a> <span class="arrow">></span> {{ messages.try }}
+                        <a href="/fonts/{{ page.project }}/{{ messages.suffix }}">{{ messages.get(page.project, {}).name }}</a> <span class="arrow">></span> {{ messages.try }}
                     {% else %}
                         {{ messages.get(page.project, {}).name }}
                     {% endif %}

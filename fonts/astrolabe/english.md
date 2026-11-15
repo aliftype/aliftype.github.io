@@ -3,6 +3,7 @@ title: Astrolabe
 subtitle: A Kufic typeface inspired by old sciences
 lang: en-US
 direction: ltr
+redirect_from: /astrolabe/english
 ---
 
 _Astrolabe_ is a [Kufic](https://en.wikipedia.org/wiki/Kufic) typeface inspired by Arabic inscription on old scientific instruments like [Astrolabes](https://en.wikipedia.org/wiki/Astrolabe) and [Quadrants](https://en.wikipedia.org/wiki/Quadrant_(instrument)). The main source of inspiration is quadrants made by [Shams al‐Din al-Mizzī](https://islamsci.mcgill.ca/RASI/BEA/Mizzi_BEA.htm) (690–750 AH / 1291–1349 CE), like the one in Cairo Museum of Islamic Art, and [another one](https://www.britishmuseum.org/collection/object/W_1888-1201-276) in The The British Museum.
