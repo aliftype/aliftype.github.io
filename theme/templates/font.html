@@ -44,6 +44,9 @@
       {% if config.download %}
       <p class="downloads"><a href="{{ GITHUB_OWNER_URL }}/{{ page.project }}/releases/download/{{ version }}/{{ config.name }}-{{ config.version }}.zip">{{ messages.download }}</a></p>
       {% endif %}
+      {% if config.documentation and page.breadcrumb != "features" %}
+      <p class="downloads"><a href="/fonts/{{ page.project }}/documentation">{{ messages.features }}</a></p>
+      {% endif %}
       {% if config.app and page.project != "raqq" %}
       <p class="downloads"><a href="{{ page.dir }}app/{{ messages.suffix }}">{{ messages.try }}</a></p>
       {% endif %}

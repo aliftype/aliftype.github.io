@@ -2,7 +2,7 @@
 title: الخط الأمیری
 lang: ar
 direction: rtl
-breadcrumb: documentation
+breadcrumb: features
 redirect_from: /amiri/documentation/Documentation-Arabic.html
 ---
 

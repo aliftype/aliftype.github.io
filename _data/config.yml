@@ -5,6 +5,7 @@ amiri:
   subtitle: خط عربي للمتون
   title-separator: "\u200A—\u200A"
   download: True
+  documentation: True
   app: False
 
 raqq:

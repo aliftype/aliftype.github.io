@@ -11,7 +11,7 @@ en-US:
   github-long: Project page on GitHub
   sitedesigner: Website design by Abdo Mohamed
   try: Try the font
-  documentation: Documentation
+  features: Font features
   download: Download the font
   artwork: Artwork
   blog: Blog
@@ -82,7 +82,7 @@ ar:
   sitedesigner: الموقع من تصميم عبد الرحمن محمد
   download: نزِّل الخط
   try: جرِّب الخط
-  documentation: توثيق
+  features: خصائص الخط
   artwork: أعمال فنية
   blog: المدونة
   theme:
