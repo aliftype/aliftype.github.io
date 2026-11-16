@@ -57,7 +57,7 @@ STATIC_EXCLUDES = ["app/harfbuzz", "assets/css"]
 IGNORE_FILES = [".*"]
 
 # URLs and file names follow the source tree, as they did under Jekyll.
-PATH_METADATA = r"(?P<slug>.+)\.(?:md|html)"
+PATH_METADATA = r"(?P<slug>.+)\.md"
 PAGE_URL = PAGE_LANG_URL = "{slug}"
 PAGE_SAVE_AS = PAGE_LANG_SAVE_AS = "{slug}.html"
 ARTICLE_URL = "{slug}/english"
